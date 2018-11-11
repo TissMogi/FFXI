@@ -246,7 +246,7 @@ function init_gear_sets()
     
     sets.precast.FC = {
         ammo="Sapience Orb",        -- 02%
-        head="Amalric Coif +1 +1 +1",        -- 10%
+        head="Amalric Coif +1",        -- 10%
         neck="Voltsurge Torque",    -- 04% 
         left_ear="Etiolation Earring",  -- 01%
         right_ear="Loquac. Earring",     -- 02%
@@ -301,7 +301,7 @@ function init_gear_sets()
     --MND (73~85%) based; depending on merits levels
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
         ammo="Hydrocera",
-        head="Amalric Coif +1 +1 +1",
+        head="Amalric Coif +1",
         body="Assim. Jubbah +3",        --body="Jhakri Robe +2",            --mnd:32
         hands="Amalric Gages",          --mnd:34
         legs="Gyve Trousers",           --find something better

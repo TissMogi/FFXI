@@ -160,7 +160,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
         --main="Oranyan",
         --sub="Clerisy Strap +1",
-        head="Amalric Coif +1 +1",
+        head="Amalric Coif +1",
         --hands="Merlinic Dastanas",
         legs="Geomancy Pants +2",
         feet="Regal Pumps +1",
@@ -291,7 +291,7 @@ function init_gear_sets()
     
     sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {
         ammo="Pemphredo Tathlum",
-        head="Amalric Coif +1 +1",
+        head="Amalric Coif +1",
         --waist="Gishdubar Sash",
         --back="Grapevine Cape",
         })
@@ -307,7 +307,7 @@ function init_gear_sets()
     sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
         --main="Vadose Rod",
         ammo="Pemphredo Tathlum",
-        head="Amalric Coif +1 +1",
+        head="Amalric Coif +1",
         waist="Emphatikos Rope",
         })
 
