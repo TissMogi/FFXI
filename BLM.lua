@@ -93,7 +93,7 @@ function init_gear_sets()
     
     -- Precast sets to enhance JAs
     sets.precast.JA['Mana Wall'] = {
-    --feet="Goetia Sabots +2"
+    feet="Wicce Sabots +1"
     }
 
     sets.precast.JA.Manafont = {
@@ -304,8 +304,6 @@ function init_gear_sets()
         legs="Spaekona's Tonban +3",
         feet=MerlinicCrackowsDrain
         }
-    
-    --[head="Nahtirah Hat" hands="Yaoyotl Gloves" left_ring="Excelsis Ring" right_ring="Sangoma Ring", legs="Bokwus Slops" feet="Wicce Sabots"]
 
     sets.midcast.Aspir = sets.midcast.Drain
 
@@ -517,7 +515,7 @@ function init_gear_sets()
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     
     sets.buff['Mana Wall'] = {
-    --feet="Goetia Sabots +2"
+    feet="Wicce Sabots +1"
     }
     
     sets.capacity_points = {back="Mecisto. Mantle"}
