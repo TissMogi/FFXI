@@ -178,7 +178,7 @@ function init_gear_sets()
         right_ring="Praan Ring",
         back="Bane Cape",
         waist="Belisama's Rope",
-        legs="Spaekona's Tonban +2",
+        legs="Spaekona's Tonban +3",
         feet="Telchine Pigaches",
     }       
     
@@ -276,7 +276,7 @@ function init_gear_sets()
     sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
 
     sets.midcast['Dark Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Jhakri Coronal +2",
+        head="Archmage's Petasos +3",
         neck="Erra Pendant",
         left_ear="Hecate's Earring",
         right_ear="Regal Earring",
@@ -286,7 +286,7 @@ function init_gear_sets()
         right_ring="Stikini Ring",
         back="Perimede Cape",
         waist="Porous Rope",
-        legs="Spaekona's Tonban +2",
+        legs="Spaekona's Tonban +3",
         feet="Jhakri Pigaches +2"                       --feet="Bokwus Boots"
         }
 
@@ -301,7 +301,7 @@ function init_gear_sets()
         right_ring="Stikini Ring",
         back=TaranusCapeDD,
         waist="Fucho-no-Obi",
-        legs="Spaekona's Tonban +2",
+        legs="Spaekona's Tonban +3",
         feet=MerlinicCrackowsDrain
         }
     
@@ -310,7 +310,7 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 
     sets.midcast.Stun = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Ea Hat",
+        head="Archmage's Petasos +3",
         neck="Erra Pendant",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
@@ -332,7 +332,7 @@ function init_gear_sets()
     -- Elemental Magic sets
     -- INT 116+246, MAB 311
     sets.midcast['Elemental Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Jhakri Coronal +2",
+        head="Archmage's Petasos +3",
         neck="Erra Pendant",
         left_ear="Friomisi Earring",
         right_ear="Regal Earring",
@@ -372,7 +372,7 @@ function init_gear_sets()
         })	
     
     sets.midcast["Death"] = {
-        head="Jhakri Coronal +2",
+        head="Archmage's Petasos +3",
         neck="Erra Pendant",
         left_ear="Friomisi Earring",
         right_ear="Regal Earring",
@@ -387,7 +387,7 @@ function init_gear_sets()
     }
         
     sets.midcast['Elemental Magic'].MP = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Jhakri Coronal +2",
+        head="Archmage's Petasos +3",
         neck="Erra Pendant",
         left_ear="Friomisi Earring",
         right_ear="Regal Earring",
