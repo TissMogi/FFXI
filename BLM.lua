@@ -352,11 +352,11 @@ function init_gear_sets()
         sub="Enki Strap",
         ammo="Pemphredo Tathlum",
                                         -- MB%          INT     MAC     MAB
-        head="Ea Hat +1",                  -- 06/06%       +38     +40     +33         +1 is 7
+        head="Ea Hat +1",               -- 07/07%       +38     +40     +33
         neck="Mizukage-no-Kubikazari",  -- 10%          +04             +08
         left_ear="Friomisi Earring",    --                              +10
         right_ear="Regal Earring",      --              +10     +set    +07
-        body="Ea Houppelande +1",          -- 08%/08%      +43     +42     +39         +1 is 9
+        body="Ea Houppelande +1",       -- 09%/09%      +43     +42     +39
         hands="Ea Cuffs",               -- 05/05%       +35     +39     +30
         left_ring="Jhakri Ring",        --                      +06     +03
         right_ring="Mujin Band",        -- 00%/05%
