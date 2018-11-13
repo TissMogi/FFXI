@@ -264,7 +264,7 @@ function init_gear_sets()
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         body="Spaekona's Coat +3",                      --body="Vanir Cotehardie",
-        hands="Jhakri Cuffs +2",                        --hands="Yaoyotl Gloves",
+        hands="Archmage's Gloves +3",                        --hands="Yaoyotl Gloves",
         left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
         right_ring="Kishar Ring",
         back=TaranusCapeDD,
@@ -281,7 +281,7 @@ function init_gear_sets()
         left_ear="Hecate's Earring",
         right_ear="Regal Earring",
         body="Archmage's Coat +3",                          --body="Vanir Cotehardie
-        hands="Jhakri Cuffs +2",
+        hands="Archmage's Gloves +3",
         left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
         right_ring="Stikini Ring",
         back="Perimede Cape",
@@ -296,7 +296,7 @@ function init_gear_sets()
         left_ear="Hecate's Earring",
         right_ear="Regal Earring",
         body="Archmage's Coat +3",
-        hands="Jhakri Cuffs +2",
+        hands="Archmage's Gloves +3",
         left_ring="Stikini Ring",
         right_ring="Stikini Ring",
         back=TaranusCapeDD,
@@ -313,7 +313,7 @@ function init_gear_sets()
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         body="Spaekona's Coat +3",
-        hands="Jhakri Cuffs +2",
+        hands="Archmage's Gloves +3",
         left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
         right_ring="Stikini Ring",
         back=TaranusCapeDD,
@@ -335,7 +335,7 @@ function init_gear_sets()
         left_ear="Friomisi Earring",
         right_ear="Regal Earring",
         body="Archmage's Coat +3",
-        hands="Jhakri Cuffs +2",
+        hands="Archmage's Gloves +3",
         left_ring="Stikini Ring",
         right_ring="Stikini Ring",
         back=TaranusCapeDD,
@@ -352,21 +352,19 @@ function init_gear_sets()
         sub="Enki Strap",
         ammo="Pemphredo Tathlum",
                                         -- MB%          INT     MAC     MAB
-        head="Ea Hat +1",               -- 07/07%       +38     +40     +33
-        neck="Mizukage-no-Kubikazari",  -- 10%          +04             +08
+        head="Ea Hat +1",               -- 07/07%       +43     +50     +38
+        neck="Sorcerer's Stole +1",     -- 08%          +12     +45     +05
         left_ear="Friomisi Earring",    --                              +10
         right_ear="Regal Earring",      --              +10     +set    +07
-        body="Ea Houppelande +1",       -- 09%/09%      +43     +42     +39
-        hands="Ea Cuffs",               -- 05/05%       +35     +39     +30
+        body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
+        hands="Archmage's Gloves +3",   -- 20%          +36     +38     +50
         left_ring="Jhakri Ring",        --                      +06     +03
         right_ring="Mujin Band",        -- 00%/05%
         back=TaranusCapeDD,             -- 05%          +30     +20     +10
         waist="Porous Rope",            --              +07     +05
         legs="Ea Slops",                -- 07%/07%      +43     +41     +36
-        --feet=MerlinicCrackowsDrain      --              +24     +34     +54 --changed b/c of neck leveling
-		--feet={ name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+8%','"Mag.Atk.Bns."+15',}}
-		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+8%','"Mag.Atk.Bns."+15',}}
-    ------------------------------- Total: 41%/31%=71%  +234    +227    +230
+        feet=MerlinicCrackowsDrain      --              +24     +34     +54
+    ------------------------------- Total: 56%/28%=68%  +253    +291    +257
         })	
     
     sets.midcast["Death"] = {
