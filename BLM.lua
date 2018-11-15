@@ -260,7 +260,7 @@ function init_gear_sets()
 
     sets.midcast['Enfeebling Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Befouled Crown",
-        neck="Erra Pendant",
+        neck="Sorcerer's Stole +1",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         body="Spaekona's Coat +3",                      --body="Vanir Cotehardie",
@@ -309,7 +309,7 @@ function init_gear_sets()
 
     sets.midcast.Stun = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Archmage's Petasos +3",
-        neck="Erra Pendant",
+        neck="Sorcerer's Stole +1",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         body="Spaekona's Coat +3",
@@ -331,7 +331,7 @@ function init_gear_sets()
     -- INT 116+246, MAB 311
     sets.midcast['Elemental Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Archmage's Petasos +3",
-        neck="Erra Pendant",
+        neck="Sorcerer's Stole +1",
         left_ear="Friomisi Earring",
         right_ear="Regal Earring",
         body="Archmage's Coat +3",
@@ -343,6 +343,21 @@ function init_gear_sets()
         legs=MerlinicShalwarDD,
         feet=MerlinicCrackowsDrain
         }
+
+        sets.midcast['Elemental Magic'].MP = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
+        head="Archmage's Petasos +3",
+        neck="Sorcerer's Stole +1",
+        left_ear="Friomisi Earring",
+        right_ear="Regal Earring",
+        body="Spaekona's Coat +3",
+        hands="Jhakri Cuffs +2",
+        left_ring="Stikini Ring",
+        right_ring="Stikini Ring",
+        back=TaranusCapeDD,
+        waist="Porous Rope",                            --waist="Refoccilation Stone",
+        legs=MerlinicShalwarDD,
+        feet=MerlinicCrackowsDrain
+        }        
 
     ---------------------------------------------------------------------------
     -- Magic Burst Set for all Spells ( Needed for Cap:40% ) ------------------
@@ -360,7 +375,7 @@ function init_gear_sets()
         hands="Archmage's Gloves +3",   -- 20%          +36     +38     +50
         left_ring="Jhakri Ring",        --                      +06     +03
         right_ring="Mujin Band",        -- 00%/05%
-        back=TaranusCapeDD,             -- 05%          +30     +20     +10
+        back=TaranusCapeDD,             -- 00%/05%      +30     +20     +10
         waist="Porous Rope",            --              +07     +05
         legs="Ea Slops",                -- 07%/07%      +43     +41     +36
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
@@ -381,21 +396,6 @@ function init_gear_sets()
         legs="Spaekona's Tonban +3",
         feet=MerlinicCrackowsDrain
     }
-        
-    sets.midcast['Elemental Magic'].MP = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Archmage's Petasos +3",
-        neck="Erra Pendant",
-        left_ear="Friomisi Earring",
-        right_ear="Regal Earring",
-        body="Spaekona's Coat +3",
-        hands="Jhakri Cuffs +2",
-        left_ring="Stikini Ring",
-        right_ring="Stikini Ring",
-        back=TaranusCapeDD,
-        waist="Porous Rope",                            --waist="Refoccilation Stone",
-        legs=MerlinicShalwarDD,
-        feet=MerlinicCrackowsDrain
-        }
 
     sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
     --sub="Wizzan Grip"
