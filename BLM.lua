@@ -336,8 +336,8 @@ function init_gear_sets()
         right_ear="Regal Earring",
         body="Archmage's Coat +3",
         hands="Archmage's Gloves +3",
-        left_ring="Stikini Ring",
-        right_ring="Stikini Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back=TaranusCapeDD,
         waist="Porous Rope",                            --waist="Refoccilation Stone",
         legs=MerlinicShalwarDD,
@@ -373,13 +373,13 @@ function init_gear_sets()
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
         hands="Archmage's Gloves +3",   -- 20%          +36     +38     +50
-        left_ring="Jhakri Ring",        --                      +06     +03
+        left_ring="Stikini Ring +1",    --              +09             +03
         right_ring="Mujin Band",        -- 00%/05%
         back=TaranusCapeDD,             -- 00%/05%      +30     +20     +10
         waist="Porous Rope",            --              +07     +05
         legs="Ea Slops",                -- 07%/07%      +43     +41     +36
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total: 56%/28%=68%  +253    +291    +257
+    ------------------------------- Total: 56%/28%=68%  +262    +285    +257
         })	
     
     sets.midcast["Death"] = {
