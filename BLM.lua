@@ -285,7 +285,7 @@ function init_gear_sets()
         left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
         right_ring="Stikini Ring",
         back="Perimede Cape",
-        waist="Porous Rope",
+        waist="Yamabuki-no-Obi",
         legs="Spaekona's Tonban +3",
         feet="Jhakri Pigaches +2"                       --feet="Bokwus Boots"
         }
@@ -339,7 +339,7 @@ function init_gear_sets()
         left_ring="Shiva Ring +1",
         right_ring="Shiva Ring +1",
         back=TaranusCapeDD,
-        waist="Porous Rope",                            --waist="Refoccilation Stone",
+        waist="Yamabuki-no-Obi",
         legs=MerlinicShalwarDD,
         feet=MerlinicCrackowsDrain
         }
@@ -351,10 +351,10 @@ function init_gear_sets()
         right_ear="Regal Earring",
         body="Spaekona's Coat +3",
         hands="Jhakri Cuffs +2",
-        left_ring="Stikini Ring",
-        right_ring="Stikini Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back=TaranusCapeDD,
-        waist="Porous Rope",                            --waist="Refoccilation Stone",
+        waist="Yamabuki-no-Obi",
         legs=MerlinicShalwarDD,
         feet=MerlinicCrackowsDrain
         }        
@@ -373,13 +373,13 @@ function init_gear_sets()
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
         hands="Archmage's Gloves +3",   -- 20%          +36     +38     +50
-        left_ring="Stikini Ring +1",    --              +09             +03
+        left_ring="Stikini Ring",       --              +09             +03
         right_ring="Mujin Band",        -- 00%/05%
         back=TaranusCapeDD,             -- 00%/05%      +30     +20     +10
-        waist="Porous Rope",            --              +07     +05
+        waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs="Ea Slops",                -- 07%/07%      +43     +41     +36
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total: 56%/28%=68%  +262    +285    +257
+    ------------------------------- Total: 56%/28%=68%  +261    +282    +262
         })	
     
     sets.midcast["Death"] = {
@@ -392,7 +392,7 @@ function init_gear_sets()
         left_ring="Sangoma Ring",
         right_ring="Persis Ring",
         back=TaranusCapeDD,
-        waist="Porous Rope",                            --waist="Refoccilation Stone",
+        waist="Yamabuki-no-Obi",
         legs="Spaekona's Tonban +3",
         feet=MerlinicCrackowsDrain
     }
