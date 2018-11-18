@@ -97,7 +97,7 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
     
     -- Precast sets to enhance JAs
-    sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
+    sets.precast.JA.Bolster = {body="Bagua Tunic +2"}
     sets.precast.JA['Life Cycle'] = {body="Geomancy Tunic +2", back="Nantosuelta's Cape"}
   
     -- Fast cast sets for spells
