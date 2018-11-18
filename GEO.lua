@@ -362,7 +362,7 @@ function init_gear_sets()
     sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {
         main="Rubicundity",
         ammo="Pemphredo Tathlum",
-        head="Bagua Galero +2",
+        head="Bagua Galero +3",
         neck="Sanctity Necklace",
         left_ear="Hermetic Earring",
         right_ear="Regal Earring",
