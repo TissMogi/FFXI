@@ -334,11 +334,10 @@ function init_gear_sets()
         back="Gwyddion's Cape",
         waist="Rumination Sash",
         legs="Inyanga Shalwar +2",
-        feet="Bagua Sandals +1",
+        feet="Bagua Sandals +2",
         } -- MND/Magic accuracy
     
     sets.midcast.IntEnfeebles = set_combine(sets.midcast.MndEnfeebles, {
-        main="Venabulum",
         back=NanCape,
         }) -- INT/Magic accuracy
 
@@ -357,7 +356,7 @@ function init_gear_sets()
         back="Gwyddion's Cape",
         waist="Rumination Sash",
         legs="Inyanga Shalwar +2",
-        feet="Bagua Sandals +1",                    --feet="Bokwus Boots"
+        feet="Bagua Sandals +2",                    --feet="Bokwus Boots"
         }
     
     sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {
@@ -499,7 +498,7 @@ function init_gear_sets()
         hands="Geo. Mitaines +3",       -- 11/0
         left_ear="Handler's Earring",       -- 3*/0
         right_ear="Handler's Earring +1",    -- 4*/0
-        feet="Bagua Sandals +1",        -- 0/3
+        feet="Bagua Sandals +2",        -- 0/3
         back=NanCape,   -- 5/10
         waist="Isa Belt" --3/1
         })
