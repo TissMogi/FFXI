@@ -397,7 +397,7 @@ function init_gear_sets()
         left_ring="Shiva Ring +1",
         right_ring="Shiva Ring +1",       
         back="Gwyddion's Cape",
-        waist="Porous Rope",
+        waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs=MerlinicShalwarDD,
         feet=MerlinicCrackowsDrain
         }
@@ -577,16 +577,16 @@ function init_gear_sets()
     --------------------------------------
 
     sets.magic_burst = {
-        head="Ea Hat",                  -- 06/06%       +38     +40     +33
+        head="Ea Hat +1",               -- 07/07%       +43     +50     +38
         neck="Mizukage-no-Kubikazari",  -- 10%          +04     +00     +08
-        left_ear="Hermetic Earring",        --              +03     +08     +08
-        right_ear="Friomisi Earring",        --                              +06
-        body="Ea Houppelande",          -- 08%/08%      +43     +42     +39
+        left_ear="Hermetic Earring",    --              +03     +08     +08
+        right_ear="Regal Earring",      --              +10     +set    +07
+        body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
         hands="Ea Cuffs",               -- 05/05%       +35     +39     +30
-        left_ring="Locus Ring",             -- 05%
-        right_ring="Mujin Band",             -- 00%/05%
+        left_ring="Locus Ring",         -- 05%
+        right_ring="Mujin Band",        -- 00%/05%
         back="Gwyddion's Cape",         --              +06     +02
-        waist="Porous Rope",            --              +07     +05
+        waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs="Ea Slops",                -- 07%/07%      +43     +41     +36
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
         }

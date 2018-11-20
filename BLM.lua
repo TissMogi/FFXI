@@ -373,7 +373,7 @@ function init_gear_sets()
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
         hands="Archmage's Gloves +3",   -- 20%          +36     +38     +50
-        left_ring="Stikini Ring",       --              +09             +03
+        left_ring="Shiva Ring +1",      --              +09             +03
         right_ring="Mujin Band",        -- 00%/05%
         back=TaranusCapeDD,             -- 00%/05%      +30     +20     +10
         waist="Yamabuki-no-Obi",        --              +06     +02     +05
