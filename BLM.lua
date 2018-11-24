@@ -526,10 +526,21 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
-    sets.engaged = {
-      --[[  head="Zelus Tiara",neck="Asperity Necklace",left_ear="Bladeborn Earring",right_ear="Steelflash Earring",
-        body="Hagondes Coat",hands="Bokwus Gloves",left_ring="Rajas Ring",right_ring="K'ayres Ring",
-        back="Umbra Cape",waist="Goading Belt",legs="Hagondes Pants",feet="Hagondes Sabots"]]
+    sets.engaged = {main="Lathi",sub="Enki Strap",ammo="Sihirik",
+                                    -- Accuracy     Double Att      Triple Att      Quad Att
+    head="Jhakri Coronal +2",       -- 44
+    neck="Sanctity Necklace",       -- 10
+    left_ear="Steelflash Earring",  -- 08           7%
+    right_ear="Bladeborn Earring",
+    body="Jhakri Robe +2",          -- 46
+    hands="Jhakri Cuffs +2",        -- 43
+    left_ring="Defending Ring",
+    right_ring="Hetairoi Ring",     --                              2
+    back=TaranusCapeDD,
+    waist="Windbuffet Belt +1",     --                              2               2
+    legs="Jhakri Slops +2",         -- 45
+    feet="Jhakri Pigaches +2"       -- 42
+    ----------------------------Total= 238          7               4               2
     }
     
 
