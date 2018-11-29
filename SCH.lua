@@ -237,12 +237,12 @@ function init_gear_sets()
         ammo="Pemphredo Tathlum",           --                                  +04
         head="Vanya Hood",                  -- 10%                              +06
         neck="Nodens Gorget",               -- 05%
-        left_ear="Mendi. Earring",              -- 05%
-        right_ear="Regal Earring",               --              +10
+        left_ear="Mendi. Earring",          -- 05%
+        right_ear="Regal Earring",          --              +10
         body="Chironic Doublet",            -- 13%
-        hands="Shrieker's Cuffs",           --                                  +07
-        left_ring="Haoma's Ring",               --                      +08
-        right_ring="Sirona's Ring",              --                      +10
+        hands="Pedagogy Bracers +3",        -- 00/03%                     +03
+        left_ring="Haoma's Ring",           --                      +08
+        right_ring="Sirona's Ring",         --                      +10
         back="Solemnity Cape",              -- 07%          +8                  +05
         waist="Luminary Sash",              --              +10                 +04
         legs="Vanya Slops",                 --              +10                 +12
@@ -281,9 +281,9 @@ function init_gear_sets()
         --neck="Malison Medallion",
         --hands="Hieros Mittens",
 		body="Pedagogy Gown +3",
-        left_ring="Haoma's Ring",
-        right_ring="Haoma's Ring",
-        feet="Vanya Clogs"
+        right_ring="Menelaus's Ring",   -- cursna +25
+        right_ring="Haoma's Ring",      -- cursna +15
+        feet="Vanya Clogs"              -- cursna +05
         }
 
     sets.midcast['Enhancing Magic'] = {

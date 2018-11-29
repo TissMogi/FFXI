@@ -232,7 +232,7 @@ function init_gear_sets()
         --neck="Malison Medallion",
         body="Vanya Robe", 
         hands="Fanatic Gloves",         -- cursna +15; HMS +9
-        left_ring="Haoma's Ring",       -- cursna 15% --Menelaus's ring is 20%
+        left_ring="Haoma's Ring",       -- cursna 15%
         right_ring="Menelaus's Ring",   -- cursna +25
         back=AlanusCure,                -- cursna +25
         legs="Theophany Pantaloons +2",
