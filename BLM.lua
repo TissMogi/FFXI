@@ -318,7 +318,7 @@ function init_gear_sets()
         right_ring="Stikini Ring",
         back=TaranusCapeDD,
         waist="Luminary Sash",
-        legs=MerlinicShalwarDD,
+        legs="Archmage's Tonban +3",
         feet="Jhakri Pigaches +2"                       --feet="Bokwus Boots"
         }
 
@@ -329,44 +329,54 @@ function init_gear_sets()
 
     -- Elemental Magic sets
     -- INT 116+246, MAB 311
-    sets.midcast['Elemental Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Archmage's Petasos +3",
-        neck="Sorcerer's Stole +1",
-        left_ear="Friomisi Earring",
-        right_ear="Regal Earring",
-        body="Archmage's Coat +3",
-        hands="Archmage's Gloves +3",
-        left_ring="Shiva Ring +1",
-        right_ring="Shiva Ring +1",
-        back=TaranusCapeDD,
-        waist="Yamabuki-no-Obi",
-        legs=MerlinicShalwarDD,
-        feet=MerlinicCrackowsDrain
+    sets.midcast['Elemental Magic'] = {
+                                        --              INT     MAC     MAB            
+        main="Lathi",                   --              +27     +15     +63
+        sub="Enki Strap",               --              +10     +10
+        ammo="Pemphredo Tathlum",       --              +04     +08     +04
+        head="Archmage's Petasos +3",   --              +34     +43     +55
+        neck="Sorcerer's Stole +1",     --              +12     +45     +05
+        left_ear="Friomisi Earring",    --                              +10
+        right_ear="Regal Earring",      --              +10     +set    +07
+        body="Archmage's Coat +3",      --              +46     +40     +52
+        hands="Archmage's Gloves +3",   --              +36     +38     +50
+        left_ring="Shiva Ring +1",      --              +09             +03
+        right_ring="Shiva Ring +1",     --              +09             +03
+        back=TaranusCapeDD,             --              +30     +20     +10
+        waist="Yamabuki-no-Obi",        --              +06     +02     +05
+        legs="Archmage's Tonban +3",    --              +50     +46     +58
+        feet=MerlinicCrackowsDrain      --              +24     +34     +54
+    ------------------------------- Total:              +307    +301    +379
         }
 
-        sets.midcast['Elemental Magic'].MP = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Archmage's Petasos +3",
-        neck="Sorcerer's Stole +1",
-        left_ear="Friomisi Earring",
-        right_ear="Regal Earring",
-        body="Spaekona's Coat +3",
-        hands="Jhakri Cuffs +2",
-        left_ring="Shiva Ring +1",
-        right_ring="Shiva Ring +1",
-        back=TaranusCapeDD,
-        waist="Yamabuki-no-Obi",
-        legs=MerlinicShalwarDD,
-        feet=MerlinicCrackowsDrain
+        sets.midcast['Elemental Magic'].MP = {
+                                        --              INT     MAC     MAB            
+        main="Lathi",                   --              +27     +15     +63
+        sub="Enki Strap",               --              +10     +10
+        ammo="Pemphredo Tathlum",       --              +04     +08     +04
+        head="Archmage's Petasos +3",   --              +34     +43     +55
+        neck="Sorcerer's Stole +1",     --              +12     +45     +05
+        left_ear="Friomisi Earring",    --                              +10
+        right_ear="Regal Earring",      --              +10     +set    +07
+        body="Spaekona's Coat +3",      --              +39     +55
+        hands="Archmage's Gloves +3",   --              +36     +38     +50
+        left_ring="Shiva Ring +1",      --              +09             +03
+        right_ring="Shiva Ring +1",     --              +09             +03
+        back=TaranusCapeDD,             --              +30     +20     +10
+        waist="Yamabuki-no-Obi",        --              +06     +02     +05
+        legs="Archmage's Tonban +3",    --              +50     +46     +58
+        feet=MerlinicCrackowsDrain      --              +24     +34     +54
+    ------------------------------- Total:              +300    +316    +327
         }        
 
     ---------------------------------------------------------------------------
-    -- Magic Burst Set for all Spells ( Needed for Cap:40% ) ------------------
+    -- Magic Burst Set for all Spells ( Needed for Cap Tier 1:40% ) ------------------
     ---------------------------------------------------------------------------
     sets.magic_burst = set_combine(sets.midcast['Elemental Magic'], {
-        main="Lathi",
-        sub="Enki Strap",
-        ammo="Pemphredo Tathlum",
-                                        -- MB%          INT     MAC     MAB
+                                        -- MB%          INT     MAC     MAB        
+        main="Lathi",                   --              +27     +15     +63
+        sub="Enki Strap",               --              +10     +10
+        ammo="Pemphredo Tathlum",       --              +04     +08     +04
         head="Ea Hat +1",               -- 07/07%       +43     +50     +38
         neck="Sorcerer's Stole +1",     -- 08%          +12     +45     +05
         left_ear="Friomisi Earring",    --                              +10
@@ -377,9 +387,9 @@ function init_gear_sets()
         right_ring="Mujin Band",        -- 00%/05%
         back=TaranusCapeDD,             -- 00%/05%      +30     +20     +10
         waist="Yamabuki-no-Obi",        --              +06     +02     +05
-        legs="Ea Slops",                -- 07%/07%      +43     +41     +36
+        legs="Archmage's Tonban +3",    -- 00%/03%      +50     +46     +58
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total: 56%/28%=68%  +261    +282    +262
+    ------------------------------- Total: 44%/29%=69%  +309    +320    +351
         })	
     
     sets.midcast["Death"] = {
@@ -539,8 +549,8 @@ function init_gear_sets()
     back=TaranusCapeDD,
     waist="Windbuffet Belt +1",     --                              2               2
     legs="Jhakri Slops +2",         -- 45
-    feet="Jhakri Pigaches +2"       -- 42
-    ----------------------------Total= 238          7               4               2
+    feet="Jhakri Pigaches +2"       -- 42           7               4               2
+    ----------------------------Total= 238
     }
     
 
