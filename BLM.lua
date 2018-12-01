@@ -179,7 +179,8 @@ function init_gear_sets()
         back="Bane Cape",
         waist="Belisama's Rope",
         legs="Spaekona's Tonban +3",
-        feet="Telchine Pigaches",
+        feet="Telchine Pigaches"
+        --------------------------------Total: 2204 MP = 1322 Myrkr~
     }       
     
     
