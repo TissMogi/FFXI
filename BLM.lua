@@ -330,7 +330,7 @@ function init_gear_sets()
     -- Elemental Magic sets
     -- INT 116+246, MAB 311
     sets.midcast['Elemental Magic'] = {
-                                        --              INT     MAC     MAB            
+                                        --              INT     MAC     MAB     Ele Skill           
         main="Lathi",                   --              +27     +15     +63
         sub="Enki Strap",               --              +10     +10
         ammo="Pemphredo Tathlum",       --              +04     +08     +04
@@ -346,11 +346,11 @@ function init_gear_sets()
         waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs="Archmage's Tonban +3",    --              +50     +46     +58
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total:              +307    +301    +379
+    ------------------------------- Total:              +307    +301    +379    +544
         }
 
         sets.midcast['Elemental Magic'].MP = {
-                                        --              INT     MAC     MAB            
+                                        --              INT     MAC     MAB     Ele Skill       
         main="Lathi",                   --              +27     +15     +63
         sub="Enki Strap",               --              +10     +10
         ammo="Pemphredo Tathlum",       --              +04     +08     +04
@@ -366,14 +366,14 @@ function init_gear_sets()
         waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs="Archmage's Tonban +3",    --              +50     +46     +58
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total:              +300    +316    +327
+    ------------------------------- Total:              +300    +316    +327    +520
         }        
 
     ---------------------------------------------------------------------------
     -- Magic Burst Set for all Spells ( Needed for Cap Tier 1:40% ) ------------------
     ---------------------------------------------------------------------------
     sets.magic_burst = set_combine(sets.midcast['Elemental Magic'], {
-                                        -- MB%          INT     MAC     MAB        
+                                        -- MB%          INT     MAC     MAB    Ele Skill
         main="Lathi",                   --              +27     +15     +63
         sub="Enki Strap",               --              +10     +10
         ammo="Pemphredo Tathlum",       --              +04     +08     +04
@@ -389,7 +389,7 @@ function init_gear_sets()
         waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs="Archmage's Tonban +3",    -- 00%/03%      +50     +46     +58
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total: 44%/29%=69%  +309    +320    +351
+    ------------------------------- Total: 44%/29%=69%  +309    +320    +351    +499
         })	
     
     sets.midcast["Death"] = {
