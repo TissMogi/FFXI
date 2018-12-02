@@ -216,21 +216,21 @@ function init_gear_sets()
     -- Fast Cast Sets for all Spells ( Cap:80% - SCH:70% - RDM:65% ) ----------
     ---------------------------------------------------------------------------
     sets.precast.FC = {
-        main="Oranyan",             -- 20%
-        ammo="Sapience Orb",        -- 02%
-        head="Vanya Hood",          -- 10%
-        neck="Voltsurge Torque",    -- 04%
+        main="Oranyan",                 -- 20%
+        ammo="Sapience Orb",            -- 02%
+        head="Vanya Hood",              -- 10%
+        neck="Voltsurge Torque",        -- 04%
         left_ear="Etiolation Earring",  -- 01%
-        right_ear="Loquacious Earring",  -- 02%  
-        body="Inyanga Jubbah +2",   -- 13%
-        --hands="Leyline Gloves",       -- 05% 
+        right_ear="Loquacious Earring", -- 02%  
+        body="Inyanga Jubbah +2",       -- 13%
+        --hands="",
         left_ring="Rahab Ring",         -- 02%
-        right_ring="Kishar Ring",        -- 04%
-        back=CCapeMagical,          -- 10%
-        waist="Witful Belt",        -- 03%/03% quick magic
-        legs="Lengo Pants",         -- 05%
-        feet="Regal Pumps +1"       -- 07%
-    --------------------------- Total: 83% ------------------------------------
+        right_ring="Kishar Ring",       -- 04%
+        back=CCapeMagical,              -- 10%
+        waist="Witful Belt",            -- 03%/03% quick magic
+        --legs="Lengo Pants",           -- 05% put them in storage, already over cap
+        feet="Regal Pumps +1"           -- 07%
+    --------------------------- Total: 78% ------------------------------------
     }
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {
