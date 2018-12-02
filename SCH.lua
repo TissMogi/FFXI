@@ -69,13 +69,15 @@ function user_setup()
     MerlinicShalwarBurst = { name="Merlinic Shalwar", augments={'Mag. Acc.+6','Magic burst dmg.+10%','"Mag.Atk.Bns."+9',}}
     MerlinicCrackowsBurst = { name="Merlinic Crackows", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+10%','MND+1','Mag. Acc.+6','"Mag.Atk.Bns."+1',}}
     
-    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Drain" and "Aspir" potency +4','INT+8','"Mag.Atk.Bns."+3',}}
+    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Drain" and "Aspir" potency +10','DEX+3',}}
+    MerlinicJubbahDrain = { name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +7','MND+5','Mag. Acc.+15','"Mag.Atk.Bns."+2',}}
+    MerlinicDastanasDrain = { name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+30','"Drain" and "Aspir" potency +10','VIT+9',}}
     MerlinicCrackowsDrain = { name="Merlinic Crackows", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Drain" and "Aspir" potency +8','CHR+2','Mag. Acc.+10','"Mag.Atk.Bns."+15',}}
-    
-    MerlinicJubbahDD = { name="Merlinic Jubbah", augments={'Mag. Acc.+5','"Fast Cast"+5','"Mag.Atk.Bns."+7',}}
+
     MerlinicShalwarDD = { name="Merlinic Shalwar", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Occult Acumen"+7','Mag. Acc.+10','"Mag.Atk.Bns."+11',}}
     MerlinicShalwarDD2 = { name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','"Fast Cast"+4','INT+12','"Mag.Atk.Bns."+15',}}      
     
+    MerlinicDastanasFC = { name="Merlinic Dastanas", augments={'Mag. Acc.+8','"Fast Cast"+5','CHR+7','"Mag.Atk.Bns."+8',}}
     LughsCapeDD = { name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Occ. inc. resist. to stat. ailments+10',}}
     LughsCapeFC = { name="Lugh's Cape", augments={'"Fast Cast"+10',}}
 
@@ -144,21 +146,21 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {
-        ammo="Sapience Orb",        -- 02%
-        head="Vanya Hood",          -- 10%
-        neck="Voltsurge Torque",    -- 04%
+        ammo="Sapience Orb",            -- 02%
+        head="Vanya Hood",              -- 10%
+        neck="Voltsurge Torque",        -- 04%
         left_ear="Loquac. Earring",     -- 02%
         left_ear="Etiolation Earring",  -- 01%  
-        body=MerlinicJubbahDD,      -- 11%
-        hands="Mallquis Cuffs +1",  -- ele. cast time -5%       --hands="Gendewitha Gages +1",-- 07% 
+        body=MerlinicJubbahDrain,       -- 06%
+        hands=MerlinicDastanasFC,       -- 05%
         left_ring="Rahab Ring",         -- 02%
-        right_ring="Kishar Ring",        -- 04%
-        back=LughsCapeFC,           -- 10%
-        waist="Witful Belt",        -- 03%/03% quick magic
-        legs="Gyve Trousers",       -- 04%
-        feet="Regal Pumps +1"       -- 07%
+        right_ring="Kishar Ring",       -- 04%
+        back=LughsCapeFC,               -- 10%
+        waist="Witful Belt",            -- 03%/03% quick magic
+        legs="Gyve Trousers",           -- 04%
+        feet="Regal Pumps +1"           -- 07%
     }
-------------------------------- Total: 60% ------------------------------------
+    ------------------------------- Total: 60% ---------------------------------
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {
     waist="Siegel Sash"
@@ -397,8 +399,8 @@ function init_gear_sets()
         neck="Erra Pendant",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
-        body="Pedagogy Gown +3",
-        hands="Jhakri Cuffs +2",
+        body=MerlinicJubbahDrain,
+        hands=MerlinicDastanasDrain,
         left_ring="Stikini Ring",
         right_ring="Stikini Ring",
         back="Perimede Cape",
@@ -567,7 +569,7 @@ function init_gear_sets()
         neck="Loricate Torque +1", 
         left_ear="Etiolation Earring",
         right_ear="Moonshade Earring",
-        body=MerlinicJubbahDD,
+        body=MerlinicJubbahDrain,
         hands="Shrieker's Cuffs",
         left_ring="Defending Ring",
         right_ring="Patricius Ring",
@@ -584,7 +586,7 @@ function init_gear_sets()
         neck="Loricate Torque +1", 
         left_ear="Etiolation Earring",
         right_ear="Moonshade Earring",
-        body=MerlinicJubbahDD,
+        body=MerlinicJubbahDrain,
         hands="Shrieker's Cuffs",
         left_ring="Defending Ring",
         right_ring="Vertigo Ring",
@@ -603,7 +605,7 @@ function init_gear_sets()
         neck="Loricate Torque +1", 
         left_ear="Etiolation Earring",
         right_ear="Hearty Earring",
-        body=MerlinicJubbahDD,
+        body=MerlinicJubbahDrain,
         hands="Shrieker's Cuffs",
         left_ring="Defending Ring",
         right_ring="Patricius Ring",

@@ -158,16 +158,18 @@ function user_setup()
     MerlinicShalwarBurst = { name="Merlinic Shalwar", augments={'Mag. Acc.+6','Magic burst dmg.+10%','"Mag.Atk.Bns."+9',}}
     MerlinicCrackowsBurst = { name="Merlinic Crackows", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+10%','MND+1','Mag. Acc.+6','"Mag.Atk.Bns."+1',}}
     
-    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Drain" and "Aspir" potency +4','INT+8','"Mag.Atk.Bns."+3',}}
+    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Drain" and "Aspir" potency +10','DEX+3',}}
+    MerlinicJubbahDrain = { name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +7','MND+5','Mag. Acc.+15','"Mag.Atk.Bns."+2',}}
+    MerlinicDastanasDrain = { name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+30','"Drain" and "Aspir" potency +10','VIT+9',}}
     MerlinicCrackowsDrain = { name="Merlinic Crackows", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Drain" and "Aspir" potency +8','CHR+2','Mag. Acc.+10','"Mag.Atk.Bns."+15',}}
-    
-    MerlinicJubbahDD = { name="Merlinic Jubbah", augments={'Mag. Acc.+5','"Fast Cast"+5','"Mag.Atk.Bns."+7',}}
+
     MerlinicShalwarDD = { name="Merlinic Shalwar", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Occult Acumen"+7','Mag. Acc.+10','"Mag.Atk.Bns."+11',}}
     MerlinicShalwarDD2 = { name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','"Fast Cast"+4','INT+12','"Mag.Atk.Bns."+15',}}
     
     MerlinicBPPhysical = { name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+30','Blood Pact Dmg.+10','Pet: DEX+8',}}
     MerlinicBPMagical = { name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+18','Blood Pact Dmg.+9','Pet: DEX+10','Pet: Mag. Acc.+12',}}
     
+    MerlinicDastanasFC = { name="Merlinic Dastanas", augments={'Mag. Acc.+8','"Fast Cast"+5','CHR+7','"Mag.Atk.Bns."+8',}}
     CCapePhysical = { name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}}
     CCapeMagical = { name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: Mag. Acc.+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}
 
@@ -223,14 +225,14 @@ function init_gear_sets()
         left_ear="Etiolation Earring",  -- 01%
         right_ear="Loquacious Earring", -- 02%  
         body="Inyanga Jubbah +2",       -- 13%
-        --hands="",
+        hands=MerlinicDastanasFC,       -- 05%
         left_ring="Rahab Ring",         -- 02%
         right_ring="Kishar Ring",       -- 04%
         back=CCapeMagical,              -- 10%
         waist="Witful Belt",            -- 03%/03% quick magic
         --legs="Lengo Pants",           -- 05% put them in storage, already over cap
         feet="Regal Pumps +1"           -- 07%
-    --------------------------- Total: 78% ------------------------------------
+    ------------------------------- Total: 83% --------------------------------
     }
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {
@@ -336,15 +338,15 @@ function init_gear_sets()
 
     sets.midcast['Elemental Magic'] = {}
 
-    sets.midcast['Dark Magic'] = {main="Oranyan",sub="Enki Strap",range="Pemphredo Tathlum",
+    sets.midcast['Dark Magic'] = {--[[main="Oranyan",sub="Enki Strap",range="Pemphredo Tathlum",
         head=MerlinicHoodDrain,neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
         body="Amalric Doublet",hands=MerlinicDastanasDrain,left_ring="Stikini Ring",right_ring="Stikini Ring",
-        back="Bane Cape",waist="Fucho-no-Obi",legs=MerlinicShalwarDD,feet=MerlinicDrain}
+        back="Bane Cape",waist="Fucho-no-Obi",legs=MerlinicShalwarDD,feet=MerlinicDrain--]]}
 
-    sets.midcast['Aspir'] = {main="Rubicundity",sub="Enki Strap",range="Pemphredo Tathlum",
+    sets.midcast['Aspir'] = {--[[main="Rubicundity",sub="Enki Strap",range="Pemphredo Tathlum",
         head=MerlinicHoodDrain,neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
         body="Amalric Doublet",hands=MerlinicDastanasDrain,left_ring="Stikini Ring",right_ring="Stikini Ring",
-        back="Bane Cape",waist="Fucho-no-Obi",legs=MerlinicShalwarDD,feet=MerlinicDrain}
+        back="Bane Cape",waist="Fucho-no-Obi",legs=MerlinicShalwarDD,feet=MerlinicDrain--]]}
 
 -------------------------------------------------------------------------------
 ------ Generic Bloodpact Sets based on type -----------------------------------

@@ -49,13 +49,15 @@ function user_setup()
     MerlinicCrackowsBurst = { name="Merlinic Crackows", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+10%','MND+1','Mag. Acc.+6','"Mag.Atk.Bns."+1',}}
     MerlinicCrackowsBurst2 = { name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+8%','"Mag.Atk.Bns."+15',}}
     
-    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Drain" and "Aspir" potency +4','INT+8','"Mag.Atk.Bns."+3',}}
+    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Drain" and "Aspir" potency +10','DEX+3',}}
+    MerlinicJubbahDrain = { name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +7','MND+5','Mag. Acc.+15','"Mag.Atk.Bns."+2',}}
+    MerlinicDastanasDrain = { name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+30','"Drain" and "Aspir" potency +10','VIT+9',}}
     MerlinicCrackowsDrain = { name="Merlinic Crackows", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Drain" and "Aspir" potency +8','CHR+2','Mag. Acc.+10','"Mag.Atk.Bns."+15',}}
-    
-    MerlinicJubbahDD = { name="Merlinic Jubbah", augments={'Mag. Acc.+5','"Fast Cast"+5','"Mag.Atk.Bns."+7',}}
+
     MerlinicShalwarDD = { name="Merlinic Shalwar", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Occult Acumen"+7','Mag. Acc.+10','"Mag.Atk.Bns."+11',}}
     MerlinicShalwarDD2 = { name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','"Fast Cast"+4','INT+12','"Mag.Atk.Bns."+15',}}
-    
+
+    MerlinicDastanasFC = { name="Merlinic Dastanas", augments={'Mag. Acc.+8','"Fast Cast"+5','CHR+7','"Mag.Atk.Bns."+8',}}
     NanCape = { name="Nantosuelta's Cape", augments={'Pet: "Regen"+10','Pet: Damage taken -5%',}}
     
     
@@ -104,23 +106,23 @@ function init_gear_sets()
     
     sets.precast.FC = {
     --  /RDM --15
-        --main="Oranyan",                   --7
-        --sub="Clerisy Strap +1",           -- 3
-        range="Dunna",                  -- 3%
-        head="Vanya Hood",              -- 10%
-        body=MerlinicJubbahDD,          -- 11%
-        --hands="Merlinic Dastanas",        -- 6%
-        legs="Geomancy Pants +2",       -- 13%
-        feet="Regal Pumps +1",          -- 7%
-        neck="Voltsurge Torque",        -- 4%
-        left_ear="Loquacious Earring",      -- 2%
+        --main="Oranyan",                    -- 07%
+        --sub="Clerisy Strap +1",            -- 03%
+        range="Dunna",                       -- 03%
+        head="Vanya Hood",                   -- 10%
+        body=MerlinicJubbahDrain,            -- 06%
+        hands=MerlinicDastanasFC,            -- 05%
+        legs="Geomancy Pants +2",            -- 13%
+        feet="Regal Pumps +1",               -- 7%
+        neck="Voltsurge Torque",             -- 4%
+        left_ear="Loquacious Earring",       -- 2%
         right_ear="Etiolation Earring",      -- 01%
-        left_ring="Kishar Ring",            -- 02%
+        left_ring="Kishar Ring",             -- 02%
         right_ring="Rahab Ring",             -- 04%
-        back="Lifestream Cape",         -- 7%
-        waist="Witful Belt",            -- 3%/(2)%
+        back="Lifestream Cape",              -- 07%
+        waist="Witful Belt",                 -- 03%/(2)%
         }
------------------------------------------- 67% Total
+    ------------------------------------ Total: 67% -----------------------------------------------
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {
         waist="Siegel Sash",
@@ -366,10 +368,10 @@ function init_gear_sets()
         neck="Sanctity Necklace",
         left_ear="Hermetic Earring",
         right_ear="Regal Earring",
-        body="Bagua Tunic +2",
-        hands="Jhakri Cuffs +2",
-        left_ring="Jhakri Ring",
-        right_ring="Vertigo Ring",       
+        body=MerlinicJubbahDrain,
+        hands=MerlinicDastanasDrain,
+        left_ring="Stikini Ring",
+        right_ring="Stikini Ring",       
         back="Gwyddion's Cape",
         waist="Fucho-no-Obi",
         legs=MerlinicShalwarDD,
@@ -473,17 +475,17 @@ function init_gear_sets()
         })
 
     sets.idle.DT = set_combine(sets.idle, {
-        main="Divinity", --10/0
-        sub="Genmei Shield",            --10/0
-        body=MerlinicJubbahDD,          --2/0           --body="Mallquis Saio +1", --6/6
-        hands="Geo. Mitaines +3",       --3/3
-        feet="Azimuth Gaiters +1",      --4/0
-        neck="Loricate Torque +1",      --6/6
-        left_ear="Genmei Earring",          --2/0
-        right_ear="Etiolation Earring",      --0/3
-        left_ring="Defending Ring",
+        main="Divinity",                    -- 10/0
+        sub="Genmei Shield",                -- 10/0
+        body=MerlinicJubbahDrain,           -- 02/0           --body="Mallquis Saio +1", --6/6
+        hands="Geo. Mitaines +3",           -- 03/03
+        feet="Azimuth Gaiters +1",          -- 04/0
+        neck="Loricate Torque +1",          -- 06/06
+        left_ear="Genmei Earring",          -- 02/0
+        right_ear="Etiolation Earring",     -- 00/03
+        left_ring="Defending Ring",         -- 10/10
         right_ring="Patricius Ring",
-        back="Moonbeam Cape",           --5/5
+        back="Moonbeam Cape",               -- 05/05
         })
 
     -- sets.idle.Weak = sets.idle.DT
