@@ -265,7 +265,7 @@ function init_gear_sets()
         right_ear="Odnowa Earring +1",
         body="Inyanga Jubbah +2",
         hands="Telchine Gloves",
-        left_ring="Praan Ring",
+        left_ring="Persis Ring",
         back="Moonbeam Cape",
         waist="Porous Rope",
         legs="Perdition Slops",
@@ -634,7 +634,7 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Myrkr'] = {
         head="Beckoner's Horn +1",neck="Sanctity Necklace",left_ear="Etiolation Earring",right_ear="Gifted Earring",
-        body="Beckoner's Doublet +1",hands="Shrieker's Cuffs",left_ring="Praan Ring",right_ring="Rahab Ring",
+        body="Beckoner's Doublet +1",hands="Shrieker's Cuffs",left_ring="Persis Ring",right_ring="Rahab Ring",
         back="Conveyance Cape",waist="Belisama's Rope",legs="Beckoner's Spats +1",feet="Beckoner's Pigaches +1"} 
 		
 	sets.precast.WS['Garland of Bliss'] = {

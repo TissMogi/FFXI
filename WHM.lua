@@ -142,7 +142,7 @@ function init_gear_sets()
         body="Ebers Bliaud +1",
         hands="Ebers Mitts +1",
         left_ring="Woltaris Ring",
-        right_ring="Praan Ring",
+        right_ring="Persis Ring",
         legs="Perdition Slops",
         feet="Mallquis Clogs +1",
         waist="Porous Rope",

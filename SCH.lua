@@ -126,7 +126,7 @@ function init_gear_sets()
         right_ear="Odnowa Earring +1",
         body="Pedagogy Gown +3",
         hands="Shrieker's Cuffs",
-        left_ring="Praan Ring",
+        left_ring="Persis Ring",
         right_ring="Woltaris Ring",
         legs="Perdition Slops",
         feet="Mallquis Clogs +1",
