@@ -115,8 +115,8 @@ function init_gear_sets()
         ammo="Sapience Orb",            -- 02%
         head="Vanya Hood",              -- 10%
         neck="Voltsurge Torque",        -- 04%
-        left_ear="Loquac. Earring",     -- 02%
-        right_ear="Etiolation Earring",  -- 01%  
+        left_ear="Etiolation Earring",  -- 02%
+        right_ear="Loquac. Earring",    -- 01%  
         body=MerlinicJubbahDrain,       -- 06%
         hands=MerlinicDastanasFC,       -- 05%    --hands="Gendewitha Gages +1",-- 07%
         left_ring="Rahab Ring",         -- 02%
@@ -124,8 +124,8 @@ function init_gear_sets()
         back=TaranusCapeFC,             -- 10%
         waist="Witful Belt",            -- 03%/03% quick magic
         legs="Gyve Trousers",           -- 04%
-        feet="Regal Pumps +1"           -- 04%
-    ------------------------------- Total: 57% / 3% quick -----------------------
+        feet="Regal Pumps +1"           -- 07%
+    ------------------------------- Total: 60% / 3% quick -----------------------
     }
 
     --[[    ammo="Impatiens",

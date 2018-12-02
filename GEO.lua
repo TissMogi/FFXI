@@ -113,10 +113,10 @@ function init_gear_sets()
         body=MerlinicJubbahDrain,            -- 06%
         hands=MerlinicDastanasFC,            -- 05%
         legs="Geomancy Pants +2",            -- 13%
-        feet="Regal Pumps +1",               -- 7%
-        neck="Voltsurge Torque",             -- 4%
-        left_ear="Loquacious Earring",       -- 2%
-        right_ear="Etiolation Earring",      -- 01%
+        feet="Regal Pumps +1",               -- 07%
+        neck="Voltsurge Torque",             -- 04%
+        left_ear="Etiolation Earring",       -- 02%
+        right_ear="Loquac. Earring",         -- 01%
         left_ring="Kishar Ring",             -- 02%
         right_ring="Rahab Ring",             -- 04%
         back="Lifestream Cape",              -- 07%

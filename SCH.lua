@@ -149,8 +149,8 @@ function init_gear_sets()
         ammo="Sapience Orb",            -- 02%
         head="Vanya Hood",              -- 10%
         neck="Voltsurge Torque",        -- 04%
-        left_ear="Loquac. Earring",     -- 02%
-        right_ear="Etiolation Earring",  -- 01%  
+        left_ear="Etiolation Earring",  -- 02%
+        right_ear="Loquac. Earring",    -- 01%  
         body=MerlinicJubbahDrain,       -- 06%
         hands=MerlinicDastanasFC,       -- 05%
         left_ring="Rahab Ring",         -- 02%
