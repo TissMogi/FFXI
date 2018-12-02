@@ -243,7 +243,7 @@ function init_gear_sets()
         main="Espiritus",
         sub="Vox Grip",
         ammo="Esper Stone +1",          -- +20
-        head="Telchine Cap",            -- +30
+        head="Telchine Cap",            -- +35
         neck="Caller's Pendant",
         left_ear="Andoaa Earring",
         body="Telchine Chasuble",       -- +35
@@ -254,7 +254,7 @@ function init_gear_sets()
         legs="Telchine Braconi",        -- +35
         feet="Beckoner's Pigaches +1"   -- +60
     }
-    ------------------------------- Total: 215 / +30mp ------------------------------------
+    ------------------------------- Total: 220 / +30mp = 879 mp----------------
             
     sets.precast.JA['Mana Cede'] = {hands="Beckoner's Bracers +1"}
     
