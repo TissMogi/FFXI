@@ -176,14 +176,14 @@ function init_gear_sets()
     }
 
     ---------------------------------------------------------------------------
-    -- Cure Potency II Set ( Healing Magic Skill > MND ) ----------------------
+    -- Cure Potency II Set (Potency > Healing Magic Skill > MND ) -------------
     -- The Cap is 50% for Cure Potency II to take effect ----------------------
     ---------------------------------------------------------------------------
     sets.midcast.Cure = set_combine(sets.midcast, {
         main="Queller Rod",                 -- 10%/02%
         head="Ebers Cap +1",                -- 16%
         neck="Cleric's Torque +1",          -- 07%
-        left_ear="Glorious Earring",       -- 00%/02%
+        left_ear="Glorious Earring",        -- 00%/02%
         body="Theo. Briault +3",            -- 00%/06%
         hands="Theophany Mitts +3",         -- 00%/04%
         left_ring="Haoma's Ring",           
@@ -203,23 +203,21 @@ function init_gear_sets()
     })
 
     ---------------------------------------------------------------------------
-    -- Curaga Set (MND > Healing Magic Skill) ---------------------------------
+    -- Curaga Set (Potency > MND > Healing Magic Skill) -----------------------
     ---------------------------------------------------------------------------
     sets.midcast.Curaga = set_combine(sets.midcast, {
-        main="Vadose Rod",              -- Ames+1 30 MND
-                     
-        sub="Ammurapi Shield",
-        neck="Cleric's Torque +1",
-        left_ear="Regal Earring",
-        right_ear="Nourish. Earring +1",
-        body="Vanya Robe",
-        hands="Inyanga Dastanas +2",
-        left_ring="Levia. Ring",
-        right_ring="Levia. Ring",
-        back=AlanusCure,
+        main="Queller Rod",                 -- 10%/02%
+        head="Ebers Cap +1",                -- 16%
+        neck="Cleric's Torque +1",          -- 07%
+        left_ear="Glorious Earring",        -- 00%/02%
+        body="Theo. Briault +3",            -- 00%/06%
+        hands="Theophany Mitts +3",         -- 00%/04%
+        left_ring="Haoma's Ring",           
+        right_ring="Sirona's ring",
+        back=AlanusCure,                    -- 10%
         waist="Hachirin-no-Obi",
         legs="Ebers Pantaloons +1",
-        feet="Inyan. Crackows +2"
+        feet="Vanya Clogs"                  -- 10%
     })
 
     ---------------------------------------------------------------------------
