@@ -183,8 +183,7 @@ function init_gear_sets()
         main="Queller Rod",                 -- 10%/02%
         head="Ebers Cap +1",                -- 16%
         neck="Cleric's Torque +1",          -- 07%
-        left_ear="Mendicant's Earring",     -- 05%
-        right_ear="Glorious Earring",       -- 00%/02%
+        left_ear="Glorious Earring",       -- 00%/02%
         body="Theo. Briault +3",            -- 00%/06%
         hands="Theophany Mitts +3",         -- 00%/04%
         left_ring="Haoma's Ring",           
@@ -193,7 +192,7 @@ function init_gear_sets()
         waist="Hachirin-no-Obi",
         legs="Ebers Pantaloons +1",
         feet="Vanya Clogs"                  -- 10%
-    ----------------------------------- Cure: 58% - Cure II: 14% - Total: 64% -
+    ----------------------------------- Cure: 53% - Cure II: 14% - Total: 64% -
     })
 
     ---------------------------------------------------------------------------
