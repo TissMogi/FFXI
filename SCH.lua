@@ -267,15 +267,12 @@ function init_gear_sets()
         sub="Enki Strap",
         ammo="Pemphredo Tathlum",
         head="Arbatel Bonnet +1",
-		body="Pedagogy Gown +3",
-        hands="Arbatel Bracers +1",
-        --neck="Incanter's Torque",
+		body="Telchine Chasuble",
+        hands="Telchine Gloves",
+        back=LughsCapeDD,        
         waist="Hachirin-no-Obi",
-        left_ear="Regal Earring",
-        right_ear="Regal Earring",
-        left_ring="Sirona's Ring",           --03%
-        right_ring="Haoma's Ring",
-        back=LughsCapeDD,
+        legs="Telchine Braconi"
+        feet="Telchine Pigaches"
     }
 
     sets.midcast.Cursna = {
