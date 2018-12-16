@@ -266,15 +266,15 @@ function init_gear_sets()
         neck="Sorcerer's Stole +1",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
-        body="Spaekona's Coat +3",                      --body="Vanir Cotehardie",
-        hands="Archmage's Gloves +3",                        --hands="Yaoyotl Gloves",
-        left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
+        body="Spaekona's Coat +3",
+        hands="Archmage's Gloves +3",
+        left_ring="Stikini Ring",
         right_ring="Kishar Ring",
         back=TaranusCapeDD,
         waist="Rumination Sash",
-        legs="Psycloth Lappas",                         --legs="Bokwus Slops",
-        feet="Jhakri Pigaches +2"                       --feet="Bokwus Boots"
-        }       
+        legs="Psycloth Lappas",
+        feet="Archmage's Sabots +3"
+        }
         
     sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
 
@@ -283,14 +283,14 @@ function init_gear_sets()
         neck="Erra Pendant",
         left_ear="Hecate's Earring",
         right_ear="Regal Earring",
-        body="Archmage's Coat +3",                          --body="Vanir Cotehardie
+        body="Archmage's Coat +3",
         hands="Archmage's Gloves +3",
-        left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
+        left_ring="Stikini Ring",
         right_ring="Stikini Ring",
         back="Perimede Cape",
         waist="Yamabuki-no-Obi",
         legs="Spaekona's Tonban +3",
-        feet="Jhakri Pigaches +2"                       --feet="Bokwus Boots"
+        feet="Archmage's Sabots +3"
         }
 
     sets.midcast.Drain = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
@@ -317,12 +317,12 @@ function init_gear_sets()
         right_ear="Lifestorm Earring",
         body="Spaekona's Coat +3",
         hands="Archmage's Gloves +3",
-        left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
+        left_ring="Stikini Ring",
         right_ring="Stikini Ring",
         back=TaranusCapeDD,
         waist="Luminary Sash",
         legs="Archmage's Tonban +3",
-        feet="Jhakri Pigaches +2"                       --feet="Bokwus Boots"
+        feet="Archmage's Sabots +3"
         }
 
     --sets.midcast.BardSong = {main="Lathi",sub="Niobid Strap",ammo="Pemphredo Tathlum",
@@ -348,8 +348,8 @@ function init_gear_sets()
         back=TaranusCapeDD,             --              +30     +20     +10
         waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs="Archmage's Tonban +3",    --              +50     +46     +58
-        feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total:              +307    +301    +379    +544
+        feet="Archmage's Sabots +3"     --              +30     +42     +54
+    ------------------------------- Total:              +313    +309    +379    +544(total skill not checked)
         }
 
         sets.midcast['Elemental Magic'].MP = {
@@ -368,8 +368,8 @@ function init_gear_sets()
         back=TaranusCapeDD,             --              +30     +20     +10
         waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs="Archmage's Tonban +3",    --              +50     +46     +58
-        feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total:              +300    +316    +327    +520
+        feet="Archmage's Sabots +3"     --              +30     +42     +54
+    ------------------------------- Total:              +306    +324    +327    +520
         }        
 
     ---------------------------------------------------------------------------
@@ -391,8 +391,8 @@ function init_gear_sets()
         back=TaranusCapeDD,             -- 00%/05%      +30     +20     +10
         waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs="Archmage's Tonban +3",    -- 00%/03%      +50     +46     +58
-        feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total: 44%/29%=69%  +309    +320    +351    +499
+        feet="Archmage's Sabots +3"     --              +30     +42     +54
+    ------------------------------- Total: 44%/29%=69%  +315    +328    +351    +499
         })	
     
     sets.midcast["Death"] = {
@@ -407,7 +407,7 @@ function init_gear_sets()
         back=TaranusCapeDD,
         waist="Yamabuki-no-Obi",
         legs="Spaekona's Tonban +3",
-        feet=MerlinicCrackowsDrain
+        feet="Archmage's Sabots +3"
     }
 
     sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
