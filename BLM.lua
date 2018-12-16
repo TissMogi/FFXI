@@ -279,7 +279,7 @@ function init_gear_sets()
     sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
 
     sets.midcast['Dark Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Archmage's Petasos +3",
+        head="Pixie Hairpin +1",
         neck="Erra Pendant",
         left_ear="Hecate's Earring",
         right_ear="Regal Earring",
@@ -294,7 +294,7 @@ function init_gear_sets()
         }
 
     sets.midcast.Drain = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head=MerlinicHoodDrain,
+        head="Pixie Hairpin +1",
         neck="Erra Pendant",
         left_ear="Hecate's Earring",
         right_ear="Regal Earring",
