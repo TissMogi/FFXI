@@ -327,8 +327,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",       --int:10, mnd:10, chr:10 macset bonus7, mab:7
         right_ear="Friomisi Earring",   --mab:10
-        left_ring="Shiva Ring",         --int:8
-        right_ring="Shiva Ring",        --int:8
+        left_ring="Shuiva Ring +1",         --int:8
+        right_ring="Shuiva Ring +1",        --int:8
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     }
         
@@ -468,8 +468,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shuiva Ring +1",
+        right_ring="Shuiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })
 
@@ -485,8 +485,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shuiva Ring +1",
+        right_ring="Shuiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })      
 
@@ -502,8 +502,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shuiva Ring +1",
+        right_ring="Shuiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })      
 
@@ -523,8 +523,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shuiva Ring +1",
+        right_ring="Shuiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     }
 
@@ -540,8 +540,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shuiva Ring +1",
+        right_ring="Shuiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })
     
@@ -557,8 +557,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Leviathan Ring",
+        right_ring="Leviathan Ring",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })
 
@@ -574,8 +574,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shuiva Ring +1",
+        right_ring="Shuiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })
     
@@ -592,8 +592,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shuiva Ring +1",
+        right_ring="Shuiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })      
 
@@ -609,8 +609,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shuiva Ring +1",
+        right_ring="Shuiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })      
 
@@ -643,8 +643,8 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shuiva Ring +1",
+        right_ring="Shuiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     }   
 
@@ -668,6 +668,11 @@ function init_gear_sets()
         right_ring="Haoma's Ring",
         back="Solemnity Cape"
         }
+
+        sets.midcast['Blue Magic']['Tenebral Crush'] = set_combine(sets.midcast['Blue Magic'].MagicalMnd,
+        {
+        head="Pixie Hairpin +1"
+        })
 
     sets.midcast['Blue Magic'].Healing = {
         ammo="Hydrocera",
