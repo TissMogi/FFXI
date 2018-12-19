@@ -267,9 +267,9 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         ammo="Falcon Eye",
-        head="Dampening Tam",
-        body="Abnoba Kaftan",
-        hands="Adhemar Wristbands",
+        head="Adhemar Bonnet +1",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Herculean Boots",
         neck="Sanctity Necklace",
@@ -283,9 +283,9 @@ function init_gear_sets()
     
     sets.precast.WS['Chant du Cygne'] = {
         ammo="Falcon Eye",
-        head="Dampening Tam",
+        head="Adhemar Bonnet +1",
         body="Abnoba Kaftan",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -293,7 +293,7 @@ function init_gear_sets()
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Ilabrat Ring",
-        right_ring="Apate Ring",
+        right_ring="Stikini Ring +1",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
 
@@ -301,18 +301,18 @@ function init_gear_sets()
     -- MND (73~85%) based; depending on merits levels
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
         ammo="Hydrocera",
-        head="Amalric Coif +1",
-        body="Assim. Jubbah +3",        --body="Jhakri Robe +2",            --mnd:32
-        hands="Amalric Gages",          --mnd:34
-        legs="Gyve Trousers",           --find something better
-        feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36; mnd:21
+        head="Jhakri Coronal +2",
+        body="Assim. Jubbah +3",
+        hands="Jhakri Cuffs +2",
+        legs="Jhakri Slops +2",
+        feet="Jhakri Pigaches +2",
         neck="Nuna Gorget",             --mnd:8, get elemental obi
         waist="Porous Rope",
         left_ear="Steelflash Earring",
         right_ear="Bladeborn Earring",
-        left_ring="Levia. Ring",
-        right_ring="Levia. Ring",
-        back="Laic Mantle"
+        left_ring="Stikini Ring +1",
+        right_ring="Leviathan Ring",
+        back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
     })
 
     -- MAB and INT Based. MAB is priority. 50% MND / 30% STR.
@@ -345,7 +345,7 @@ function init_gear_sets()
         left_ear="Regal Earring",
         right_ear="Mache Earring",
         left_ring="Ilabrat Ring",
-        right_ring="Leviathan Ring",
+        right_ring="Stikini Ring +1",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
     
@@ -375,9 +375,9 @@ function init_gear_sets()
 
     sets.midcast['Blue Magic'].PhysicalAcc = {
         ammo="Mavi Tathlum",
-        head="Adhemar Bonnet",
+        head="Adhemar Bonnet +1",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -392,9 +392,9 @@ function init_gear_sets()
     sets.midcast['Blue Magic'].PhysicalStr = set_combine(sets.midcast['Blue Magic'].Physical,
         {
         ammo="Mavi Tathlum",
-        head="Adhemar Bonnet",
+        head="Adhemar Bonnet +1",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -411,7 +411,7 @@ function init_gear_sets()
         ammo="Mavi Tathlum",
         head="Dampening Tam",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -428,7 +428,7 @@ function init_gear_sets()
         ammo="Mavi Tathlum",
         head="Dampening Tam",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Ayanmo Cosciales +2",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -445,7 +445,7 @@ function init_gear_sets()
         ammo="Mavi Tathlum",
         head="Dampening Tam",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -559,7 +559,7 @@ function init_gear_sets()
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Leviathan Ring",
-        right_ring="Leviathan Ring",
+        right_ring="Stikini Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })
 
@@ -745,7 +745,7 @@ function init_gear_sets()
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",
         right_ear="Moonshade Earring",
-        left_ring="Defending Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Woltaris Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
     }
@@ -754,7 +754,7 @@ function init_gear_sets()
         ammo="Ginsen",
         head="Ayanmo Zucchetto +2",
         body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Loricate Torque +1",
@@ -779,7 +779,7 @@ function init_gear_sets()
         ammo="Ginsen",
         head="Ayanmo Zucchetto +2",
         body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Loricate Torque +1",
@@ -795,7 +795,7 @@ function init_gear_sets()
         ammo="Ginsen",
         head="Ayanmo Zucchetto +2",
         body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Loricate Torque +1",
@@ -820,8 +820,8 @@ function init_gear_sets()
     sets.engaged = {
         ammo="Ginsen",
         head="Dampening Tam",
-        body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -836,8 +836,8 @@ function init_gear_sets()
     sets.engaged.Acc = {
         ammo="Ginsen",
         head="Dampening Tam",
-        body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -854,8 +854,8 @@ function init_gear_sets()
     sets.engaged.DW = {
         ammo="Ginsen",
         head="Dampening Tam",
-        body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
