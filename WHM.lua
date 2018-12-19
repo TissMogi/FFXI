@@ -247,7 +247,7 @@ function init_gear_sets()
         left_ear="Andoaa Earring",
         body="Telchine Chasuble",
         hands="Telchine Gloves",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         --back="Fi Follet Cape",
         back="Perimede Cape",
@@ -267,7 +267,7 @@ function init_gear_sets()
     
     sets.midcast.BarElement = set_combine(sets.midcast['Enhancing Magic'], {
         neck="Enhancing Torque",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         legs="Piety Pantaloons +3",
         feet="Ebers Duckbills +1"
@@ -351,7 +351,7 @@ function init_gear_sets()
         right_ear="Lifestorm Earring",
         body="Vanya Robe",
         hands="Inyan. Dastanas +2",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Gwyddion's Cape",
         waist="Rumination Sash",
@@ -378,7 +378,7 @@ function init_gear_sets()
         right_ear="Lifestorm Earring",
         body="Theo. Briault +3",
         hands="Inyan. Dastanas +2",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Kishar Ring",
         back="Gwyddion's Cape",
         waist="Rumination Sash",
@@ -396,7 +396,7 @@ function init_gear_sets()
         right_ear="Lifestorm Earring",
         body="Theo. Briault +3",
         hands="Inyan. Dastanas +2",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Kishar Ring",
                       
         back="Gwyddion's Cape",

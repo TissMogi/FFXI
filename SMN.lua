@@ -289,7 +289,7 @@ function init_gear_sets()
     right_ear="Calamitous Earring",
     body="Telchine Chasuble",
     hands="Telchine Gloves",
-    left_ring="Stikini Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Stikini Ring",
     back="Perimede Cape",
     waist="Olympus Sash",
@@ -357,12 +357,12 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     sets.midcast.Pet.BloodPactWard = {main="Espiritus",sub="Vox Grip",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Caller's Pendant",left_ear="Andoaa Earring",right_ear="Enmerkar Earring",
-        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Evoker's Ring",right_ring="Stikini Ring",
+        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Evoker's Ring",right_ring="Stikini Ring +1",
         back="Conveyance Cape",waist="Lucidity Sash",legs="Beckoner's Spats +1"}
 
     sets.midcast.Pet.DebuffBloodPactWard = {main="Nirvana", sub="Vox Grip",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Adad Amulet",left_ear="Lugalbanda Earring",right_ear="Enmerkar Earring",
-        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Evoker's Ring",right_ring="Stikini Ring",
+        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Evoker's Ring",right_ring="Stikini Ring +1",
         back="Conveyance Cape",waist="Incarnation Sash",legs="Beckoner's Spats +1"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard

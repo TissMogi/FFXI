@@ -298,7 +298,7 @@ function init_gear_sets()
     }
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    --MND (73~85%) based; depending on merits levels
+    -- MND (73~85%) based; depending on merits levels
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
         ammo="Hydrocera",
         head="Amalric Coif +1",
@@ -315,11 +315,11 @@ function init_gear_sets()
         back="Laic Mantle"
     })
 
-    --MAB and INT Based. MAB is priority.
+    -- MAB and INT Based. MAB is priority. 50% MND / 30% STR.
     sets.precast.WS['Sanguine Blade'] = {
         ammo="Ginsen",
         head="Jhakri Coronal +2",       --int:33, mab:38, mac:38
-        body="Assim. Jubbah +3",        --int:47, mab:40, mac:40
+        body="Jhakri Robe +2",          --int:50, mab:43, mac:46
         hands="Jhakri Cuffs +2",        --int:33, mab:37, macc:37
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
@@ -331,20 +331,21 @@ function init_gear_sets()
         right_ring="Shiva Ring +1",        --int:8
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     }
-        
+
+    -- 50% STR / 50% MND
     sets.precast.WS['Savage Blade'] = {
         ammo="Ginsen",
-        head="Dampening Tam",
+        head="Jhakri Coronal +2",
         body="Assimilator's Jubbah +3",
-        hands="Ayanmo Manopolas +2",
-        legs="Carmine Cuisses +1",
+        hands="Jhakri Cuffs +2",
+        legs="Jhakri Slops +2",
         feet=HercWSD,
         neck="Sanctity Necklace",
-        waist="Kentarch Belt +1",
+        waist="Latria Sash",
         left_ear="Regal Earring",
         right_ear="Mache Earring",
         left_ring="Ilabrat Ring",
-        right_ring="Apate Ring",
+        right_ring="Leviathan Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
     
