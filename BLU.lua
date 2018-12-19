@@ -280,7 +280,7 @@ function init_gear_sets()
         right_ring="Apate Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
-    
+
     sets.precast.WS['Chant du Cygne'] = {
         ammo="Falcon Eye",
         head="Adhemar Bonnet +1",
@@ -293,9 +293,10 @@ function init_gear_sets()
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Ilabrat Ring",
-        right_ring="Stikini Ring +1",
+        right_ring="Apate Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
+    ------------------------- Total: 1233 acc, 1175 att, +253 DEX ---------
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     -- MND (73~85%) based; depending on merits levels
@@ -314,6 +315,7 @@ function init_gear_sets()
         right_ring="Leviathan Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
     })
+    ------------------------- Total: 1233 acc, 1278 att, +173 MND ---------
 
     -- MAB and INT Based. MAB is priority. 50% MND / 30% STR.
     sets.precast.WS['Sanguine Blade'] = {
@@ -331,6 +333,7 @@ function init_gear_sets()
         right_ring="Shiva Ring +1",        --int:8
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     }
+    ------------------------- Total: 1183 acc, 1304 att. +133, +148 MND, +173 STR, +275 Int
 
     -- 50% STR / 50% MND
     sets.precast.WS['Savage Blade'] = {
@@ -348,6 +351,7 @@ function init_gear_sets()
         right_ring="Stikini Ring +1",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
+    ------------------------- Total: 1250 acc, 1281 att, +173 STR, +152 MND -----
     
     
     -- Midcast Sets
