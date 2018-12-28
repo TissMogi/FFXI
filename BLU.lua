@@ -369,7 +369,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",       --macc:10
-        waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         left_ring="Kishar Ring",
@@ -385,7 +385,7 @@ function init_gear_sets()
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -402,7 +402,7 @@ function init_gear_sets()
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -419,7 +419,7 @@ function init_gear_sets()
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -436,7 +436,7 @@ function init_gear_sets()
         legs="Ayanmo Cosciales +2",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Genmei Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -453,7 +453,7 @@ function init_gear_sets()
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -470,7 +470,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Shiva Ring +1",
@@ -487,7 +487,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Shiva Ring +1",
@@ -504,7 +504,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Shiva Ring +1",
@@ -525,7 +525,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Shiva Ring +1",
@@ -542,7 +542,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Shiva Ring +1",
@@ -559,7 +559,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Leviathan Ring",
@@ -576,7 +576,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Shiva Ring +1",
@@ -594,7 +594,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Shiva Ring +1",
@@ -611,7 +611,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Shiva Ring +1",
@@ -627,7 +627,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Eddy Necklace",           --mac:5, mab:11
-        waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         left_ring="Kishar Ring",
@@ -645,7 +645,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
         left_ring="Shiva Ring +1",
@@ -666,7 +666,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Phalaina Locket",
-        waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Mendi. Earring",
         left_ring="Sirona's Ring",
@@ -687,7 +687,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Phalaina Locket",
-        waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Mendi. Earring",
         left_ring="Sirona's Ring",
@@ -706,7 +706,7 @@ function init_gear_sets()
         left_ring="Vertigo ring",
         --right_ring="Sangoma ring",
         --back="Cornflower cape",
-        waist="Witful Belt",
+        waist="Austerity Belt +1", --waist="Witful Belt",
         legs="Hashishin Tayt",
         feet="Luhlaza charuqs +1"
         }

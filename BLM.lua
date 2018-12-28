@@ -217,7 +217,7 @@ function init_gear_sets()
         left_ring="Lebeche Ring",               -- 03%
         right_ring="Sirona's Ring",              --                      +10
         back="Solemnity Cape",              -- 07%                              +05
-        waist="Luminary Sash",              --              +10                 +04
+        waist="Austerity Belt +1", --waist="Luminary Sash",              --              +10                 +04
         legs="Gyve Trousers",               -- 10%
         feet="Vanya Clogs"                  -- 10%                              +06
         }
@@ -237,7 +237,7 @@ function init_gear_sets()
         body="Telchine Chasuble",
         hands="Telchine Gloves",
         legs="Telchine Braconi",
-        waist="Olympus Sash",
+        waist="Austerity Belt +1",
         legs="Telchine Braconi",
         feet="Telchine Pigaches"
         }

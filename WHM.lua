@@ -169,10 +169,10 @@ function init_gear_sets()
         body="Witching Robe",       -- 05% (Kaykaus: 06, Chironic: 05, Vedic: 10)
         hands="Shrieker's Cuffs",   -- 07% (Thrift Gloves +1: 05, Kaykaus: 06)
         back="Solemnity Cape",      -- 05% (Fi Follet: 04, Aurist's: 1-5)
-        waist="Luminary Sash",      -- 04% (Austerity Belt/+1: 08/09 )
+        waist="Austerity Belt +1",  -- 09%
         legs="Vanya Slops",         -- 12% (with augment C)
         feet="Vanya Clogs",         -- 06% (with augment C, Kaykaus: 06)
-    --------------------------- Total: 64% ------------------------------------
+    --------------------------- Total: 69% ------------------------------------
     }
 
     ---------------------------------------------------------------------------
@@ -251,7 +251,7 @@ function init_gear_sets()
         right_ring="Stikini Ring",
         --back="Fi Follet Cape",
         back="Perimede Cape",
-        waist="Olympus Sash",
+        waist="Austerity Belt +1",
         legs="Telchine Braconi",
         feet="Theophany Duckbills +3"
     --------------------------- Total: 511 ------------------------------------ 
@@ -354,7 +354,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Gwyddion's Cape",
-        waist="Rumination Sash",
+        --waist="Rumination Sash", --I'd rather use Austerity Belt +1
         legs="Theophany Pantaloons +2",
         feet="Medium's Sabots"
         })

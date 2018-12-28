@@ -246,7 +246,7 @@ function init_gear_sets()
         left_ring="Haoma's Ring",           --                      +08
         right_ring="Sirona's Ring",         --                      +10
         back="Solemnity Cape",              -- 07%          +8                  +05
-        waist="Luminary Sash",              --              +10                 +04
+        waist="Austerity Belt +1", --waist="Luminary Sash",              --              +10                 +04
         legs="Vanya Slops",                 --              +10                 +12
         feet="Vanya Clogs"                  -- 10%                              +06
 }
@@ -298,7 +298,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Perimede Cape",
-        waist="Olympus Sash",
+        waist="Austerity Belt +1", --waist="Olympus Sash",
         legs="Telchine Braconi",    
         feet="Telchine Pigaches"
     }
@@ -344,7 +344,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back=LughsCapeDD,
-        waist="Porous Rope",
+        waist="Austerity Belt +1",
         legs="Psycloth Lappas",                     
         feet="Jhakri Pigaches +2"                   
     }

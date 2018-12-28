@@ -187,7 +187,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Lifestream Cape",
-        waist="Emphatikos Rope"         --waist="Austerity Belt +1",
+        waist="Austerity Belt +1",
         }
     
     sets.midcast.Geomancy.Indi = {
@@ -205,7 +205,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Lifestream Cape",
-        waist="Emphatikos Rope"         --waist="Austerity Belt +1",
+        waist="Austerity Belt +1",
         }
 
     ---------------------------------------------------------------------------
@@ -226,7 +226,7 @@ function init_gear_sets()
         left_ring="Haoma's Ring",               --                      +08
         right_ring="Sirona's Ring",              --                      +10
         back="Solemnity Cape",              -- 07%          +8                  +05
-        waist="Luminary Sash",              --              +10                 +04
+        waist="Austerity Belt +1", --waist="Luminary Sash",              --              +10                 +04
         legs="Vanya Slops",                 --              +10                 +12
         feet="Vanya Clogs"                  -- 10%                              +06
         }
@@ -264,7 +264,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Perimede Cape",       --back="Fi Follet Cape +1",
-        waist="Olympus Sash",
+        waist="Austerity Belt +1", --waist="Olympus Sash",
         }
         
     sets.midcast['Haste'] = sets.midcast['Enhancing Magic']
@@ -334,7 +334,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Kishar Ring",
         back="Gwyddion's Cape",
-        waist="Rumination Sash",
+        waist="Austerity Belt +1", --waist="Rumination Sash",
         legs="Inyanga Shalwar +2",
         feet="Bagua Sandals +2",
         } -- MND/Magic accuracy
@@ -356,7 +356,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Kishar Ring",
         back="Gwyddion's Cape",
-        waist="Rumination Sash",
+        waist="Austerity Belt +1", --waist="Rumination Sash",
         legs="Inyanga Shalwar +2",
         feet="Bagua Sandals +2",                    --feet="Bokwus Boots"
         }
