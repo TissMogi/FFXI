@@ -118,14 +118,14 @@ function init_gear_sets()
         left_ear="Etiolation Earring",  -- 02%
         right_ear="Loquac. Earring",    -- 01%  
         body=MerlinicJubbahDrain,       -- 06%
-        hands=MerlinicDastanasFC,       -- 05%    --hands="Gendewitha Gages +1",-- 07%
+        hands="Gendewitha Gages +1",    -- 07%
         left_ring="Rahab Ring",         -- 02%
         right_ring="Kishar Ring",       -- 04%
         back=TaranusCapeFC,             -- 10%
         waist="Witful Belt",            -- 03%/03% quick magic
         legs="Gyve Trousers",           -- 04%
         feet="Regal Pumps +1"           -- 07%
-    ------------------------------- Total: 60% / 3% quick -----------------------
+    ------------------------------- Total: 62% / 3% quick -----------------------
     }
 
     --[[    ammo="Impatiens",

@@ -67,20 +67,19 @@ function init_gear_sets()
     -- Fast Cast Sets for all Spells ( Cap:80% - SCH:70% - RDM:65% ) ----------
     ---------------------------------------------------------------------------
     sets.precast.FC = {
-        main="Yagrush",             -- 20%
-        ammo="Sapience Orb",        -- 02%
-        head="Vanya Hood",          -- 10%
-        neck="Orison Locket",       -- 05%
+        main="Yagrush",                 -- 20%
+        ammo="Sapience Orb",            -- 02%
+        head="Vanya Hood",              -- 10%
+        neck="Orison Locket",           -- 05%
         left_ear="Etiolation Earring",  -- 01%
-        right_ear="Loquac. Earring",     -- 02%  
-        body="Inyanga Jubbah +2",   -- 14%
-        hands="Fanatic Gloves",     -- 07% 
+        right_ear="Loquac. Earring",    -- 02%  
+        body="Inyanga Jubbah +2",       -- 14%
+        hands="Fanatic Gloves",         -- 07% 
         left_ring="Rahab Ring",         -- 02%
-        right_ring="Kishar Ring",        -- 04%
-                                
-        waist="Witful Belt",        -- 03%/03% quick magic
-        legs="Ayanmo Cosciales +2", -- 06%
-        feet="Regal Pumps +1"       -- 04% +1-3 unity ranking (counted 3)
+        right_ring="Kishar Ring",       -- 04%
+        waist="Witful Belt",            -- 03%/03% quick magic
+        legs="Ayanmo Cosciales +2",     -- 06%
+        feet="Regal Pumps +1"           -- 04% +1-3 unity ranking (counted 3)
     --------------------------- Total: 80% ------------------------------------
     }
 

@@ -51,7 +51,7 @@ function user_setup()
     
     MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Drain" and "Aspir" potency +10','DEX+3',}}
     MerlinicJubbahDrain = { name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +7','MND+5','Mag. Acc.+15','"Mag.Atk.Bns."+2',}}
-    MerlinicDastanasDrain = { name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+30','"Drain" and "Aspir" potency +10','VIT+9',}}
+    MerlinicDastanasDrain = { name="Merlinic Dastanas", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +9','Mag. Acc.+14','"Mag.Atk.Bns."+15',}}
     MerlinicCrackowsDrain = { name="Merlinic Crackows", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Drain" and "Aspir" potency +8','CHR+2','Mag. Acc.+10','"Mag.Atk.Bns."+15',}}
 
     MerlinicShalwarDD = { name="Merlinic Shalwar", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Occult Acumen"+7','Mag. Acc.+10','"Mag.Atk.Bns."+11',}}
@@ -219,12 +219,12 @@ function init_gear_sets()
         ammo="Pemphredo Tathlum",           --                                  +04
         head="Vanya Hood",                  -- 10%                              +06
         neck="Nodens Gorget",               -- 05%
-        left_ear="Mendi. Earring",              -- 05%
-        right_ear="Regal Earring",               --              +10
+        left_ear="Mendi. Earring",          -- 05%
+        right_ear="Regal Earring",          --              +10
         body="Vanya Robe",                  --                      +20
         hands="Shrieker's Cuffs",           --                                  +07
-        left_ring="Haoma's Ring",               --                      +08
-        right_ring="Sirona's Ring",              --                      +10
+        left_ring="Haoma's Ring",           --                      +08
+        right_ring="Sirona's Ring",         --                      +10
         back="Solemnity Cape",              -- 07%          +8                  +05
         waist="Austerity Belt +1", --waist="Luminary Sash",              --              +10                 +04
         legs="Vanya Slops",                 --              +10                 +12
@@ -247,7 +247,7 @@ function init_gear_sets()
         --neck="Debilis Medallion",
         --left_ear="Beatific Earring",
         left_ring="Haoma's Ring",       -- cursna 15%
-        right_ring="Haoma's Ring"
+        right_ring="Menelaus's Ring"
         })
 
     sets.midcast['Enhancing Magic'] = {
@@ -264,7 +264,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Perimede Cape",       --back="Fi Follet Cape +1",
-        waist="Austerity Belt +1", --waist="Olympus Sash",
+        waist="Austerity Belt +1" --waist="Olympus Sash",
         }
         
     sets.midcast['Haste'] = sets.midcast['Enhancing Magic']
@@ -307,7 +307,7 @@ function init_gear_sets()
         })
 
     sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
-        --main="Vadose Rod",
+        main="Vadose Rod",
         ammo="Pemphredo Tathlum",
         head="Amalric Coif +1",
         waist="Emphatikos Rope",
@@ -395,7 +395,7 @@ function init_gear_sets()
         left_ear="Friomisi Earring",        
         right_ear="Regal Earring",
         body="Bagua Tunic +2",
-        hands="Ea Cuffs",
+        hands="Ea Cuffs +1",
         left_ring="Shiva Ring +1",
         right_ring="Shiva Ring +1",       
         back="Gwyddion's Cape",
@@ -504,14 +504,15 @@ function init_gear_sets()
         back=NanCape,   -- 5/10
         waist="Isa Belt" --3/1
         })
-    ----------------------------------DT: 34, Regen: 18----------------
+    ----------------------------------DT: 36, Regen: 20----------------
 
     sets.idle.DT.Pet = set_combine(sets.idle.Pet, {
         --body="Mallquis Saio +1", --6/6
         legs="Psycloth Lappas", --4/0
         neck="Loricate Torque +1", --6/6
-        left_ring="Patricius Ring",
-        right_ring="Vertigo Ring", --7/(-1)
+        left_ring="Defending Ring", --7/(-1)
+        right_ring="Patricius Ring",
+    ----------------------------------DT: 40, Regen: 20----------------    
         })
 
     -- .Indi sets are for when an Indi-spell is active.
@@ -584,7 +585,7 @@ function init_gear_sets()
         left_ear="Hermetic Earring",    --              +03     +08     +08
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
-        hands="Ea Cuffs",               -- 05/05%       +35     +39     +30
+        hands="Ea Cuffs +1",            -- 06/06%       +35     +39     +30
         left_ring="Locus Ring",         -- 05%
         right_ring="Mujin Band",        -- 00%/05%
         back="Gwyddion's Cape",         --              +06     +02

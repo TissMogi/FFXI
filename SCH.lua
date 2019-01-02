@@ -271,7 +271,7 @@ function init_gear_sets()
         hands="Telchine Gloves",
         back=LughsCapeDD,        
         waist="Hachirin-no-Obi",
-        legs="Telchine Braconi"
+        legs="Telchine Braconi",
         feet="Telchine Pigaches"
     }
 
