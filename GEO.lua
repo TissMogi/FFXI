@@ -533,7 +533,7 @@ function init_gear_sets()
         neck="Loricate Torque +1",
         left_ear="Moonshade Earring",
         right_ear="Etiolation Earring",
-        left_ring="Patricius Ring",
+        left_ring="Defending Ring",
         right_ring="Woltaris Ring",
         back="Disperser's Cape",
         waist="Porous Rope",

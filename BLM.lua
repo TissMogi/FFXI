@@ -263,7 +263,7 @@ function init_gear_sets()
 
     sets.midcast['Enfeebling Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Befouled Crown",
-        neck="Sorcerer's Stole +1",
+        neck="Sorcerer's Stole +2",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         body="Spaekona's Coat +3",
@@ -312,7 +312,7 @@ function init_gear_sets()
 
     sets.midcast.Stun = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Archmage's Petasos +3",
-        neck="Sorcerer's Stole +1",
+        neck="Sorcerer's Stole +2",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         body="Spaekona's Coat +3",
@@ -338,7 +338,7 @@ function init_gear_sets()
         sub="Enki Strap",               --              +10     +10
         ammo="Pemphredo Tathlum",       --              +04     +08     +04
         head="Archmage's Petasos +3",   --              +34     +43     +55
-        neck="Sorcerer's Stole +1",     --              +12     +45     +05
+        neck="Sorcerer's Stole +2",     --              +12     +45     +05
         left_ear="Friomisi Earring",    --                              +10
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Archmage's Coat +3",      --              +46     +40     +52
@@ -358,7 +358,7 @@ function init_gear_sets()
         sub="Enki Strap",               --              +10     +10
         ammo="Pemphredo Tathlum",       --              +04     +08     +04
         head="Archmage's Petasos +3",   --              +34     +43     +55
-        neck="Sorcerer's Stole +1",     --              +12     +45     +05
+        neck="Sorcerer's Stole +2",     --              +12     +45     +05
         left_ear="Friomisi Earring",    --                              +10
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Spaekona's Coat +3",      --              +39     +55
@@ -381,7 +381,7 @@ function init_gear_sets()
         sub="Enki Strap",               --              +10     +10
         ammo="Pemphredo Tathlum",       --              +04     +08     +04
         head="Ea Hat +1",               -- 07/07%       +43     +50     +38
-        neck="Sorcerer's Stole +1",     -- 08%          +12     +45     +05
+        neck="Sorcerer's Stole +2",     -- 08%          +12     +45     +05
         left_ear="Friomisi Earring",    --                              +10
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
