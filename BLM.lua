@@ -345,7 +345,7 @@ function init_gear_sets()
         }
 
     ---------------------------------------------------------------------------
-    -- Magic Burst Set for all Spells ( Needed for Cap:40% ) ------------------
+    -- Magic Burst Set for all Spells ( Needed for Tier 1 Cap:40% ) -----------
     ---------------------------------------------------------------------------
     sets.magic_burst = set_combine(sets.midcast['Elemental Magic'], {
         main="Lathi",
@@ -353,7 +353,7 @@ function init_gear_sets()
         ammo="Pemphredo Tathlum",
                                         -- MB%          INT     MAC     MAB
         head="Ea Hat +1",               -- 07/07%       +43     +50     +38
-        neck="Sorcerer's Stole +1",     -- 08%          +12     +45     +05
+        neck="Sorcerer's Stole +2",     -- 10%          +15     +55     +07
         left_ear="Friomisi Earring",    --                              +10
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
@@ -364,8 +364,8 @@ function init_gear_sets()
         waist="Porous Rope",            --              +07     +05
         legs="Ea Slops",                -- 07%/07%      +43     +41     +36
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
-    ------------------------------- Total: 56%/28%=68%  +253    +291    +257
-        })	
+    ------------------------------- Total: 58%/28%=68%  +256    +301    +259
+        })
     
     sets.midcast["Death"] = {
         head="Archmage's Petasos +3",
