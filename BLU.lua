@@ -871,7 +871,22 @@ function init_gear_sets()
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
     }
 
-    sets.engaged.DW.Acc = {}
+    sets.engaged.DW.Acc = 
+    {
+        ammo="Ginsen",
+        head="Dampening Tam",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
+        legs="Carmine Cuisses +1",
+        feet="Ayanmo Gambieras +2",
+        neck="Sanctity Necklace",
+        waist="Kentarch Belt +1",
+        left_ear="Mache Earring",
+        right_ear="Digni. Earring",
+        left_ring="Begrudging Ring",
+        right_ring="Varar Ring +1",
+        back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
+        }
 
     sets.engaged.DW.Refresh = {}
 
