@@ -280,25 +280,27 @@ function init_gear_sets()
     --------------------------------------
     
     sets.midcast['Enhancing Magic'] = {
-    main="Gada",
-    sub="Ammurapi Shield",
-    ammo="Pemphredo Tathlum",
-    head="Telchine Cap",
-    --neck="Incanter's Torque",
-    left_ear="Andoaa Earring",
-    right_ear="Calamitous Earring",
-    body="Telchine Chasuble",
-    hands="Telchine Gloves",
-    left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring",
-    back="Perimede Cape",
-    waist="Austerity Belt +1", --waist="Olympus Sash",
-    legs="Telchine Braconi",
-    feet="Telchine Pigaches"
+        main="Gada",
+        sub="Ammurapi Shield",
+        ammo="Pemphredo Tathlum",
+        head="Telchine Cap",
+        --neck="Incanter's Torque",
+        left_ear="Andoaa Earring",
+        right_ear="Calamitous Earring",
+        body="Telchine Chasuble",
+        hands="Telchine Gloves",
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring",
+        back="Perimede Cape",
+        waist="Austerity Belt +1", --waist="Olympus Sash",
+        legs="Telchine Braconi",
+        feet="Telchine Pigaches"
     }
     
     sets.midcast['Haste'] = sets.midcast['Enhancing Magic']
-    sets.midcast['Refresh'] = sets.midcast['Enhancing Magic']
+    sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {
+        feet="Inspirited Boots"
+        })
     sets.midcast.Storm = sets.midcast['Enhancing Magic']
     sets.midcast['Sneak'] = sets.midcast['Enhancing Magic']
     sets.midcast['Invisible'] = sets.midcast['Enhancing Magic']

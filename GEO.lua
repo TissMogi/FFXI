@@ -296,6 +296,7 @@ function init_gear_sets()
         head="Amalric Coif +1",
         --waist="Gishdubar Sash",
         --back="Grapevine Cape",
+        feet="Inspirited Boots"
         })
             
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {

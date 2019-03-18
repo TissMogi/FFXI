@@ -247,7 +247,9 @@ function init_gear_sets()
     sets.midcast.Storm = sets.midcast['Enhancing Magic']
     sets.midcast['Sneak'] = sets.midcast['Enhancing Magic']
     sets.midcast['Invisible'] = sets.midcast['Enhancing Magic']
-    sets.midcast['Refresh'] = sets.midcast['Enhancing Magic']
+    sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {
+        feet="Inspirited Boots"
+        })
     sets.midcast['Phalanx'] = sets.midcast['Enhancing Magic']
         
     sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {

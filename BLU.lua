@@ -635,6 +635,10 @@ function init_gear_sets()
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
         }   
 
+        sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {
+            feet="Inspirited Boots"
+            })        
+
     -- Breath Spells --
     
     sets.midcast['Blue Magic'].Breath = {

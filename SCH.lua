@@ -302,6 +302,19 @@ function init_gear_sets()
         legs="Telchine Braconi",    
         feet="Telchine Pigaches"
     }
+
+    sets.midcast['Haste'] = sets.midcast['Enhancing Magic']
+    sets.midcast['Blink'] = sets.midcast['Enhancing Magic']
+    sets.midcast.Storm = sets.midcast['Enhancing Magic']
+    sets.midcast['Sneak'] = sets.midcast['Enhancing Magic']
+    sets.midcast['Invisible'] = sets.midcast['Enhancing Magic']
+    sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {
+        ammo="Pemphredo Tathlum",
+        head="Amalric Coif +1",
+        --waist="Gishdubar Sash",
+        --back="Grapevine Cape",
+        feet="Inspirited Boots"
+        })
     
 
 
