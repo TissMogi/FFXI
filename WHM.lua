@@ -263,6 +263,7 @@ function init_gear_sets()
     sets.midcast['Invisible'] = sets.midcast['Enhancing Magic']
     sets.midcast['Erase'] = set_combine(sets.midcast, {main="Yagrush", neck="Cleric's Torque +1"})
     sets.midcast['Healing Magic'] = set_combine(sets.midcast, {main="Yagrush"})
+    sets.Obi = { waist = "Hachirin-no-Obi"}
     
     sets.midcast.BarElement = set_combine(sets.midcast['Enhancing Magic'], {
         neck="Enhancing Torque",
