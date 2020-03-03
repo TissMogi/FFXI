@@ -264,7 +264,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Perimede Cape",       --back="Fi Follet Cape +1",
-        waist="Austerity Belt +1" --waist="Olympus Sash",
+        waist="Embla Sash"
         }
         
     sets.midcast['Haste'] = sets.midcast['Enhancing Magic']

@@ -69,19 +69,20 @@ function job_setup()
     pacts.cure = {['Carbuncle']='Healing Ruby'}
     pacts.curaga = {['Carbuncle']='Healing Ruby II', ['Garuda']='Whispering Wind', ['Leviathan']='Spring Water'}
     pacts.buffoffense = {['Carbuncle']='Glittering Ruby', ['Ifrit']='Crimson Howl', ['Garuda']='Hastega II', ['Ramuh']='Rolling Thunder',
-        ['Fenrir']='Ecliptic Growl'}
+        ['Fenrir']='Ecliptic Growl', ['Siren']='Katabatic Blades'}
     pacts.buffdefense = {['Carbuncle']='Shining Ruby', ['Shiva']='Frost Armor', ['Garuda']='Aerial Armor', ['Titan']='Earthen Ward',
         ['Ramuh']='Lightning Armor', ['Fenrir']='Ecliptic Howl', ['Diabolos']='Noctoshield', ['Cait Sith']='Reraise II'}
     pacts.buffspecial = {['Ifrit']='Inferno Howl', ['Garuda']='Fleet Wind', ['Titan']='Earthen Armor',['Shiva']='Crystal Blessing', ['Leviathan']='Soothing Current',['Diabolos']='Dream Shroud',
-        ['Carbuncle']='Soothing Ruby', ['Fenrir']='Heavenward Howl', ['Cait Sith']='Raise II'}
+        ['Carbuncle']='Soothing Ruby', ['Fenrir']='Heavenward Howl', ['Cait Sith']='Raise II', ['Siren']='Chinook', ['Siren']="Wind's Blessing"}
     pacts.debuff1 = {['Shiva']='Diamond Storm', ['Ramuh']='Shock Squall', ['Leviathan']='Tidal Roar', ['Fenrir']='Lunar Cry',
-        ['Diabolos']='Pavor Nocturnus', ['Cait Sith']='Eerie Eye'}
+        ['Diabolos']='Pavor Nocturnus', ['Cait Sith']='Eerie Eye', ['Siren']='Bitter Elegy', ['Siren']='Lunatic Voice'}
     pacts.debuff2 = {['Shiva']='Sleepga', ['Leviathan']='Slowga', ['Fenrir']='Lunar Roar', ['Diabolos']='Somnolence'}
     pacts.sleep = {['Shiva']='Sleepga', ['Diabolos']='Nightmare', ['Cait Sith']='Mewing Lullaby'}
     pacts.nuke2 = {['Ifrit']='Fire II', ['Shiva']='Blizzard II', ['Garuda']='Aero II', ['Titan']='Stone II',
         ['Ramuh']='Thunder II', ['Leviathan']='Water II'}
     pacts.nuke4 = {['Ifrit']='Fire IV', ['Shiva']='Blizzard IV', ['Garuda']='Aero IV', ['Titan']='Stone IV',
-        ['Ramuh']='Thunder IV', ['Leviathan']='Water IV'}
+        ['Ramuh']='Thunder IV', ['Leviathan']='Water IV', ['Siren']='Tonrado 2'} --might need to change this for Siren
+	pacts.bp65 = {['Siren']='Sonic Buffet'}
     pacts.bp70 = {['Ifrit']='Flaming Crush', ['Shiva']='Rush', ['Garuda']='Predator Claws', ['Titan']='Mountain Buster',
         ['Ramuh']='Chaotic Strike', ['Leviathan']='Spinning Dive', ['Carbuncle']='Meteorite', ['Fenrir']='Eclipse Bite',
         ['Diabolos']='Nether Blast',['Cait Sith']='Regal Scratch'}
@@ -89,10 +90,10 @@ function job_setup()
         ['Ramuh']='Thunderstorm', ['Leviathan']='Grand Fall', ['Carbuncle']='Holy Mist', ['Fenrir']='Lunar Bay',
         ['Diabolos']='Night Terror', ['Cait Sith']='Level ? Holy'}
     pacts.bp99 = {['Ifrit']='Conflag Strike', ['Shiva']='Rush', ['Garuda']='Wind Blade', ['Titan']='Crag Throw',
-        ['Ramuh']='Volt Strike', ['Carbuncle']='Holy Mist', ['Fenrir']='Impact', ['Diabolos']='Blindside'}
+        ['Ramuh']='Volt Strike', ['Carbuncle']='Holy Mist', ['Fenrir']='Impact', ['Diabolos']='Blindside', ['Siren']='Hysteric Assault'}
     pacts.astralflow = {['Ifrit']='Inferno', ['Shiva']='Diamond Dust', ['Garuda']='Aerial Blast', ['Titan']='Earthen Fury',
         ['Ramuh']='Judgment Bolt', ['Leviathan']='Tidal Wave', ['Carbuncle']='Searing Light', ['Fenrir']='Howling Moon',
-        ['Diabolos']='Ruinous Omen', ['Cait Sith']="Altana's Favor"}
+        ['Diabolos']='Ruinous Omen', ['Cait Sith']="Altana's Favor", ['Siren']='Clarsach Call'}
 
     -- Wards table for creating custom timers   
     wards = {}
@@ -253,10 +254,11 @@ function init_gear_sets()
         left_ring="Evoker's Ring",
         right_ring="Fervor Ring",
         back="Conveyance Cape",         -- +30mp
+		waist="Ligea Sash",				-- +10
         legs="Telchine Braconi",        -- +35
         feet="Beckoner's Pigaches +1"   -- +60
     }
-    ------------------------------- Total: 220 / +30mp = 879 mp----------------
+    ------------------------------- Total: 230 / +30mp = 879 mp----------------
             
     sets.precast.JA['Mana Cede'] = {hands="Beckoner's Bracers +1"}
     
@@ -292,7 +294,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Perimede Cape",
-        waist="Austerity Belt +1", --waist="Olympus Sash",
+        waist="Embla Sash",
         legs="Telchine Braconi",
         feet="Telchine Pigaches"
     }
@@ -453,6 +455,8 @@ function init_gear_sets()
     --  head="Apogee Crown +1",
     --  hands="Apogee Mitts",
     --  legs="Apogee Slacks +1"})
+	
+
     ---------------------------------------------------------------------------
     -- Bloodpact Specific Sets for Ward Pacts ---------------------------------
     ---------------------------------------------------------------------------
@@ -461,6 +465,8 @@ function init_gear_sets()
     --  head="",neck="",left_ear="",right_ear="",
     --  body="",hands="",left_ring="",right_ring="",
     --  back="",waist="",legs="",feet=""})
+	
+	
 
 -------------------------------------------------------------------------------
 ------ Bloodpact Specific Sets for Debuff Ward Pacts --------------------------

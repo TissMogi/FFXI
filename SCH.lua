@@ -298,7 +298,7 @@ function init_gear_sets()
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Perimede Cape",
-        waist="Austerity Belt +1", --waist="Olympus Sash",
+        waist="Embla Sash",
         legs="Telchine Braconi",    
         feet="Telchine Pigaches"
     }

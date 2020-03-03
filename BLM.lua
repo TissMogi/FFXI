@@ -237,7 +237,7 @@ function init_gear_sets()
         body="Telchine Chasuble",
         hands="Telchine Gloves",
         legs="Telchine Braconi",
-        waist="Austerity Belt +1",
+        waist="Embla Sash",
         legs="Telchine Braconi",
         feet="Telchine Pigaches"
         }

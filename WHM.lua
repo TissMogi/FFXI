@@ -250,7 +250,7 @@ function init_gear_sets()
         right_ring="Stikini Ring",
         --back="Fi Follet Cape",
         back="Perimede Cape",
-        waist="Austerity Belt +1",
+        waist="Embla Sash",
         legs="Telchine Braconi",
         feet="Theophany Duckbills +3"
     --------------------------- Total: 511 ------------------------------------ 
@@ -709,5 +709,5 @@ function select_default_macro_book()
 end
 
 function set_lockstyle()
-    send_command('wait 2; input /lockstyleset 10')
+    send_command('wait 2; input /lockstyleset 2')
 end
