@@ -182,7 +182,7 @@ function user_setup()
     state.OffenseMode:options('Normal', 'PDT', 'MDT', 'MDTHP', 'Acc', 'Refresh', 'Learning')
     state.WeaponskillMode:options('Normal', 'Acc')
     state.CastingMode:options('Normal', 'Resistant')
-    state.IdleMode:options('Normal', 'PDT', 'Learning')
+    state.IdleMode:options('Normal', 'PDT', 'MDT', 'Learning')
 
     -- Additional local binds
     send_command('bind ^` input /ja "Chain Affinity" <me>')

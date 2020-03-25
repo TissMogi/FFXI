@@ -331,8 +331,17 @@ function init_gear_sets()
         head="Vanya Hood",                  -- 10%                              +06
         neck="Nodens Gorget",               -- 05%
         left_ear="Calamitous Earring",      --                                  +04
+<<<<<<< HEAD
         right_ear="Mendicant's Earring",    -- 05%                              +02
+=======
+<<<<<<< HEAD
+        right_ear="Mendicant's Earring",    -- 05%                              +02
+        body="Vanya Robe",                  --                      +20
+=======
+        right_ear="Regal Earring",
+>>>>>>> 3121777d81f6c67f9287ea55bc4539831c1b6f21
         body="Vanya Robe",                  --              +20
+>>>>>>> 8e724c36587d991fb7c1d8aa07dbece4f396b826
         hands="Shrieker's Cuffs",           --                                  +07
         left_ring="Haoma's Ring",           --              +08
         right_ring="Sirona's Ring",         --              +10

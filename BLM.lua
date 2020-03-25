@@ -375,7 +375,11 @@ function init_gear_sets()
         }        
 
     ---------------------------------------------------------------------------
+<<<<<<< HEAD
+    -- Magic Burst Set for all Spells ( Needed for Tier 1 Cap:40% ) -----------
+=======
     -- Magic Burst Set for all Spells ( Needed for Cap Tier 1:40% ) ------------------
+>>>>>>> 8e724c36587d991fb7c1d8aa07dbece4f396b826
     ---------------------------------------------------------------------------
     sets.magic_burst = set_combine(sets.midcast['Elemental Magic'], {
                                         -- MB%          INT     MAC     MAB    Ele Skill
@@ -383,19 +387,32 @@ function init_gear_sets()
         sub="Enki Strap",               --              +10     +10
         ammo="Pemphredo Tathlum",       --              +04     +08     +04
         head="Ea Hat +1",               -- 07/07%       +43     +50     +38
+<<<<<<< HEAD
+        neck="Sorcerer's Stole +2",     -- 10%          +15     +55     +07
+=======
         neck="Sorcerer's Stole +2",     -- 08%          +12     +45     +05
+>>>>>>> 8e724c36587d991fb7c1d8aa07dbece4f396b826
         left_ear="Friomisi Earring",    --                              +10
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
         hands="Archmage's Gloves +3",   -- 20%          +36     +38     +50
         left_ring="Shiva Ring +1",      --              +09             +03
         right_ring="Mujin Band",        -- 00%/05%
+<<<<<<< HEAD
+        back=TaranusCapeDD,             -- 05%          +30     +20     +10
+        waist="Porous Rope",            --              +07     +05
+        legs="Ea Slops",                -- 07%/07%      +43     +41     +36
+        feet=MerlinicCrackowsDrain      --              +24     +34     +54
+    ------------------------------- Total: 58%/28%=68%  +256    +301    +259
+        })
+=======
         back=TaranusCapeDD,             -- 00%/05%      +30     +20     +10
         waist="Yamabuki-no-Obi",        --              +06     +02     +05
         legs="Archmage's Tonban +3",    -- 00%/03%      +50     +46     +58
         feet="Archmage's Sabots +3"     --              +30     +42     +54
     ------------------------------- Total: 44%/29%=69%  +315    +328    +351    +499
         })	
+>>>>>>> 8e724c36587d991fb7c1d8aa07dbece4f396b826
     
     sets.midcast["Death"] = {
         head="Archmage's Petasos +3",
