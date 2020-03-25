@@ -280,6 +280,15 @@ function init_gear_sets()
     --------------------------------------
     -- Midcast sets
     --------------------------------------
+	
+    sets.midcast.Cursna = set_combine(sets.midcast, {
+                             
+        --neck="Malison Medallion",
+        body="Vanya Robe", 
+        left_ring="Haoma's Ring",       -- cursna 15%
+        right_ring="Menelaus's Ring",   -- cursna +25
+        feet="Vanya Clogs" --Gende. Galosh. +1
+    })	
     
     sets.midcast['Enhancing Magic'] = {
         main="Gada",
@@ -322,7 +331,7 @@ function init_gear_sets()
         head="Vanya Hood",                  -- 10%                              +06
         neck="Nodens Gorget",               -- 05%
         left_ear="Calamitous Earring",      --                                  +04
-        right_ear="Regal Earring",
+        right_ear="Mendicant's Earring",    -- 05%                              +02
         body="Vanya Robe",                  --              +20
         hands="Shrieker's Cuffs",           --                                  +07
         left_ring="Haoma's Ring",           --              +08
@@ -332,7 +341,7 @@ function init_gear_sets()
         legs="Vanya Slops",                 --              +10                 +12
         feet="Vanya Clogs"                  -- 10%                              +06
         }
-        --------------------------------Total: 50%                  +38         +48
+        --------------------------------Total: 55%                  +38         +50
 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
         head="Umuthi Hat", 
@@ -379,7 +388,7 @@ function init_gear_sets()
         sub="Elan Strap +1",            -- 3
         ammo="Sancus Sachet +1",        -- 15
         head="Apogee Crown +1",         -- 8
-        neck="Shulmanu Collar",
+        neck="Summoner's Collar +2",
         left_ear="Lugalbanda Earring",  -- 10
         right_ear="Gelos Earring",      -- 5
         body="Convoker's Doublet +3",   -- 16
@@ -405,7 +414,7 @@ function init_gear_sets()
         sub="Elan Strap +1",            -- 3
         ammo="Sancus Sachet +1",        -- 15
         head="Apogee Crown +1",         -- 8
-        neck="Adad Amulet",
+        neck="Summoner's Collar +2",
         left_ear="Lugalbanda Earring",  -- 10
         right_ear="Gelos Earring",      -- 5
         body="Convoker's Doublet +3",   -- 16
@@ -534,7 +543,7 @@ function init_gear_sets()
     -- Avatar TP set ----------------------------------------------------------
     ---------------------------------------------------------------------------
 	sets.idle.Avatar.Melee = set_combine(sets.idle.Avatar, {main="Nirvana",sub="Elan Strap +1",ammo="Sancus Sachet +1",
-        head="Beckoner's Horn +1",neck="Shulmanu Collar",left_ear="Rimeice Earring", right_ear="Enmerkar Earring",
+        head="Beckoner's Horn +1",neck="Summoner's Collar +2",left_ear="Rimeice Earring", right_ear="Enmerkar Earring",
         body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Varar Ring +1",right_ring="Varar Ring +1",
         back=CCapePhysical, waist="Incarnation Sash", legs="Convoker's Spats +3", feet="Convoker's Pigaches +3"
     })

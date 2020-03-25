@@ -179,7 +179,7 @@ end
 
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('Normal', 'Acc', 'Refresh', 'Learning')
+    state.OffenseMode:options('Normal', 'PDT', 'MDT', 'MDTHP', 'Acc', 'Refresh', 'Learning')
     state.WeaponskillMode:options('Normal', 'Acc')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'Learning')
@@ -800,19 +800,19 @@ function init_gear_sets()
     }
 
     sets.defense.MDT = {
-        ammo="Ginsen",
-        head="Ayanmo Zucchetto +2",
-        body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands +1",
-        legs="Carmine Cuisses +1",
-        feet="Ayanmo Gambieras +2",
-        neck="Loricate Torque +1",
-        waist="Kentarch Belt +1",
-        left_ear="Etiolation Earring",
-        right_ear="Moonshade Earring",
-        left_ring="Defending Ring",
-        right_ring="Vertigo Ring",
-        back="Disperser's Cape"
+    ammo="Ginsen",
+    head="Aya. Zucchetto +2",
+    body="Ayanmo Corazza +2",
+    hands="Adhemar Wrist. +1",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    feet="Aya. Gambieras +2",
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Etiolation Earring",
+    right_ear="Odnowa Earring +1",
+    left_ring="Defending Ring",
+    right_ring="Vertigo Ring",
+    back="Moonbeam Cape",
     }
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
@@ -825,6 +825,23 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
+	
+    --[[sets.engaged = {
+        ammo="Ginsen",
+        head="Dampening Tam",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
+        legs="Carmine Cuisses +1",
+        feet="Ayanmo Gambieras +2",
+        neck="Sanctity Necklace",
+        waist="Windbuffet Belt +1",
+        left_ear="Steelflash Earring",
+        right_ear="Bladeborn Earring",
+        left_ring="Epona's Ring",
+        right_ring="Hetairoi Ring",
+        back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
+    }	--]]
+	
     sets.engaged = {
         ammo="Ginsen",
         head="Dampening Tam",
@@ -840,6 +857,22 @@ function init_gear_sets()
         right_ring="Hetairoi Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
     }
+	
+    sets.engaged = {	--mdthp
+		ammo="Ginsen",
+		head="Aya. Zucchetto +2",
+		body="Ayanmo Corazza +2",
+		hands="Adhemar Wrist. +1",
+		legs={ name="Carmine Cuisses +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+		feet="Aya. Gambieras +2",
+		neck="Loricate Torque +1",
+		waist="Flume Belt +1",
+		left_ear="Etiolation Earring",
+		right_ear="Odnowa Earring +1",
+		left_ring="Defending Ring",
+		right_ring="Vertigo Ring",
+		back="Moonbeam Cape",
+    }	
 
     sets.engaged.Acc = {
         ammo="Ginsen",
@@ -856,6 +889,55 @@ function init_gear_sets()
         right_ring="Varar Ring +1",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
         }   
+		
+    sets.engaged.PDT = {
+        ammo="Ginsen",
+        head="Ayanmo Zucchetto +2",
+        body="Ayanmo Corazza +2",
+        hands="Adhemar Wristbands +1",
+        legs="Carmine Cuisses +1",
+        feet="Ayanmo Gambieras +2",
+        neck="Loricate Torque +1",
+        waist="Flume Belt +1",
+        left_ear="Etiolation Earring",
+        right_ear="Moonshade Earring",
+        left_ring="Defending Ring",
+        right_ring="Patricius Ring",
+        back="Disperser's Cape"
+        }	
+
+    sets.engaged.MDT = {
+        ammo="Ginsen",
+        head="Ayanmo Zucchetto +2",
+        body="Ayanmo Corazza +2",
+        hands="Adhemar Wristbands +1",
+        legs="Carmine Cuisses +1",
+        feet="Ayanmo Gambieras +2",
+        neck="Loricate Torque +1",
+        waist="Kentarch Belt +1",
+        left_ear="Etiolation Earring",
+        right_ear="Moonshade Earring",
+        left_ring="Defending Ring",
+        right_ring="Vertigo Ring",
+        back="Disperser's Cape"
+        }
+
+    sets.engaged.MDTHP = {
+	ammo="Ginsen",
+    head="Aya. Zucchetto +2",
+    body="Ayanmo Corazza +2",
+    hands="Adhemar Wrist. +1",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    feet="Aya. Gambieras +2",
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Etiolation Earring",
+    right_ear="Odnowa Earring +1",
+    left_ring="Defending Ring",
+    right_ring="Vertigo Ring",
+    back="Moonbeam Cape",
+        }
+		
 
     sets.engaged.Refresh = {}
 
