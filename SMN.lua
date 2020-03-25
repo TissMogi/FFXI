@@ -315,8 +315,8 @@ function init_gear_sets()
         ammo="Pemphredo Tathlum",           --                                  +04
         head="Vanya Hood",                  -- 10%                              +06
         neck="Nodens Gorget",               -- 05%
-        left_ear="Calamitous Earring",          --                                  +04
-        right_ear="Regal Earring",
+        left_ear="Calamitous Earring",      --                                  +04
+        right_ear="Mendicant's Earring",    -- 05%                              +02
         body="Vanya Robe",                  --                      +20
         hands="Shrieker's Cuffs",           --                                  +07
         left_ring="Haoma's Ring",               --                      +08
@@ -326,7 +326,7 @@ function init_gear_sets()
         legs="Vanya Slops",                 --              +10                 +12
         feet="Vanya Clogs"                  -- 10%                              +06
         }
-        --------------------------------Total: 50%                  +38         +48
+        --------------------------------Total: 55%                  +38         +50
 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
         head="Umuthi Hat", 
