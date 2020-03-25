@@ -13,6 +13,7 @@ end
 function job_setup()
     state.Buff['Afflatus Solace'] = buffactive['Afflatus Solace'] or false
     state.Buff['Afflatus Misery'] = buffactive['Afflatus Misery'] or false
+    state.Buff['Sublimation: Activated'] = buffactive['Sublimation: Activated'] or false
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -264,6 +265,7 @@ function init_gear_sets()
     sets.midcast['Erase'] = set_combine(sets.midcast, {main="Yagrush", neck="Cleric's Torque +1"})
     sets.midcast['Healing Magic'] = set_combine(sets.midcast, {main="Yagrush"})
     sets.Obi = { waist = "Hachirin-no-Obi"}
+    sets.buff.Sublimation = {waist="Embla Sash"}
     
     sets.midcast.BarElement = set_combine(sets.midcast['Enhancing Magic'], {
         neck="Enhancing Torque",
@@ -593,6 +595,12 @@ end ]]
 -- Job-specific hooks for non-casting events.
 -------------------------------------------------------------------------------------------------------------------
 
+function job_buff_change(buff,gain)
+    if buff == "Sublimation: Activated" then
+        handle_equipping_gear(player.status)
+    end
+end
+
 -- Handle notifications of general user state change.
 function job_state_change(stateField, newValue, oldValue)
     if stateField == 'Offense Mode' then
@@ -646,8 +654,16 @@ end
     return idleSet
 end ]]
 
+function customize_idle_set(idleSet)
+    if state.Buff['Sublimation: Activated'] then
+        idleSet = set_combine(idleSet, sets.buff.Sublimation)
+    end
+    return idleSet
+end
+
 -- Called by the 'update' self-command.
 function job_update(cmdParams, eventArgs)
+    update_sublimation()    
     if cmdParams[1] == 'user' and not areas.Cities:contains(world.area) then
         local needsArts =
             player.sub_job:lower() == 'sch' and
@@ -696,6 +712,10 @@ end
 -------------------------------------------------------------------------------------------------------------------
 -- Utility functions specific to this job.
 -------------------------------------------------------------------------------------------------------------------
+
+function update_sublimation()
+    state.Buff['Sublimation: Activated'] = buffactive['Sublimation: Activated'] or false
+end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()

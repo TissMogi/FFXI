@@ -671,6 +671,7 @@ function init_gear_sets()
     --left_ear="Savant's Earring",
     body="Pedagogy Gown +3",
     --main="Siriti",
+    waist="Embla Sash"
     }
     sets.buff.PDTSublimation = {head="Acad. Mortar. +3",
     --left_ear="Savant's Earring"
