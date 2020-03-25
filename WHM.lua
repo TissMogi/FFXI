@@ -67,20 +67,19 @@ function init_gear_sets()
     -- Fast Cast Sets for all Spells ( Cap:80% - SCH:70% - RDM:65% ) ----------
     ---------------------------------------------------------------------------
     sets.precast.FC = {
-        main="Yagrush",             -- 20%
-        ammo="Sapience Orb",        -- 02%
-        head="Vanya Hood",          -- 10%
-        neck="Orison Locket",       -- 05%
+        main="Yagrush",                 -- 20%
+        ammo="Sapience Orb",            -- 02%
+        head="Vanya Hood",              -- 10%
+        neck="Orison Locket",           -- 05%
         left_ear="Etiolation Earring",  -- 01%
-        right_ear="Loquac. Earring",     -- 02%  
-        body="Inyanga Jubbah +2",   -- 14%
-        hands="Fanatic Gloves",     -- 07% 
+        right_ear="Loquac. Earring",    -- 02%  
+        body="Inyanga Jubbah +2",       -- 14%
+        hands="Fanatic Gloves",         -- 07% 
         left_ring="Rahab Ring",         -- 02%
-        right_ring="Kishar Ring",        -- 04%
-                                
-        waist="Witful Belt",        -- 03%/03% quick magic
-        legs="Ayanmo Cosciales +2", -- 06%
-        feet="Regal Pumps +1"       -- 04% +1-3 unity ranking (counted 3)
+        right_ring="Kishar Ring",       -- 04%
+        waist="Witful Belt",            -- 03%/03% quick magic
+        legs="Ayanmo Cosciales +2",     -- 06%
+        feet="Regal Pumps +1"           -- 04% +1-3 unity ranking (counted 3)
     --------------------------- Total: 80% ------------------------------------
     }
 
@@ -103,8 +102,8 @@ function init_gear_sets()
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
                                               
         head="Piety Cap +1",            -- 13%
-        left_ear="Mendi. Earring",          -- 05%
-        right_ear="Nourish. Earring +1",     -- 04%
+        left_ear="Mendi. Earring",      -- 05%
+        right_ear="Nourish. Earring +1",-- 04%
         back="Pahtli Cape",             -- 08%
         legs="Doyen Pants",             -- 15%
         feet="Vanya Clogs"              -- 15%
@@ -142,7 +141,7 @@ function init_gear_sets()
         body="Ebers Bliaud +1",
         hands="Ebers Mitts +1",
         left_ring="Woltaris Ring",
-        right_ring="Praan Ring",
+        right_ring="Persis Ring",
         legs="Perdition Slops",
         feet="Mallquis Clogs +1",
         waist="Porous Rope",
@@ -169,22 +168,21 @@ function init_gear_sets()
         body="Witching Robe",       -- 05% (Kaykaus: 06, Chironic: 05, Vedic: 10)
         hands="Shrieker's Cuffs",   -- 07% (Thrift Gloves +1: 05, Kaykaus: 06)
         back="Solemnity Cape",      -- 05% (Fi Follet: 04, Aurist's: 1-5)
-        waist="Luminary Sash",      -- 04% (Austerity Belt/+1: 08/09 )
+        waist="Austerity Belt +1",  -- 09%
         legs="Vanya Slops",         -- 12% (with augment C)
         feet="Vanya Clogs",         -- 06% (with augment C, Kaykaus: 06)
-    --------------------------- Total: 64% ------------------------------------
+    --------------------------- Total: 69% ------------------------------------
     }
 
     ---------------------------------------------------------------------------
-    -- Cure Potency II Set ( Healing Magic Skill > MND ) ----------------------
+    -- Cure Potency II Set (Potency > Healing Magic Skill > MND ) -------------
     -- The Cap is 50% for Cure Potency II to take effect ----------------------
     ---------------------------------------------------------------------------
     sets.midcast.Cure = set_combine(sets.midcast, {
         main="Queller Rod",                 -- 10%/02%
         head="Ebers Cap +1",                -- 16%
         neck="Cleric's Torque +1",          -- 07%
-        left_ear="Mendicant's Earring",     -- 05%
-        right_ear="Glorious Earring",       -- 00%/02%
+        left_ear="Glorious Earring",        -- 00%/02%
         body="Theo. Briault +3",            -- 00%/06%
         hands="Theophany Mitts +3",         -- 00%/04%
         left_ring="Haoma's Ring",           
@@ -193,7 +191,7 @@ function init_gear_sets()
         waist="Hachirin-no-Obi",
         legs="Ebers Pantaloons +1",
         feet="Vanya Clogs"                  -- 10%
-    ----------------------------------- Cure: 58% - Cure II: 14% - Total: 64% -
+    ----------------------------------- Cure: 53% - Cure II: 14% - Total: 64% -
     })
 
     ---------------------------------------------------------------------------
@@ -204,23 +202,21 @@ function init_gear_sets()
     })
 
     ---------------------------------------------------------------------------
-    -- Curaga Set (MND > Healing Magic Skill) ---------------------------------
+    -- Curaga Set (Potency > MND > Healing Magic Skill) -----------------------
     ---------------------------------------------------------------------------
     sets.midcast.Curaga = set_combine(sets.midcast, {
-        main="Vadose Rod",              -- Ames+1 30 MND
-                     
-        sub="Ammurapi Shield",
-        neck="Cleric's Torque +1",
-        left_ear="Regal Earring",
-        right_ear="Nourish. Earring +1",
-        body="Vanya Robe",
-        hands="Inyanga Dastanas +2",
-        left_ring="Levia. Ring",
-        right_ring="Levia. Ring",
-        back=AlanusCure,
+        main="Queller Rod",                 -- 10%/02%
+        head="Ebers Cap +1",                -- 16%
+        neck="Cleric's Torque +1",          -- 07%
+        left_ear="Glorious Earring",        -- 00%/02%
+        body="Theo. Briault +3",            -- 00%/06%
+        hands="Theophany Mitts +3",         -- 00%/04%
+        left_ring="Haoma's Ring",           
+        right_ring="Sirona's ring",
+        back=AlanusCure,                    -- 10%
         waist="Hachirin-no-Obi",
         legs="Ebers Pantaloons +1",
-        feet="Inyan. Crackows +2"
+        feet="Vanya Clogs"                  -- 10%
     })
 
     ---------------------------------------------------------------------------
@@ -232,7 +228,7 @@ function init_gear_sets()
         --neck="Malison Medallion",
         body="Vanya Robe", 
         hands="Fanatic Gloves",         -- cursna +15; HMS +9
-        left_ring="Haoma's Ring",       -- cursna 15% --Menelaus's ring is 20%
+        left_ring="Haoma's Ring",       -- cursna 15%
         right_ring="Menelaus's Ring",   -- cursna +25
         back=AlanusCure,                -- cursna +25
         legs="Theophany Pantaloons +2",
@@ -250,11 +246,11 @@ function init_gear_sets()
         left_ear="Andoaa Earring",
         body="Telchine Chasuble",
         hands="Telchine Gloves",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         --back="Fi Follet Cape",
         back="Perimede Cape",
-        waist="Olympus Sash",
+        waist="Embla Sash",
         legs="Telchine Braconi",
         feet="Theophany Duckbills +3"
     --------------------------- Total: 511 ------------------------------------ 
@@ -267,10 +263,11 @@ function init_gear_sets()
     sets.midcast['Invisible'] = sets.midcast['Enhancing Magic']
     sets.midcast['Erase'] = set_combine(sets.midcast, {main="Yagrush", neck="Cleric's Torque +1"})
     sets.midcast['Healing Magic'] = set_combine(sets.midcast, {main="Yagrush"})
+    sets.Obi = { waist = "Hachirin-no-Obi"}
     
     sets.midcast.BarElement = set_combine(sets.midcast['Enhancing Magic'], {
         neck="Enhancing Torque",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         legs="Piety Pantaloons +3",
         feet="Ebers Duckbills +1"
@@ -354,10 +351,10 @@ function init_gear_sets()
         right_ear="Lifestorm Earring",
         body="Vanya Robe",
         hands="Inyan. Dastanas +2",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Gwyddion's Cape",
-        waist="Rumination Sash",
+        --waist="Rumination Sash", --I'd rather use Austerity Belt +1
         legs="Theophany Pantaloons +2",
         feet="Medium's Sabots"
         })
@@ -381,7 +378,7 @@ function init_gear_sets()
         right_ear="Lifestorm Earring",
         body="Theo. Briault +3",
         hands="Inyan. Dastanas +2",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Kishar Ring",
         back="Gwyddion's Cape",
         waist="Rumination Sash",
@@ -399,7 +396,7 @@ function init_gear_sets()
         right_ear="Lifestorm Earring",
         body="Theo. Briault +3",
         hands="Inyan. Dastanas +2",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Kishar Ring",
                       
         back="Gwyddion's Cape",
@@ -712,5 +709,5 @@ function select_default_macro_book()
 end
 
 function set_lockstyle()
-    send_command('wait 2; input /lockstyleset 10')
+    send_command('wait 2; input /lockstyleset 2')
 end

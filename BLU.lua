@@ -267,9 +267,9 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         ammo="Falcon Eye",
-        head="Dampening Tam",
-        body="Abnoba Kaftan",
-        hands="Adhemar Wristbands",
+        head="Adhemar Bonnet +1",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Herculean Boots",
         neck="Sanctity Necklace",
@@ -280,12 +280,12 @@ function init_gear_sets()
         right_ring="Apate Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
-    
+
     sets.precast.WS['Chant du Cygne'] = {
         ammo="Falcon Eye",
-        head="Dampening Tam",
+        head="Adhemar Bonnet +1",
         body="Abnoba Kaftan",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -296,30 +296,32 @@ function init_gear_sets()
         right_ring="Apate Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
+    ------------------------- Total: 1233 acc, 1175 att, +253 DEX ---------
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    --MND (73~85%) based; depending on merits levels
+    -- MND (73~85%) based; depending on merits levels
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
         ammo="Hydrocera",
-        head="Amalric Coif +1",
-        body="Assim. Jubbah +3",        --body="Jhakri Robe +2",            --mnd:32
-        hands="Amalric Gages",          --mnd:34
-        legs="Gyve Trousers",           --find something better
-        feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36; mnd:21
+        head="Jhakri Coronal +2",
+        body="Assim. Jubbah +3",
+        hands="Jhakri Cuffs +2",
+        legs="Jhakri Slops +2",
+        feet="Jhakri Pigaches +2",
         neck="Nuna Gorget",             --mnd:8, get elemental obi
         waist="Porous Rope",
         left_ear="Steelflash Earring",
         right_ear="Bladeborn Earring",
-        left_ring="Levia. Ring",
-        right_ring="Levia. Ring",
-        back="Laic Mantle"
+        left_ring="Stikini Ring +1",
+        right_ring="Leviathan Ring",
+        back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
     })
+    ------------------------- Total: 1233 acc, 1278 att, +173 MND ---------
 
-    --MAB and INT Based. MAB is priority.
+    -- MAB and INT Based. MAB is priority. 50% MND / 30% STR.
     sets.precast.WS['Sanguine Blade'] = {
         ammo="Ginsen",
         head="Jhakri Coronal +2",       --int:33, mab:38, mac:38
-        body="Assim. Jubbah +3",        --int:47, mab:40, mac:40
+        body="Jhakri Robe +2",          --int:50, mab:43, mac:46
         hands="Jhakri Cuffs +2",        --int:33, mab:37, macc:37
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
@@ -327,26 +329,29 @@ function init_gear_sets()
         waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",       --int:10, mnd:10, chr:10 macset bonus7, mab:7
         right_ear="Friomisi Earring",   --mab:10
-        left_ring="Shiva Ring",         --int:8
-        right_ring="Shiva Ring",        --int:8
+        left_ring="Shiva Ring +1",         --int:8
+        right_ring="Shiva Ring +1",        --int:8
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     }
-        
+    ------------------------- Total: 1183 acc, 1304 att. +133, +148 MND, +173 STR, +275 Int
+
+    -- 50% STR / 50% MND
     sets.precast.WS['Savage Blade'] = {
         ammo="Ginsen",
-        head="Dampening Tam",
+        head="Jhakri Coronal +2",
         body="Assimilator's Jubbah +3",
-        hands="Ayanmo Manopolas +2",
-        legs="Carmine Cuisses +1",
+        hands="Jhakri Cuffs +2",
+        legs="Jhakri Slops +2",
         feet=HercWSD,
         neck="Sanctity Necklace",
-        waist="Kentarch Belt +1",
+        waist="Latria Sash",
         left_ear="Regal Earring",
         right_ear="Mache Earring",
         left_ring="Ilabrat Ring",
-        right_ring="Apate Ring",
+        right_ring="Stikini Ring +1",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
+    ------------------------- Total: 1250 acc, 1281 att, +173 STR, +152 MND -----
     
     
     -- Midcast Sets
@@ -364,7 +369,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",       --macc:10
-        waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         left_ring="Kishar Ring",
@@ -374,13 +379,13 @@ function init_gear_sets()
 
     sets.midcast['Blue Magic'].PhysicalAcc = {
         ammo="Mavi Tathlum",
-        head="Adhemar Bonnet",
+        head="Adhemar Bonnet +1",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -391,13 +396,13 @@ function init_gear_sets()
     sets.midcast['Blue Magic'].PhysicalStr = set_combine(sets.midcast['Blue Magic'].Physical,
         {
         ammo="Mavi Tathlum",
-        head="Adhemar Bonnet",
+        head="Adhemar Bonnet +1",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -410,11 +415,11 @@ function init_gear_sets()
         ammo="Mavi Tathlum",
         head="Dampening Tam",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -427,11 +432,11 @@ function init_gear_sets()
         ammo="Mavi Tathlum",
         head="Dampening Tam",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Ayanmo Cosciales +2",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Genmei Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -444,11 +449,11 @@ function init_gear_sets()
         ammo="Mavi Tathlum",
         head="Dampening Tam",
         body="Assim. Jubbah +3",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Latria Sash",
+        waist="Austerity Belt +1", --waist="Latria Sash",
         left_ear="Mache Earring",
         right_ear="Mache Earring",
         left_ring="Rajas Ring",
@@ -465,11 +470,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })
 
@@ -482,11 +487,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })      
 
@@ -499,11 +504,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })      
 
@@ -520,11 +525,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     }
 
@@ -537,11 +542,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })
     
@@ -554,11 +559,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Leviathan Ring",
+        right_ring="Stikini Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })
 
@@ -571,11 +576,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })
     
@@ -589,11 +594,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })      
 
@@ -606,11 +611,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     })      
 
@@ -622,13 +627,17 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Eddy Necklace",           --mac:5, mab:11
-        waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         left_ring="Kishar Ring",
         right_ring="Jhakri Ring",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
         }   
+
+        sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {
+            feet="Inspirited Boots"
+            })        
 
     -- Breath Spells --
     
@@ -640,11 +649,11 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Sanctity Necklace",
-        waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Acuity Belt",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",
-        left_ring="Shiva Ring",
-        right_ring="Shiva Ring",
+        left_ring="Shiva Ring +1",
+        right_ring="Shiva Ring +1",
         back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     }   
 
@@ -661,13 +670,18 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Phalaina Locket",
-        waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Mendi. Earring",
         left_ring="Sirona's Ring",
         right_ring="Haoma's Ring",
         back="Solemnity Cape"
         }
+
+        sets.midcast['Blue Magic']['Tenebral Crush'] = set_combine(sets.midcast['Blue Magic'].MagicalMnd,
+        {
+        head="Pixie Hairpin +1"
+        })
 
     sets.midcast['Blue Magic'].Healing = {
         ammo="Hydrocera",
@@ -677,7 +691,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",         --int:52, mab:45, macc:42
         feet="Jhakri Pigaches +2",      --int:30, mab:36, macc:36
         neck="Phalaina Locket",
-        waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
+        waist="Austerity Belt +1", --waist="Porous Rope",            --int:5, int:3~7 based on unity ranking
         left_ear="Regal Earring",
         right_ear="Mendi. Earring",
         left_ring="Sirona's Ring",
@@ -696,7 +710,7 @@ function init_gear_sets()
         left_ring="Vertigo ring",
         --right_ring="Sangoma ring",
         --back="Cornflower cape",
-        waist="Witful Belt",
+        waist="Austerity Belt +1", --waist="Witful Belt",
         legs="Hashishin Tayt",
         feet="Luhlaza charuqs +1"
         }
@@ -739,7 +753,7 @@ function init_gear_sets()
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",
         right_ear="Moonshade Earring",
-        left_ring="Defending Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Woltaris Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
     }
@@ -748,7 +762,7 @@ function init_gear_sets()
         ammo="Ginsen",
         head="Ayanmo Zucchetto +2",
         body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Loricate Torque +1",
@@ -773,7 +787,7 @@ function init_gear_sets()
         ammo="Ginsen",
         head="Ayanmo Zucchetto +2",
         body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Loricate Torque +1",
@@ -789,7 +803,7 @@ function init_gear_sets()
         ammo="Ginsen",
         head="Ayanmo Zucchetto +2",
         body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Loricate Torque +1",
@@ -814,8 +828,8 @@ function init_gear_sets()
     sets.engaged = {
         ammo="Ginsen",
         head="Dampening Tam",
-        body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -830,8 +844,8 @@ function init_gear_sets()
     sets.engaged.Acc = {
         ammo="Ginsen",
         head="Dampening Tam",
-        body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -848,8 +862,8 @@ function init_gear_sets()
     sets.engaged.DW = {
         ammo="Ginsen",
         head="Dampening Tam",
-        body="Ayanmo Corazza +2",
-        hands="Adhemar Wristbands",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
@@ -861,7 +875,22 @@ function init_gear_sets()
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
     }
 
-    sets.engaged.DW.Acc = {}
+    sets.engaged.DW.Acc = 
+    {
+        ammo="Ginsen",
+        head="Dampening Tam",
+        body="Adhemar Jacket +1",
+        hands="Adhemar Wristbands +1",
+        legs="Carmine Cuisses +1",
+        feet="Ayanmo Gambieras +2",
+        neck="Sanctity Necklace",
+        waist="Kentarch Belt +1",
+        left_ear="Mache Earring",
+        right_ear="Digni. Earring",
+        left_ring="Begrudging Ring",
+        right_ring="Varar Ring +1",
+        back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
+        }
 
     sets.engaged.DW.Refresh = {}
 

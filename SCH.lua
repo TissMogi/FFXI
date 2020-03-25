@@ -69,13 +69,15 @@ function user_setup()
     MerlinicShalwarBurst = { name="Merlinic Shalwar", augments={'Mag. Acc.+6','Magic burst dmg.+10%','"Mag.Atk.Bns."+9',}}
     MerlinicCrackowsBurst = { name="Merlinic Crackows", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+10%','MND+1','Mag. Acc.+6','"Mag.Atk.Bns."+1',}}
     
-    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Drain" and "Aspir" potency +4','INT+8','"Mag.Atk.Bns."+3',}}
+    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Drain" and "Aspir" potency +10','DEX+3',}}
+    MerlinicJubbahDrain = { name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +7','MND+5','Mag. Acc.+15','"Mag.Atk.Bns."+2',}}
+    MerlinicDastanasDrain = { name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+30','"Drain" and "Aspir" potency +10','VIT+9',}}
     MerlinicCrackowsDrain = { name="Merlinic Crackows", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Drain" and "Aspir" potency +8','CHR+2','Mag. Acc.+10','"Mag.Atk.Bns."+15',}}
-    
-    MerlinicJubbahDD = { name="Merlinic Jubbah", augments={'Mag. Acc.+5','"Fast Cast"+5','"Mag.Atk.Bns."+7',}}
+
     MerlinicShalwarDD = { name="Merlinic Shalwar", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Occult Acumen"+7','Mag. Acc.+10','"Mag.Atk.Bns."+11',}}
     MerlinicShalwarDD2 = { name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','"Fast Cast"+4','INT+12','"Mag.Atk.Bns."+15',}}      
     
+    MerlinicDastanasFC = { name="Merlinic Dastanas", augments={'Mag. Acc.+8','"Fast Cast"+5','CHR+7','"Mag.Atk.Bns."+8',}}
     LughsCapeDD = { name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Occ. inc. resist. to stat. ailments+10',}}
     LughsCapeFC = { name="Lugh's Cape", augments={'"Fast Cast"+10',}}
 
@@ -126,7 +128,7 @@ function init_gear_sets()
         right_ear="Odnowa Earring +1",
         body="Pedagogy Gown +3",
         hands="Shrieker's Cuffs",
-        left_ring="Praan Ring",
+        left_ring="Persis Ring",
         right_ring="Woltaris Ring",
         legs="Perdition Slops",
         feet="Mallquis Clogs +1",
@@ -144,21 +146,21 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {
-        ammo="Sapience Orb",        -- 02%
-        head="Vanya Hood",          -- 10%
-        neck="Voltsurge Torque",    -- 04%
-        left_ear="Loquac. Earring",     -- 02%
-        left_ear="Etiolation Earring",  -- 01%  
-        body=MerlinicJubbahDD,      -- 11%
-        hands="Mallquis Cuffs +1",  -- ele. cast time -5%       --hands="Gendewitha Gages +1",-- 07% 
+        ammo="Sapience Orb",            -- 02%
+        head="Vanya Hood",              -- 10%
+        neck="Voltsurge Torque",        -- 04%
+        left_ear="Etiolation Earring",  -- 02%
+        right_ear="Loquac. Earring",    -- 01%  
+        body=MerlinicJubbahDrain,       -- 06%
+        hands=MerlinicDastanasFC,       -- 05%
         left_ring="Rahab Ring",         -- 02%
-        right_ring="Kishar Ring",        -- 04%
-        back=LughsCapeFC,           -- 10%
-        waist="Witful Belt",        -- 03%/03% quick magic
-        legs="Gyve Trousers",       -- 04%
-        feet="Regal Pumps +1"       -- 07%
+        right_ring="Kishar Ring",       -- 04%
+        back=LughsCapeFC,               -- 10%
+        waist="Witful Belt",            -- 03%/03% quick magic
+        legs="Gyve Trousers",           -- 04%
+        feet="Regal Pumps +1"           -- 07%
     }
-------------------------------- Total: 60% ------------------------------------
+    ------------------------------- Total: 60% ---------------------------------
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {
     waist="Siegel Sash"
@@ -237,14 +239,14 @@ function init_gear_sets()
         ammo="Pemphredo Tathlum",           --                                  +04
         head="Vanya Hood",                  -- 10%                              +06
         neck="Nodens Gorget",               -- 05%
-        left_ear="Mendi. Earring",              -- 05%
-        right_ear="Regal Earring",               --              +10
+        left_ear="Mendi. Earring",          -- 05%
+        right_ear="Regal Earring",          --              +10
         body="Chironic Doublet",            -- 13%
-        hands="Shrieker's Cuffs",           --                                  +07
-        left_ring="Haoma's Ring",               --                      +08
-        right_ring="Sirona's Ring",              --                      +10
+        hands="Pedagogy Bracers +3",        -- 00/03%                     +03
+        left_ring="Haoma's Ring",           --                      +08
+        right_ring="Sirona's Ring",         --                      +10
         back="Solemnity Cape",              -- 07%          +8                  +05
-        waist="Luminary Sash",              --              +10                 +04
+        waist="Austerity Belt +1", --waist="Luminary Sash",              --              +10                 +04
         legs="Vanya Slops",                 --              +10                 +12
         feet="Vanya Clogs"                  -- 10%                              +06
 }
@@ -265,15 +267,12 @@ function init_gear_sets()
         sub="Enki Strap",
         ammo="Pemphredo Tathlum",
         head="Arbatel Bonnet +1",
-		body="Pedagogy Gown +3",
-        hands="Arbatel Bracers +1",
-        --neck="Incanter's Torque",
+		body="Telchine Chasuble",
+        hands="Telchine Gloves",
+        back=LughsCapeDD,        
         waist="Hachirin-no-Obi",
-        left_ear="Regal Earring",
-        right_ear="Regal Earring",
-        left_ring="Sirona's Ring",           --03%
-        right_ring="Haoma's Ring",
-        back=LughsCapeDD,
+        legs="Telchine Braconi",
+        feet="Telchine Pigaches"
     }
 
     sets.midcast.Cursna = {
@@ -281,9 +280,9 @@ function init_gear_sets()
         --neck="Malison Medallion",
         --hands="Hieros Mittens",
 		body="Pedagogy Gown +3",
-        left_ring="Haoma's Ring",
-        right_ring="Haoma's Ring",
-        feet="Vanya Clogs"
+        right_ring="Menelaus's Ring",   -- cursna +25
+        right_ring="Haoma's Ring",      -- cursna +15
+        feet="Vanya Clogs"              -- cursna +05
         }
 
     sets.midcast['Enhancing Magic'] = {
@@ -296,13 +295,26 @@ function init_gear_sets()
         right_ear="Calamitous Earring",
         body="Pedagogy Gown +3",
         hands="Telchine Gloves",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Perimede Cape",
-        waist="Olympus Sash",
+        waist="Embla Sash",
         legs="Telchine Braconi",    
         feet="Telchine Pigaches"
     }
+
+    sets.midcast['Haste'] = sets.midcast['Enhancing Magic']
+    sets.midcast['Blink'] = sets.midcast['Enhancing Magic']
+    sets.midcast.Storm = sets.midcast['Enhancing Magic']
+    sets.midcast['Sneak'] = sets.midcast['Enhancing Magic']
+    sets.midcast['Invisible'] = sets.midcast['Enhancing Magic']
+    sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {
+        ammo="Pemphredo Tathlum",
+        head="Amalric Coif +1",
+        --waist="Gishdubar Sash",
+        --back="Grapevine Cape",
+        feet="Inspirited Boots"
+        })
     
 
 
@@ -342,10 +354,10 @@ function init_gear_sets()
         right_ear="Lifestorm Earring",
         body="Pedagogy Gown +3",              
         hands="Jhakri Cuffs +2",                    
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back=LughsCapeDD,
-        waist="Porous Rope",
+        waist="Austerity Belt +1",
         legs="Psycloth Lappas",                     
         feet="Jhakri Pigaches +2"                   
     }
@@ -357,13 +369,13 @@ function init_gear_sets()
         main="Akademos",
         sub="Enki Strap",
         ammo="Pemphredo Tathlum",
-        head="Jhakri Coronal +2",
+        head="Pixie Hairpin +1",
         neck="Erra Pendant",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         body="Pedagogy Gown +3",
         hands="Jhakri Cuffs +2",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Perimede Cape",
         waist="Porous Rope",
@@ -393,13 +405,13 @@ function init_gear_sets()
         main="Akademos",
         sub="Enki Strap",
         ammo="Pemphredo Tathlum",
-        head=MerlinicHoodDrain,
+        head="Pixie Hairpin +1",
         neck="Erra Pendant",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
-        body="Pedagogy Gown +3",
-        hands="Jhakri Cuffs +2",
-        left_ring="Stikini Ring",
+        body=MerlinicJubbahDrain,
+        hands=MerlinicDastanasDrain,
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back="Perimede Cape",
         waist="Fucho-no-Obi",
@@ -483,14 +495,14 @@ function init_gear_sets()
         main="Akademos",
         sub="Enki Strap",
         ammo="Pemphredo Tathlum",
-        head=MerlinicHoodBurst,         -- 11%          +29     +38     +25
+        head="Ea Hat +1",               -- 07/07%       +43     +50     +38
         neck="Mizukage-no-Kubikazari",  -- 10%          +04     +00     +08
-        left_ear="Regal Earring",
-        right_ear="Friomisi Earring",        --                              +06
-        body="Pedagogy Gown +3",
+        right_ear="Regal Earring",      --              +10     +set    +07
+        right_ear="Friomisi Earring",   --                              +06
+        body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
         hands="Jhakri Cuffs +2",        -- 05/05%       +35     +39     +30
-        left_ring="Jhakri Ring",            --                      +06     +03
-        right_ring="Mujin Band",             -- 00%/05%
+        left_ring="Shiva Ring +1",      --              +09             +03
+        right_ring="Mujin Band",        -- 00%/05%
         back=LughsCapeDD,               -- 05%          +26     +20     +10
         waist="Hachirin-no-Obi",
         legs=MerlinicShalwarDD,         --              +43     +51     +47
@@ -507,8 +519,8 @@ function init_gear_sets()
         left_ear="Regal Earring",
         right_ear="Friomisi Earring",        --                              +06
 		body="Pedagogy Gown +3",		--				+39     +40		+52
-        hands="Jhakri Cuffs +2",                -- 05/05%       +35     +39     +30
-        left_ring="Jhakri Ring",            --                      +06     +03
+        hands="Jhakri Cuffs +2",        -- 05/05%       +35     +39     +30
+        left_ring="Shiva Ring +1",      --              +09             +03
         right_ring="Mujin Band",             -- 00%/05%
         back="Bookworm's Cape",             -- 05%          +26     +20     +10
         waist="Hachirin-no-Obi",
@@ -567,7 +579,7 @@ function init_gear_sets()
         neck="Loricate Torque +1", 
         left_ear="Etiolation Earring",
         right_ear="Moonshade Earring",
-        body=MerlinicJubbahDD,
+        body=MerlinicJubbahDrain,
         hands="Shrieker's Cuffs",
         left_ring="Defending Ring",
         right_ring="Patricius Ring",
@@ -584,7 +596,7 @@ function init_gear_sets()
         neck="Loricate Torque +1", 
         left_ear="Etiolation Earring",
         right_ear="Moonshade Earring",
-        body=MerlinicJubbahDD,
+        body=MerlinicJubbahDrain,
         hands="Shrieker's Cuffs",
         left_ring="Defending Ring",
         right_ring="Vertigo Ring",
@@ -603,7 +615,7 @@ function init_gear_sets()
         neck="Loricate Torque +1", 
         left_ear="Etiolation Earring",
         right_ear="Hearty Earring",
-        body=MerlinicJubbahDD,
+        body=MerlinicJubbahDrain,
         hands="Shrieker's Cuffs",
         left_ring="Defending Ring",
         right_ring="Patricius Ring",

@@ -41,13 +41,15 @@ function user_setup()
     MerlinicCrackowsBurst = { name="Merlinic Crackows", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+10%','MND+1','Mag. Acc.+6','"Mag.Atk.Bns."+1',}}
     MerlinicCrackowsBurst2 = { name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+8%','"Mag.Atk.Bns."+15',}}
     
-    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Drain" and "Aspir" potency +4','INT+8','"Mag.Atk.Bns."+3',}}
+    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Drain" and "Aspir" potency +10','DEX+3',}}
+    MerlinicJubbahDrain = { name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +7','MND+5','Mag. Acc.+15','"Mag.Atk.Bns."+2',}}
+    MerlinicDastanasDrain = { name="Merlinic Dastanas", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +9','Mag. Acc.+14','"Mag.Atk.Bns."+15',}}
     MerlinicCrackowsDrain = { name="Merlinic Crackows", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Drain" and "Aspir" potency +8','CHR+2','Mag. Acc.+10','"Mag.Atk.Bns."+15',}}
-    
-    MerlinicJubbahDD = { name="Merlinic Jubbah", augments={'Mag. Acc.+5','"Fast Cast"+5','"Mag.Atk.Bns."+7',}}
+
     MerlinicShalwarDD = { name="Merlinic Shalwar", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Occult Acumen"+7','Mag. Acc.+10','"Mag.Atk.Bns."+11',}}
     MerlinicShalwarDD2 = { name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','"Fast Cast"+4','INT+12','"Mag.Atk.Bns."+15',}}  
     
+    MerlinicDastanasFC = { name="Merlinic Dastanas", augments={'Mag. Acc.+8','"Fast Cast"+5','CHR+7','"Mag.Atk.Bns."+8',}}
     TaranusCapeDD = { name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}}
     TaranusCapeFC = { name="Taranus's Cape", augments={'"Fast Cast"+10',}}
     
@@ -110,20 +112,20 @@ function init_gear_sets()
     -- Fast Cast Sets for all Spells ( Cap:80% - SCH:70% - RDM:65% ) ----------
     ---------------------------------------------------------------------------
     sets.precast.FC = {
-        ammo="Sapience Orb",        -- 02%
-        head="Vanya Hood",          -- 10%
-        neck="Voltsurge Torque",    -- 04%
-        left_ear="Loquac. Earring",     -- 02%
-        left_ear="Etiolation Earring",  -- 01%  
-        body=MerlinicJubbahDD,      -- 11%
-        hands="Mallquis Cuffs +1",  -- ele. cast time -5%       --hands="Gendewitha Gages +1",-- 07% 
+        ammo="Sapience Orb",            -- 02%
+        head="Vanya Hood",              -- 10%
+        neck="Voltsurge Torque",        -- 04%
+        left_ear="Etiolation Earring",  -- 02%
+        right_ear="Loquac. Earring",    -- 01%  
+        body=MerlinicJubbahDrain,       -- 06%
+        hands="Gendewitha Gages +1",    -- 07%
         left_ring="Rahab Ring",         -- 02%
-        right_ring="Kishar Ring",        -- 04%
-        back=TaranusCapeFC,         -- 10%
-        waist="Witful Belt",        -- 03%/03% quick magic
-        legs="Gyve Trousers",       -- 04%
-        feet="Regal Pumps +1"       -- 04%
-    --------------------------- Total: 60% / -5% ele / 3% quick ------------------------------------
+        right_ring="Kishar Ring",       -- 04%
+        back=TaranusCapeFC,             -- 10%
+        waist="Witful Belt",            -- 03%/03% quick magic
+        legs="Gyve Trousers",           -- 04%
+        feet="Regal Pumps +1"           -- 07%
+    ------------------------------- Total: 62% / 3% quick -----------------------
     }
 
     --[[    ammo="Impatiens",
@@ -179,7 +181,8 @@ function init_gear_sets()
         back="Bane Cape",
         waist="Belisama's Rope",
         legs="Spaekona's Tonban +3",
-        feet="Telchine Pigaches",
+        feet="Telchine Pigaches"
+        --------------------------------Total: 2204 MP = 1322 Myrkr~
     }       
     
     
@@ -214,7 +217,7 @@ function init_gear_sets()
         left_ring="Lebeche Ring",               -- 03%
         right_ring="Sirona's Ring",              --                      +10
         back="Solemnity Cape",              -- 07%                              +05
-        waist="Luminary Sash",              --              +10                 +04
+        waist="Austerity Belt +1", --waist="Luminary Sash",              --              +10                 +04
         legs="Gyve Trousers",               -- 10%
         feet="Vanya Clogs"                  -- 10%                              +06
         }
@@ -234,7 +237,7 @@ function init_gear_sets()
         body="Telchine Chasuble",
         hands="Telchine Gloves",
         legs="Telchine Braconi",
-        waist="Olympus Sash",
+        waist="Embla Sash",
         legs="Telchine Braconi",
         feet="Telchine Pigaches"
         }
@@ -244,7 +247,9 @@ function init_gear_sets()
     sets.midcast.Storm = sets.midcast['Enhancing Magic']
     sets.midcast['Sneak'] = sets.midcast['Enhancing Magic']
     sets.midcast['Invisible'] = sets.midcast['Enhancing Magic']
-    sets.midcast['Refresh'] = sets.midcast['Enhancing Magic']
+    sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {
+        feet="Inspirited Boots"
+        })
     sets.midcast['Phalanx'] = sets.midcast['Enhancing Magic']
         
     sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {
@@ -260,44 +265,44 @@ function init_gear_sets()
 
     sets.midcast['Enfeebling Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Befouled Crown",
-        neck="Erra Pendant",
+        neck="Sorcerer's Stole +2",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
-        body="Spaekona's Coat +3",                      --body="Vanir Cotehardie",
-        hands="Archmage's Gloves +3",                        --hands="Yaoyotl Gloves",
-        left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
+        body="Spaekona's Coat +3",
+        hands="Archmage's Gloves +3",
+        left_ring="Stikini Ring +1",
         right_ring="Kishar Ring",
         back=TaranusCapeDD,
         waist="Rumination Sash",
-        legs="Psycloth Lappas",                         --legs="Bokwus Slops",
-        feet="Jhakri Pigaches +2"                       --feet="Bokwus Boots"
-        }       
+        legs="Psycloth Lappas",
+        feet="Archmage's Sabots +3"
+        }
         
     sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
 
     sets.midcast['Dark Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Archmage's Petasos +3",
-        neck="Erra Pendant",
-        left_ear="Hecate's Earring",
-        right_ear="Regal Earring",
-        body="Archmage's Coat +3",                          --body="Vanir Cotehardie
-        hands="Archmage's Gloves +3",
-        left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
-        right_ring="Stikini Ring",
-        back="Perimede Cape",
-        waist="Porous Rope",
-        legs="Spaekona's Tonban +3",
-        feet="Jhakri Pigaches +2"                       --feet="Bokwus Boots"
-        }
-
-    sets.midcast.Drain = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head=MerlinicHoodDrain,
+        head="Pixie Hairpin +1",
         neck="Erra Pendant",
         left_ear="Hecate's Earring",
         right_ear="Regal Earring",
         body="Archmage's Coat +3",
         hands="Archmage's Gloves +3",
-        left_ring="Stikini Ring",
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring",
+        back="Perimede Cape",
+        waist="Yamabuki-no-Obi",
+        legs="Spaekona's Tonban +3",
+        feet="Archmage's Sabots +3"
+        }
+
+    sets.midcast.Drain = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
+        head="Pixie Hairpin +1",
+        neck="Erra Pendant",
+        left_ear="Hecate's Earring",
+        right_ear="Regal Earring",
+        body=MerlinicJubbahDrain,
+        hands=MerlinicDastanasDrain,
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back=TaranusCapeDD,
         waist="Fucho-no-Obi",
@@ -309,17 +314,17 @@ function init_gear_sets()
 
     sets.midcast.Stun = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Archmage's Petasos +3",
-        neck="Erra Pendant",
+        neck="Sorcerer's Stole +2",
         left_ear="Psystorm Earring",
         right_ear="Lifestorm Earring",
         body="Spaekona's Coat +3",
         hands="Archmage's Gloves +3",
-        left_ring="Stikini Ring",                           --left_ring="Strendu Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Stikini Ring",
         back=TaranusCapeDD,
         waist="Luminary Sash",
-        legs=MerlinicShalwarDD,
-        feet="Jhakri Pigaches +2"                       --feet="Bokwus Boots"
+        legs="Archmage's Tonban +3",
+        feet="Archmage's Sabots +3"
         }
 
     --sets.midcast.BardSong = {main="Lathi",sub="Niobid Strap",ammo="Pemphredo Tathlum",
@@ -329,43 +334,85 @@ function init_gear_sets()
 
     -- Elemental Magic sets
     -- INT 116+246, MAB 311
-    sets.midcast['Elemental Magic'] = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Archmage's Petasos +3",
-        neck="Erra Pendant",
-        left_ear="Friomisi Earring",
-        right_ear="Regal Earring",
-        body="Archmage's Coat +3",
-        hands="Archmage's Gloves +3",
-        left_ring="Stikini Ring",
-        right_ring="Stikini Ring",
-        back=TaranusCapeDD,
-        waist="Porous Rope",                            --waist="Refoccilation Stone",
-        legs=MerlinicShalwarDD,
-        feet=MerlinicCrackowsDrain
+    sets.midcast['Elemental Magic'] = {
+                                        --              INT     MAC     MAB     Ele Skill           
+        main="Lathi",                   --              +27     +15     +63
+        sub="Enki Strap",               --              +10     +10
+        ammo="Pemphredo Tathlum",       --              +04     +08     +04
+        head="Archmage's Petasos +3",   --              +34     +43     +55
+        neck="Sorcerer's Stole +2",     --              +12     +45     +05
+        left_ear="Friomisi Earring",    --                              +10
+        right_ear="Regal Earring",      --              +10     +set    +07
+        body="Archmage's Coat +3",      --              +46     +40     +52
+        hands="Archmage's Gloves +3",   --              +36     +38     +50
+        left_ring="Shiva Ring +1",      --              +09             +03
+        right_ring="Shiva Ring +1",     --              +09             +03
+        back=TaranusCapeDD,             --              +30     +20     +10
+        waist="Yamabuki-no-Obi",        --              +06     +02     +05
+        legs="Archmage's Tonban +3",    --              +50     +46     +58
+        feet="Archmage's Sabots +3"     --              +30     +42     +54
+    ------------------------------- Total:              +313    +309    +379    +544(total skill not checked)
         }
 
+        sets.midcast['Elemental Magic'].MP = {
+                                        --              INT     MAC     MAB     Ele Skill       
+        main="Lathi",                   --              +27     +15     +63
+        sub="Enki Strap",               --              +10     +10
+        ammo="Pemphredo Tathlum",       --              +04     +08     +04
+        head="Archmage's Petasos +3",   --              +34     +43     +55
+        neck="Sorcerer's Stole +2",     --              +12     +45     +05
+        left_ear="Friomisi Earring",    --                              +10
+        right_ear="Regal Earring",      --              +10     +set    +07
+        body="Spaekona's Coat +3",      --              +39     +55
+        hands="Archmage's Gloves +3",   --              +36     +38     +50
+        left_ring="Shiva Ring +1",      --              +09             +03
+        right_ring="Shiva Ring +1",     --              +09             +03
+        back=TaranusCapeDD,             --              +30     +20     +10
+        waist="Yamabuki-no-Obi",        --              +06     +02     +05
+        legs="Archmage's Tonban +3",    --              +50     +46     +58
+        feet="Archmage's Sabots +3"     --              +30     +42     +54
+    ------------------------------- Total:              +306    +324    +327    +520
+        }        
+
     ---------------------------------------------------------------------------
+<<<<<<< HEAD
     -- Magic Burst Set for all Spells ( Needed for Tier 1 Cap:40% ) -----------
+=======
+    -- Magic Burst Set for all Spells ( Needed for Cap Tier 1:40% ) ------------------
+>>>>>>> 8e724c36587d991fb7c1d8aa07dbece4f396b826
     ---------------------------------------------------------------------------
     sets.magic_burst = set_combine(sets.midcast['Elemental Magic'], {
-        main="Lathi",
-        sub="Enki Strap",
-        ammo="Pemphredo Tathlum",
-                                        -- MB%          INT     MAC     MAB
+                                        -- MB%          INT     MAC     MAB    Ele Skill
+        main="Lathi",                   --              +27     +15     +63
+        sub="Enki Strap",               --              +10     +10
+        ammo="Pemphredo Tathlum",       --              +04     +08     +04
         head="Ea Hat +1",               -- 07/07%       +43     +50     +38
+<<<<<<< HEAD
         neck="Sorcerer's Stole +2",     -- 10%          +15     +55     +07
+=======
+        neck="Sorcerer's Stole +2",     -- 08%          +12     +45     +05
+>>>>>>> 8e724c36587d991fb7c1d8aa07dbece4f396b826
         left_ear="Friomisi Earring",    --                              +10
         right_ear="Regal Earring",      --              +10     +set    +07
         body="Ea Houppelande +1",       -- 09%/09%      +48     +52     +44
         hands="Archmage's Gloves +3",   -- 20%          +36     +38     +50
-        left_ring="Jhakri Ring",        --                      +06     +03
+        left_ring="Shiva Ring +1",      --              +09             +03
         right_ring="Mujin Band",        -- 00%/05%
+<<<<<<< HEAD
         back=TaranusCapeDD,             -- 05%          +30     +20     +10
         waist="Porous Rope",            --              +07     +05
         legs="Ea Slops",                -- 07%/07%      +43     +41     +36
         feet=MerlinicCrackowsDrain      --              +24     +34     +54
     ------------------------------- Total: 58%/28%=68%  +256    +301    +259
         })
+=======
+        back=TaranusCapeDD,             -- 00%/05%      +30     +20     +10
+        waist="Yamabuki-no-Obi",        --              +06     +02     +05
+        legs="Archmage's Tonban +3",    -- 00%/03%      +50     +46     +58
+        feet="Archmage's Sabots +3"     --              +30     +42     +54
+    ------------------------------- Total: 44%/29%=69%  +315    +328    +351    +499
+        })	
+>>>>>>> 8e724c36587d991fb7c1d8aa07dbece4f396b826
     
     sets.midcast["Death"] = {
         head="Archmage's Petasos +3",
@@ -373,29 +420,14 @@ function init_gear_sets()
         left_ear="Friomisi Earring",
         right_ear="Regal Earring",
         body="Spaekona's Coat +3",
-        hands="Ea Cuffs",
+        hands="Archmage's Gloves +3",
         left_ring="Sangoma Ring",
         right_ring="Persis Ring",
         back=TaranusCapeDD,
-        waist="Porous Rope",                            --waist="Refoccilation Stone",
+        waist="Yamabuki-no-Obi",
         legs="Spaekona's Tonban +3",
-        feet=MerlinicCrackowsDrain
+        feet="Archmage's Sabots +3"
     }
-        
-    sets.midcast['Elemental Magic'].MP = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Archmage's Petasos +3",
-        neck="Erra Pendant",
-        left_ear="Friomisi Earring",
-        right_ear="Regal Earring",
-        body="Spaekona's Coat +3",
-        hands="Jhakri Cuffs +2",
-        left_ring="Stikini Ring",
-        right_ring="Stikini Ring",
-        back=TaranusCapeDD,
-        waist="Porous Rope",                            --waist="Refoccilation Stone",
-        legs=MerlinicShalwarDD,
-        feet=MerlinicCrackowsDrain
-        }
 
     sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
     --sub="Wizzan Grip"
@@ -438,7 +470,7 @@ function init_gear_sets()
         right_ear="Moonshade Earring",
         body="Jhakri Robe +2",
         hands="Shrieker's Cuffs",
-        left_ring="Defending Ring",
+        left_ring="Stikini Ring +1",
         right_ring="Woltaris Ring",
         back=TaranusCapeDD,
         waist="Porous Rope",
@@ -481,7 +513,7 @@ function init_gear_sets()
         neck="Loricate Torque +1",
         left_ear="Etiolation Earring",
         right_ear="Moonshade Earring",
-        body=MerlinicJubbahDD,
+        body=MerlinicJubbahDrain,
         hands="Shrieker's Cuffs",
         left_ring="Defending Ring",
         right_ring="Patricius Ring",
@@ -526,10 +558,21 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
-    sets.engaged = {
-      --[[  head="Zelus Tiara",neck="Asperity Necklace",left_ear="Bladeborn Earring",right_ear="Steelflash Earring",
-        body="Hagondes Coat",hands="Bokwus Gloves",left_ring="Rajas Ring",right_ring="K'ayres Ring",
-        back="Umbra Cape",waist="Goading Belt",legs="Hagondes Pants",feet="Hagondes Sabots"]]
+    sets.engaged = {main="Lathi",sub="Enki Strap",ammo="Sihirik",
+                                    -- Accuracy     Double Att      Triple Att      Quad Att
+    head="Jhakri Coronal +2",       -- 44
+    neck="Sanctity Necklace",       -- 10
+    left_ear="Steelflash Earring",  -- 08           7%
+    right_ear="Bladeborn Earring",
+    body="Jhakri Robe +2",          -- 46
+    hands="Jhakri Cuffs +2",        -- 43
+    left_ring="Defending Ring",
+    right_ring="Hetairoi Ring",     --                              2
+    back=TaranusCapeDD,
+    waist="Windbuffet Belt +1",     --                              2               2
+    legs="Jhakri Slops +2",         -- 45
+    feet="Jhakri Pigaches +2"       -- 42           7               4               2
+    ----------------------------Total= 238
     }
     
 

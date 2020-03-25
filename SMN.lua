@@ -69,19 +69,20 @@ function job_setup()
     pacts.cure = {['Carbuncle']='Healing Ruby'}
     pacts.curaga = {['Carbuncle']='Healing Ruby II', ['Garuda']='Whispering Wind', ['Leviathan']='Spring Water'}
     pacts.buffoffense = {['Carbuncle']='Glittering Ruby', ['Ifrit']='Crimson Howl', ['Garuda']='Hastega II', ['Ramuh']='Rolling Thunder',
-        ['Fenrir']='Ecliptic Growl'}
+        ['Fenrir']='Ecliptic Growl', ['Siren']='Katabatic Blades'}
     pacts.buffdefense = {['Carbuncle']='Shining Ruby', ['Shiva']='Frost Armor', ['Garuda']='Aerial Armor', ['Titan']='Earthen Ward',
         ['Ramuh']='Lightning Armor', ['Fenrir']='Ecliptic Howl', ['Diabolos']='Noctoshield', ['Cait Sith']='Reraise II'}
     pacts.buffspecial = {['Ifrit']='Inferno Howl', ['Garuda']='Fleet Wind', ['Titan']='Earthen Armor',['Shiva']='Crystal Blessing', ['Leviathan']='Soothing Current',['Diabolos']='Dream Shroud',
-        ['Carbuncle']='Soothing Ruby', ['Fenrir']='Heavenward Howl', ['Cait Sith']='Raise II'}
+        ['Carbuncle']='Soothing Ruby', ['Fenrir']='Heavenward Howl', ['Cait Sith']='Raise II', ['Siren']='Chinook', ['Siren']="Wind's Blessing"}
     pacts.debuff1 = {['Shiva']='Diamond Storm', ['Ramuh']='Shock Squall', ['Leviathan']='Tidal Roar', ['Fenrir']='Lunar Cry',
-        ['Diabolos']='Pavor Nocturnus', ['Cait Sith']='Eerie Eye'}
+        ['Diabolos']='Pavor Nocturnus', ['Cait Sith']='Eerie Eye', ['Siren']='Bitter Elegy', ['Siren']='Lunatic Voice'}
     pacts.debuff2 = {['Shiva']='Sleepga', ['Leviathan']='Slowga', ['Fenrir']='Lunar Roar', ['Diabolos']='Somnolence'}
     pacts.sleep = {['Shiva']='Sleepga', ['Diabolos']='Nightmare', ['Cait Sith']='Mewing Lullaby'}
     pacts.nuke2 = {['Ifrit']='Fire II', ['Shiva']='Blizzard II', ['Garuda']='Aero II', ['Titan']='Stone II',
         ['Ramuh']='Thunder II', ['Leviathan']='Water II'}
     pacts.nuke4 = {['Ifrit']='Fire IV', ['Shiva']='Blizzard IV', ['Garuda']='Aero IV', ['Titan']='Stone IV',
-        ['Ramuh']='Thunder IV', ['Leviathan']='Water IV'}
+        ['Ramuh']='Thunder IV', ['Leviathan']='Water IV', ['Siren']='Tonrado 2'} --might need to change this for Siren
+	pacts.bp65 = {['Siren']='Sonic Buffet'}
     pacts.bp70 = {['Ifrit']='Flaming Crush', ['Shiva']='Rush', ['Garuda']='Predator Claws', ['Titan']='Mountain Buster',
         ['Ramuh']='Chaotic Strike', ['Leviathan']='Spinning Dive', ['Carbuncle']='Meteorite', ['Fenrir']='Eclipse Bite',
         ['Diabolos']='Nether Blast',['Cait Sith']='Regal Scratch'}
@@ -89,10 +90,10 @@ function job_setup()
         ['Ramuh']='Thunderstorm', ['Leviathan']='Grand Fall', ['Carbuncle']='Holy Mist', ['Fenrir']='Lunar Bay',
         ['Diabolos']='Night Terror', ['Cait Sith']='Level ? Holy'}
     pacts.bp99 = {['Ifrit']='Conflag Strike', ['Shiva']='Rush', ['Garuda']='Wind Blade', ['Titan']='Crag Throw',
-        ['Ramuh']='Volt Strike', ['Carbuncle']='Holy Mist', ['Fenrir']='Impact', ['Diabolos']='Blindside'}
+        ['Ramuh']='Volt Strike', ['Carbuncle']='Holy Mist', ['Fenrir']='Impact', ['Diabolos']='Blindside', ['Siren']='Hysteric Assault'}
     pacts.astralflow = {['Ifrit']='Inferno', ['Shiva']='Diamond Dust', ['Garuda']='Aerial Blast', ['Titan']='Earthen Fury',
         ['Ramuh']='Judgment Bolt', ['Leviathan']='Tidal Wave', ['Carbuncle']='Searing Light', ['Fenrir']='Howling Moon',
-        ['Diabolos']='Ruinous Omen', ['Cait Sith']="Altana's Favor"}
+        ['Diabolos']='Ruinous Omen', ['Cait Sith']="Altana's Favor", ['Siren']='Clarsach Call'}
 
     -- Wards table for creating custom timers   
     wards = {}
@@ -158,16 +159,18 @@ function user_setup()
     MerlinicShalwarBurst = { name="Merlinic Shalwar", augments={'Mag. Acc.+6','Magic burst dmg.+10%','"Mag.Atk.Bns."+9',}}
     MerlinicCrackowsBurst = { name="Merlinic Crackows", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+10%','MND+1','Mag. Acc.+6','"Mag.Atk.Bns."+1',}}
     
-    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Drain" and "Aspir" potency +4','INT+8','"Mag.Atk.Bns."+3',}}
+    MerlinicHoodDrain = { name="Merlinic Hood", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Drain" and "Aspir" potency +10','DEX+3',}}
+    MerlinicJubbahDrain = { name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +7','MND+5','Mag. Acc.+15','"Mag.Atk.Bns."+2',}}
+    MerlinicDastanasDrain = { name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+30','"Drain" and "Aspir" potency +10','VIT+9',}}
     MerlinicCrackowsDrain = { name="Merlinic Crackows", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Drain" and "Aspir" potency +8','CHR+2','Mag. Acc.+10','"Mag.Atk.Bns."+15',}}
-    
-    MerlinicJubbahDD = { name="Merlinic Jubbah", augments={'Mag. Acc.+5','"Fast Cast"+5','"Mag.Atk.Bns."+7',}}
+
     MerlinicShalwarDD = { name="Merlinic Shalwar", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','"Occult Acumen"+7','Mag. Acc.+10','"Mag.Atk.Bns."+11',}}
     MerlinicShalwarDD2 = { name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','"Fast Cast"+4','INT+12','"Mag.Atk.Bns."+15',}}
     
     MerlinicBPPhysical = { name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+30','Blood Pact Dmg.+10','Pet: DEX+8',}}
     MerlinicBPMagical = { name="Merlinic Dastanas", augments={'Pet: "Mag.Atk.Bns."+18','Blood Pact Dmg.+9','Pet: DEX+10','Pet: Mag. Acc.+12',}}
     
+    MerlinicDastanasFC = { name="Merlinic Dastanas", augments={'Mag. Acc.+8','"Fast Cast"+5','CHR+7','"Mag.Atk.Bns."+8',}}
     CCapePhysical = { name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}}
     CCapeMagical = { name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: Mag. Acc.+10','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}
 
@@ -216,21 +219,21 @@ function init_gear_sets()
     -- Fast Cast Sets for all Spells ( Cap:80% - SCH:70% - RDM:65% ) ----------
     ---------------------------------------------------------------------------
     sets.precast.FC = {
-        main="Oranyan",             -- 20%
-        ammo="Sapience Orb",        -- 02%
-        head="Vanya Hood",          -- 10%
-        neck="Voltsurge Torque",    -- 04%
+        main="Oranyan",                 -- 20%
+        ammo="Sapience Orb",            -- 02%
+        head="Vanya Hood",              -- 10%
+        neck="Voltsurge Torque",        -- 04%
         left_ear="Etiolation Earring",  -- 01%
-        right_ear="Loquacious Earring",  -- 02%  
-        body="Inyanga Jubbah +2",   -- 13%
-        --hands="Leyline Gloves",       -- 05% 
+        right_ear="Loquacious Earring", -- 02%  
+        body="Inyanga Jubbah +2",       -- 13%
+        hands=MerlinicDastanasFC,       -- 05%
         left_ring="Rahab Ring",         -- 02%
-        right_ring="Kishar Ring",        -- 04%
-        back=CCapeMagical,          -- 10%
-        waist="Witful Belt",        -- 03%/03% quick magic
-        legs="Lengo Pants",         -- 05%
-        feet="Regal Pumps +1"       -- 07%
-    --------------------------- Total: 83% ------------------------------------
+        right_ring="Kishar Ring",       -- 04%
+        back=CCapeMagical,              -- 10%
+        waist="Witful Belt",            -- 03%/03% quick magic
+        --legs="Lengo Pants",           -- 05% put them in storage, already over cap
+        feet="Regal Pumps +1"           -- 07%
+    ------------------------------- Total: 83% --------------------------------
     }
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {
@@ -243,7 +246,7 @@ function init_gear_sets()
         main="Espiritus",
         sub="Vox Grip",
         ammo="Esper Stone +1",          -- +20
-        head="Telchine Cap",            -- +30
+        head="Telchine Cap",            -- +35
         neck="Caller's Pendant",
         left_ear="Andoaa Earring",
         body="Telchine Chasuble",       -- +35
@@ -251,10 +254,11 @@ function init_gear_sets()
         left_ring="Evoker's Ring",
         right_ring="Fervor Ring",
         back="Conveyance Cape",         -- +30mp
+		waist="Ligea Sash",				-- +10
         legs="Telchine Braconi",        -- +35
         feet="Beckoner's Pigaches +1"   -- +60
     }
-    ------------------------------- Total: 215 / +30mp ------------------------------------
+    ------------------------------- Total: 230 / +30mp = 879 mp----------------
             
     sets.precast.JA['Mana Cede'] = {hands="Beckoner's Bracers +1"}
     
@@ -265,7 +269,7 @@ function init_gear_sets()
         right_ear="Odnowa Earring +1",
         body="Inyanga Jubbah +2",
         hands="Telchine Gloves",
-        left_ring="Praan Ring",
+        left_ring="Persis Ring",
         back="Moonbeam Cape",
         waist="Porous Rope",
         legs="Perdition Slops",
@@ -278,25 +282,27 @@ function init_gear_sets()
     --------------------------------------
     
     sets.midcast['Enhancing Magic'] = {
-    main="Gada",
-    sub="Ammurapi Shield",
-    ammo="Pemphredo Tathlum",
-    head="Telchine Cap",
-    --neck="Incanter's Torque",
-    left_ear="Andoaa Earring",
-    right_ear="Calamitous Earring",
-    body="Telchine Chasuble",
-    hands="Telchine Gloves",
-    left_ring="Stikini Ring",
-    right_ring="Stikini Ring",
-    back="Perimede Cape",
-    waist="Olympus Sash",
-    legs="Telchine Braconi",
-    feet="Telchine Pigaches"
+        main="Gada",
+        sub="Ammurapi Shield",
+        ammo="Pemphredo Tathlum",
+        head="Telchine Cap",
+        --neck="Incanter's Torque",
+        left_ear="Andoaa Earring",
+        right_ear="Calamitous Earring",
+        body="Telchine Chasuble",
+        hands="Telchine Gloves",
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring",
+        back="Perimede Cape",
+        waist="Embla Sash",
+        legs="Telchine Braconi",
+        feet="Telchine Pigaches"
     }
     
     sets.midcast['Haste'] = sets.midcast['Enhancing Magic']
-    sets.midcast['Refresh'] = sets.midcast['Enhancing Magic']
+    sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {
+        feet="Inspirited Boots"
+        })
     sets.midcast.Storm = sets.midcast['Enhancing Magic']
     sets.midcast['Sneak'] = sets.midcast['Enhancing Magic']
     sets.midcast['Invisible'] = sets.midcast['Enhancing Magic']
@@ -316,13 +322,18 @@ function init_gear_sets()
         head="Vanya Hood",                  -- 10%                              +06
         neck="Nodens Gorget",               -- 05%
         left_ear="Calamitous Earring",      --                                  +04
+<<<<<<< HEAD
         right_ear="Mendicant's Earring",    -- 05%                              +02
         body="Vanya Robe",                  --                      +20
+=======
+        right_ear="Regal Earring",
+        body="Vanya Robe",                  --              +20
+>>>>>>> 8e724c36587d991fb7c1d8aa07dbece4f396b826
         hands="Shrieker's Cuffs",           --                                  +07
-        left_ring="Haoma's Ring",               --                      +08
-        right_ring="Sirona's Ring",              --                      +10
+        left_ring="Haoma's Ring",           --              +08
+        right_ring="Sirona's Ring",         --              +10
         back="Solemnity Cape",              -- 07%          +8                  +05
-        waist="Luminary Sash",              --              +10                 +04
+        waist="Austerity Belt +1", --waist="Luminary Sash",              --              +10                 +04
         legs="Vanya Slops",                 --              +10                 +12
         feet="Vanya Clogs"                  -- 10%                              +06
         }
@@ -336,15 +347,15 @@ function init_gear_sets()
 
     sets.midcast['Elemental Magic'] = {}
 
-    sets.midcast['Dark Magic'] = {main="Oranyan",sub="Enki Strap",range="Pemphredo Tathlum",
+    sets.midcast['Dark Magic'] = {--[[main="Oranyan",sub="Enki Strap",range="Pemphredo Tathlum",
         head=MerlinicHoodDrain,neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
         body="Amalric Doublet",hands=MerlinicDastanasDrain,left_ring="Stikini Ring",right_ring="Stikini Ring",
-        back="Bane Cape",waist="Fucho-no-Obi",legs=MerlinicShalwarDD,feet=MerlinicDrain}
+        back="Bane Cape",waist="Fucho-no-Obi",legs=MerlinicShalwarDD,feet=MerlinicDrain--]]}
 
-    sets.midcast['Aspir'] = {main="Rubicundity",sub="Enki Strap",range="Pemphredo Tathlum",
+    sets.midcast['Aspir'] = {--[[main="Rubicundity",sub="Enki Strap",range="Pemphredo Tathlum",
         head=MerlinicHoodDrain,neck="Erra Pendant",left_ear="Psystorm Earring",right_ear="Lifestorm Earring",
         body="Amalric Doublet",hands=MerlinicDastanasDrain,left_ring="Stikini Ring",right_ring="Stikini Ring",
-        back="Bane Cape",waist="Fucho-no-Obi",legs=MerlinicShalwarDD,feet=MerlinicDrain}
+        back="Bane Cape",waist="Fucho-no-Obi",legs=MerlinicShalwarDD,feet=MerlinicDrain--]]}
 
 -------------------------------------------------------------------------------
 ------ Generic Bloodpact Sets based on type -----------------------------------
@@ -355,12 +366,12 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     sets.midcast.Pet.BloodPactWard = {main="Espiritus",sub="Vox Grip",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Caller's Pendant",left_ear="Andoaa Earring",right_ear="Enmerkar Earring",
-        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Evoker's Ring",right_ring="Stikini Ring",
+        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Evoker's Ring",right_ring="Stikini Ring +1",
         back="Conveyance Cape",waist="Lucidity Sash",legs="Beckoner's Spats +1"}
 
     sets.midcast.Pet.DebuffBloodPactWard = {main="Nirvana", sub="Vox Grip",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Adad Amulet",left_ear="Lugalbanda Earring",right_ear="Enmerkar Earring",
-        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Evoker's Ring",right_ring="Stikini Ring",
+        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Evoker's Ring",right_ring="Stikini Ring +1",
         back="Conveyance Cape",waist="Incarnation Sash",legs="Beckoner's Spats +1"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
@@ -449,6 +460,8 @@ function init_gear_sets()
     --  head="Apogee Crown +1",
     --  hands="Apogee Mitts",
     --  legs="Apogee Slacks +1"})
+	
+
     ---------------------------------------------------------------------------
     -- Bloodpact Specific Sets for Ward Pacts ---------------------------------
     ---------------------------------------------------------------------------
@@ -457,6 +470,8 @@ function init_gear_sets()
     --  head="",neck="",left_ear="",right_ear="",
     --  body="",hands="",left_ring="",right_ring="",
     --  back="",waist="",legs="",feet=""})
+	
+	
 
 -------------------------------------------------------------------------------
 ------ Bloodpact Specific Sets for Debuff Ward Pacts --------------------------
@@ -634,7 +649,7 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Myrkr'] = {
         head="Beckoner's Horn +1",neck="Sanctity Necklace",left_ear="Etiolation Earring",right_ear="Gifted Earring",
-        body="Beckoner's Doublet +1",hands="Shrieker's Cuffs",left_ring="Praan Ring",right_ring="Rahab Ring",
+        body="Beckoner's Doublet +1",hands="Shrieker's Cuffs",left_ring="Persis Ring",right_ring="Rahab Ring",
         back="Conveyance Cape",waist="Belisama's Rope",legs="Beckoner's Spats +1",feet="Beckoner's Pigaches +1"} 
 		
 	sets.precast.WS['Garland of Bliss'] = {
