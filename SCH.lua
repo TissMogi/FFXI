@@ -36,6 +36,8 @@ function get_sets()
 
     -- Load and initialize the include file.
     include('Mote-Include.lua')
+    -- Include Organizer addon.
+    include('organizer-lib')
 end
 
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
@@ -104,6 +106,13 @@ function user_unload()
     send_command('unbind ^`')
 end
 
+-- Organizer Gear to keep in inv for specific job.
+organizer_items = {
+    echos="Echo Drops",
+    remedy="Remedy",
+    food="Pear Crepe",
+    orb="Macrocosmic Orb"
+    }
 
 -- Define sets and vars used by this job file.
 function init_gear_sets()

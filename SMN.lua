@@ -182,6 +182,14 @@ function user_setup()
     set_lockstyle()
 end
 
+-- Organizer Gear to keep in inv for specific job.
+organizer_items = {
+    echos="Echo Drops",
+    remedy="Remedy",
+    holy="Holy Water",
+    food="Grape Daifuku",
+    orb="Macrocosmic Orb"
+    }
 
 -- Define sets and vars used by this job file.
 function init_gear_sets()

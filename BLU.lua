@@ -8,6 +8,8 @@ function get_sets()
     
     -- Load and initialize the include file.
     include('Mote-Include.lua')
+    -- Include Organizer addon.
+    include('organizer-lib')    
 end
 
 
@@ -212,6 +214,14 @@ function user_unload()
     send_command('unbind @`')
     send_command('unbind @w')
 end
+
+-- Organizer Gear to keep in inv for specific job.
+organizer_items = {
+    remedy="Remedy",
+    holy="Holy Water"
+    food="Pear Crepe",
+    orb="Macrocosmic Orb"
+    }
 
 
 -- Set up gear sets.

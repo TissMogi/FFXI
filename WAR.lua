@@ -20,7 +20,8 @@ function get_sets()
     mote_include_version = 2
     -- Load and initialize the include file.
     include('Mote-Include.lua')
-    -- include('organizer-lib')
+    -- Include Organizer addon.
+    include('organizer-lib')
 end
 
 function job_setup()
@@ -57,6 +58,15 @@ function file_unload()
     send_command('unbind ^[')
     send_command('unbind ![')
 end
+
+-- Organizer Gear to keep in inv for specific job.
+organizer_items = {
+    echos="Echo Drops",
+    remedy="Remedy",
+    holy="Holy Water",
+    food="Pear Crepe",
+    orb="Macrocosmic Orb"
+    }
 
 -- Define sets and vars used by this job file.
 function init_gear_sets()
