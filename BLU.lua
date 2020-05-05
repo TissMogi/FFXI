@@ -291,7 +291,7 @@ function init_gear_sets()
         neck="Sanctity Necklace",
         waist="Kentarch Belt +1",
         left_ear="Mache Earring",
-        right_ear="Mache Earring",
+        right_ear="Odr Earring",
         left_ring="Ilabrat Ring",
         right_ring="Apate Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
@@ -346,7 +346,7 @@ function init_gear_sets()
         neck="Sanctity Necklace",
         waist="Latria Sash",
         left_ear="Regal Earring",
-        right_ear="Mache Earring",
+        right_ear="Odr Earring",
         left_ring="Ilabrat Ring",
         right_ring="Stikini Ring +1",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
