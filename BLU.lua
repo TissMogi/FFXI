@@ -218,7 +218,7 @@ end
 -- Organizer Gear to keep in inv for specific job.
 organizer_items = {
     remedy="Remedy",
-    holy="Holy Water"
+    holy="Holy Water",
     food="Pear Crepe",
     orb="Macrocosmic Orb"
     }
