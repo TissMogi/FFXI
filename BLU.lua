@@ -278,7 +278,7 @@ function init_gear_sets()
     sets.precast.WS = {
         ammo="Falcon Eye",
         head="Adhemar Bonnet +1",
-        body="Adhemar Jacket +1",
+        body="Malignance Tabard",       --body="Adhemar Jacket +1",
         hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Herculean Boots",
@@ -294,7 +294,7 @@ function init_gear_sets()
     sets.precast.WS['Chant du Cygne'] = {
         ammo="Falcon Eye",
         head="Adhemar Bonnet +1",
-        body="Abnoba Kaftan",
+        body="Malignance Tabard",       --body="Abnoba Kaftan",
         hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
@@ -313,7 +313,7 @@ function init_gear_sets()
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
         ammo="Hydrocera",
         head="Jhakri Coronal +2",
-        body="Assim. Jubbah +3",
+        body="Malignance Tabard",       --body="Assim. Jubbah +3",
         hands="Jhakri Cuffs +2",
         legs="Jhakri Slops +2",
         feet="Jhakri Pigaches +2",
@@ -362,6 +362,10 @@ function init_gear_sets()
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}}
     }
     ------------------------- Total: 1250 acc, 1281 att, +173 STR, +152 MND -----
+
+    sets.precast.JA['Provoke'] = {
+    
+    }
     
     
     -- Midcast Sets
@@ -855,7 +859,7 @@ function init_gear_sets()
     sets.engaged = {
         ammo="Ginsen",
         head="Dampening Tam",
-        body="Adhemar Jacket +1",
+        body="Malignance Tabard",
         hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
@@ -868,22 +872,6 @@ function init_gear_sets()
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
     }
 	
-    sets.engaged = {	--mdthp
-		ammo="Ginsen",
-		head="Aya. Zucchetto +2",
-		body="Ayanmo Corazza +2",
-		hands="Adhemar Wrist. +1",
-		legs={ name="Carmine Cuisses +1", augments={'Accuracy+12','DEX+12','MND+20',}},
-		feet="Aya. Gambieras +2",
-		neck="Loricate Torque +1",
-		waist="Flume Belt +1",
-		left_ear="Etiolation Earring",
-		right_ear="Odnowa Earring +1",
-		left_ring="Defending Ring",
-		right_ring="Vertigo Ring",
-		back="Moonbeam Cape",
-    }	
-
     sets.engaged.Acc = {
         ammo="Ginsen",
         head="Dampening Tam",
@@ -898,7 +886,7 @@ function init_gear_sets()
         left_ring="Begrudging Ring",
         right_ring="Varar Ring +1",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
-        }   
+    }   
 		
     sets.engaged.PDT = {
         ammo="Ginsen",
@@ -914,7 +902,7 @@ function init_gear_sets()
         left_ring="Defending Ring",
         right_ring="Patricius Ring",
         back="Disperser's Cape"
-        }	
+    }	
 
     sets.engaged.MDT = {
         ammo="Ginsen",
@@ -930,23 +918,23 @@ function init_gear_sets()
         left_ring="Defending Ring",
         right_ring="Vertigo Ring",
         back="Disperser's Cape"
-        }
+    }
 
     sets.engaged.MDTHP = {
-	ammo="Ginsen",
-    head="Aya. Zucchetto +2",
-    body="Ayanmo Corazza +2",
-    hands="Adhemar Wrist. +1",
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+12','DEX+12','MND+20',}},
-    feet="Aya. Gambieras +2",
-    neck="Loricate Torque +1",
-    waist="Flume Belt +1",
-    left_ear="Etiolation Earring",
-    right_ear="Odnowa Earring +1",
-    left_ring="Defending Ring",
-    right_ring="Vertigo Ring",
-    back="Moonbeam Cape",
-        }
+	    ammo="Ginsen",
+        head="Aya. Zucchetto +2",
+        body="Ayanmo Corazza +2",
+        hands="Adhemar Wrist. +1",
+        legs={ name="Carmine Cuisses +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+        feet="Aya. Gambieras +2",
+        neck="Loricate Torque +1",
+        waist="Flume Belt +1",
+        left_ear="Etiolation Earring",
+        right_ear="Odnowa Earring +1",
+        left_ring="Defending Ring",
+        right_ring="Vertigo Ring",
+        back="Moonbeam Cape",
+    }
 		
 
     sets.engaged.Refresh = {}
@@ -954,7 +942,7 @@ function init_gear_sets()
     sets.engaged.DW = {
         ammo="Ginsen",
         head="Dampening Tam",
-        body="Adhemar Jacket +1",
+        body="Malignance Tabard",
         hands="Adhemar Wristbands +1",
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
