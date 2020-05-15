@@ -700,7 +700,23 @@ function init_gear_sets()
     sets.engaged.ClubShield = {}
     sets.engaged.DualWield = {}
 
-    sets.engaged.TH = {}
+    sets.engaged.TH = {
+        main={ name="Aganoshe", augments={'"Counter"+1','VIT+16','Attack+20','DMG:+26',}},
+        sub="Utu Grip",
+        ammo="Ginsen",
+        head="Flam. Zucchetto +2",
+        body={ name="Valorous Mail", augments={'MND+11','"Cure" potency +1%','"Treasure Hunter"+1','Accuracy+9 Attack+9','Mag. Acc.+12 "Mag.Atk.Bns."+12',}},
+        hands="Sulev. Gauntlets +2",
+        legs={ name="Agoge Cuisses +1", augments={'Enhances "Warrior\'s Charge" effect',}},
+        feet="Flam. Gambieras +2",
+        neck={ name="War. Beads +2", augments={'Path: A',}},
+        waist="Chaac Belt",
+        left_ear="Steelflash Earring",
+        right_ear="Bladeborn Earring",
+        left_ring="Chirich Ring +1",
+        right_ring="Niqmaddu Ring",
+        back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    }
 
     ---------------------------------------------------------------------------
     -- Idle Sets --------------------------------------------------------------
