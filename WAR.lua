@@ -31,7 +31,7 @@ end
 -- Setup vars that are user-dependent. Can override this function in a sidecar file.
 function user_setup()
     -- F9 - Cycle Offense Mode (the offensive half of all 'hybrid' melee modes).
-    state.OffenseMode:options('GA', 'GS', 'Polearm','AxeShield', 'SwordShield', 'ClubShield', 'DualWield')
+    state.OffenseMode:options('GA', 'GS', 'Polearm','AxeShield', 'SwordShield', 'ClubShield', 'DualWield', 'TH')
     -- Ctrl-F9 - Cycle Hybrid Mode.
     state.HybridMode:options('Normal', 'Accuracy', 'LightPDT', 'PDT')
     -- Ctrl-F10 - Cycle type of Physical Defense Mode in use.
@@ -699,6 +699,8 @@ function init_gear_sets()
 	
     sets.engaged.ClubShield = {}
     sets.engaged.DualWield = {}
+
+    sets.engaged.TH = {}
 
     ---------------------------------------------------------------------------
     -- Idle Sets --------------------------------------------------------------
