@@ -85,22 +85,22 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     -- Job Abilities ----------------------------------------------------------
     ---------------------------------------------------------------------------
-    sets.precast.JA['Call Wyvern']    = { body="Pteroslaver Mail +3", neck="Dragoon's Collar", hands="Crusher Gauntlets", back="Updraft Mantle", legs="Vishap Brais +3", feet="Pteroslaver Greaves +3" }
+    sets.precast.JA['Call Wyvern']    = { }                     --body="Pteroslaver Mail +3", neck="Dragoon's Collar", hands="Crusher Gauntlets", back="Updraft Mantle", legs="Vishap Brais +3", feet="Pteroslaver Greaves +3"
     
-	sets.precast.JA['Ancient Circle'] = { legs="Vishap Brais +3" }
+	sets.precast.JA['Ancient Circle'] = { }                     --legs="Vishap Brais +3"
 	
 	sets.precast.JA['Berserk'] = {
 	head="Sulevia's Mask +2",
     body="Pummeler's Lorica +2",                                --body="Pummeler's Lorica +3",
     hands="Sulevia's Gauntlets +2",
-    legs="Arke Cosciales",
+    --legs="Arke Cosciales",
     feet="Agoge Calligae +1",                                   --feet={ name="Agoge Calligae +3", augments={'Enhances "Tomahawk" effect',}},
     neck="War. Beads +2",
     waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
     left_ring="Defending Ring",
-    right_ring="Moonbeam Ring",
+    --right_ring="Moonbeam Ring",
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},   --back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 	}
 	
@@ -108,14 +108,14 @@ function init_gear_sets()
 	head="Pummeler's Mask +2",                                  --head="Pummeler's Mask +3",
     body="Agoge Lorica +1",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
     hands="Sulevia's Gauntlets +2",
-    legs="Arke Cosciales",
+    --legs="Arke Cosciales",
     feet="Sulevia's Leggings +2",
     neck="War. Beads +2",
     waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
     left_ring="Defending Ring",
-    right_ring="Moonbeam Ring",
+    --right_ring="Moonbeam Ring",
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},   --back="Solemnity Cape",
 	}
 	
@@ -171,9 +171,9 @@ function init_gear_sets()
     sets.precast.FC = {
 	ammo="Sapience Orb",
     --head="Arke Zuchetto",
-    body="Odysssean Chestplate",                                --body={ name="Odysssean Chestplate", augments={'"Fast Cast"+3','MND+9',}},
+    body="Odyssean Chestplate",                                --body={ name="Odyssean Chestplate", augments={'"Fast Cast"+3','MND+9',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-    legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
+    --legs={ name="Eschite Cuisses", augments={'"Mag.Atk.Bns."+25','"Conserve MP"+6','"Fast Cast"+5',}},
     feet="Odyssean Greaves",                                    --feet={ name="Odyssean Greaves", augments={'"Mag.Atk.Bns."+14','"Fast Cast"+5','AGI+2',}},
     neck="Voltsurge Torque",
     waist="Flume Belt +1",
@@ -188,37 +188,37 @@ function init_gear_sets()
     -- Midcast Sets -----------------------------------------------------------
     ---------------------------------------------------------------------------
     sets.midcast['Blue Magic'] = {
-	ammo="Impatiens",
-    head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    body={ name="Eschite Breast.", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
+	--ammo="Impatiens",
+    --head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    --body={ name="Eschite Breast.", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
     hands="Pummeler's Mufflers +2",
-    legs={ name="Eschite Cuisses", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
+    --legs={ name="Eschite Cuisses", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
     feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},    --feet={ name="Eschite Greaves", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
     neck="Unmoving Collar +1",                                  --neck="Moonlight Necklace",
-    waist="Ninurta's Sash",
+    --waist="Ninurta's Sash",
     left_ear="Friomisi Earring",
     right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
     left_ring="Apeile Ring +1",
     right_ring="Apeile Ring",
-    back={ name="Cichol's Mantle", augments={'"Fast Cast"+10','Spell interruption rate down-10%',}},
+    --back={ name="Cichol's Mantle", augments={'"Fast Cast"+10','Spell interruption rate down-10%',}},
 	}
 	
 	sets.midcast['Ninjutsu'] = sets.midcast['Blue Magic']
 	
 	sets.midcast['Healing Magic'] = {
-    ammo="Impatiens",
-    head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
-    hands={ name="Souveran Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    legs={ name="Eschite Cuisses", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
+    --ammo="Impatiens",
+    --head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    --legs={ name="Eschite Cuisses", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
     feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},    --feet={ name="Eschite Greaves", augments={'Mag. Evasion+15','Spell interruption rate down +15%','Enmity+7',}},
     neck="Unmoving Collar +1",                                  --neck="Moonlight Necklace",
     --waist="Ninurta's Sash",
-    left_ear="Nourish. Earring",
+    left_ear="Nourish. Earring +1",
     right_ear="Mendi. Earring",
-    right_ring="Evanescence Ring",
-    right_ring="Moonbeam ring",
-    back={ name="Cichol's Mantle", augments={'"Fast Cast"+10','Spell interruption rate down-10%',}},
+    --right_ring="Evanescence Ring",
+    --right_ring="Moonbeam ring",
+    --back={ name="Cichol's Mantle", augments={'"Fast Cast"+10','Spell interruption rate down-10%',}},
 	}
 	
 	sets.midcast['Dark Magic'] = sets.precast.JA['Provoke']
@@ -233,7 +233,8 @@ function init_gear_sets()
     -- Specific Weaponskills --------------------------------------------------
     ---------------------------------------------------------------------------
     sets.precast.WS['Geirskogul'] = {}
-	
+    
+    -- Fivefold physical attack, 73~85% STR -----------------------------------
 	sets.precast.WS['Resolution'] = {
 	    ammo="Seeth. Bomblet +1",
         head={ name="Argosy Celata +1", augments={'STR+12','DEX+12','Attack+20',}},
@@ -252,6 +253,7 @@ function init_gear_sets()
 	
 	sets.precast.WS['King\'s Justice'] = sets.precast.WS['Resolution']
     
+    -- Fourfold physical attack, 73~85% VIT -----------------------------------
 	sets.precast.WS['Upheaval'] = {
 	    ammo="Knobkierrie",
         head="Sulevia's Mask +2",                                   --head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
@@ -260,16 +262,17 @@ function init_gear_sets()
         legs="Sulevia's Cuisses +2",                                --legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
-        waist="Fotia Belt",
+        waist="Sailfi Belt +1",                                     --waist="Fotia belt",
         left_ear="Thrud Earring",                                   --left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
         left_ring="Shukuyu Ring",                                   --left_ring="Regal Ring",
         right_ring="Niqmaddu Ring",                                 --right_ring="Epaminondas's Ring",
         back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}},
 	}
-	
+    
+    -- Threefold physical attack, 50% STR ------------------------------------
 	sets.precast.WS['Raging Rush'] = {
-	    ammo="Yetshila +1",
+	    ammo="Seeth. Bomblet +1",                                   --ammo="Yetshila +1",
         head="Boii Mask +1",
         body="Agoge Lorica +1",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
         hands="Sulevia's Gauntlets +2",
@@ -281,11 +284,12 @@ function init_gear_sets()
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
         left_ring="Shukuyu Ring",                                   --left_ring="Regal Ring",
         right_ring="Niqmaddu Ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}}, --back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10',}},
 	}
-	
+    
+    -- Fivefold physical attack, 50% STR -------------------------------------
 	sets.precast.WS['Rampage'] = {
-	    ammo="Yetshila +1",
+	    ammo="Seeth. Bomblet +1",                                   --ammo="Yetshila +1",
         head="Boii Mask +1",
         body="Agoge Lorica +1",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
         hands="Sulevia's Gauntlets +2",
@@ -297,11 +301,12 @@ function init_gear_sets()
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
         left_ring="Shukuyu Ring",                                   --left_ring="Regal Ring",
         right_ring="Niqmaddu Ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}}, --back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10',}},
 	}
-	
+    
+    -- Fourfold physical attack, 60% STR -------------------------------------
 	sets.precast.WS['Vorpal Blade'] = {
-	    ammo="Yetshila +1",
+	    ammo="Seeth. Bomblet +1",                                   --ammo="Yetshila +1",
         head="Boii Mask +1",
         body="Agoge Lorica +1",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
         hands="Sulevia's Gauntlets +2",
@@ -313,9 +318,10 @@ function init_gear_sets()
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
         left_ring="Begrudging Ring",
         right_ring="Niqmaddu Ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}}, --back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10',}},
 	}
-	
+    
+    -- Twofold physical attack, 100% STR -------------------------------------
 	sets.precast.WS['Impulse Drive'] = {
 	    ammo="Knobkierrie",
         head={ name="Argosy Celata +1", augments={'STR+12','DEX+12','Attack+20',}}, --head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
@@ -324,16 +330,17 @@ function init_gear_sets()
         legs="Argosy Breeches +1",
         feet="Boii Calligae +1",
         neck="War. Beads +2",
-        waist="Prosilio Belt +1",
+        waist="Sailfi Belt +1",
         left_ear="Thrud Earring",                                   --left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-        right_ear="Ishvara Earring",
+        right_ear="Bladeborn Earring",                              --right_ear="Ishvara Earring",
         left_ring="Shukuyu Ring",                                   --left_ring="Regal Ring",
         right_ring="Niqmaddu Ring",                                 --right_ring="Epaminondas's Ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 	}
 	
 	sets.precast.WS['Vorpal Thrust'] = sets.precast.WS['Impulse Drive']
-	
+    
+    --Fourfold physical attack, 73~85% STR -----------------------------------
 	sets.precast.WS['Stardiver'] = {
 	    head={ name="Argosy Celata +1", augments={'STR+12','DEX+12','Attack+20',}},
         body={ name="Argosy Hauberk +1", augments={'STR+12','Attack+20','"Store TP"+6',}},
@@ -350,23 +357,25 @@ function init_gear_sets()
 	}
 	
 	sets.precast.WS['Penta Thrust'] = sets.precast.WS['Stardiver']
-	
+    
+    -- Sixfold physical attack, 30% STR / 30% MND ---------------------------
 		sets.precast.WS['Hexa Strike'] = {
-	    ammo="Yetshila +1",
+	    ammo="Seeth. Bomblet +1",                                   --ammo="Yetshila +1",
         head="Boii Mask +1",
         body="Agoge Lorica +1",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
         hands="Sulevia's Gauntlets +2",
         legs="Agoge Cuisses +1",                                    --legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Boii Calligae +1",
         neck="War. Beads +2",
-        waist="Fotia Belt",
+        waist="Sailfi Belt +1",                                     --waist="Fotia belt",,
         left_ear="Steelflash Earring",                              --left_ear="Cessance Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
         left_ring="Begrudging Ring",
         right_ring="Niqmaddu Ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}}, --back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10',}},
 	}
-	
+    
+    -- Twofold physical attack, 50% STR / 50% MND --------------------------
 	sets.precast.WS['Savage Blade'] = {
 	    ammo="Knobkierrie",
         head="Sulevia's Mask +2",                                   --head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
@@ -380,7 +389,7 @@ function init_gear_sets()
         right_ear="Bladeborn Earring",                              --right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
         left_ring="Shukuyu Ring",                                   --left_ring="Regal Ring",
         right_ring="Niqmaddu Ring",                                 --right_ring="Epaminondas's Ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 	}
 	
 	sets.precast.WS['Fell Cleave'] = sets.precast.WS['Savage Blade']
@@ -394,7 +403,8 @@ function init_gear_sets()
 	sets.precast.WS['Ground Strike'] = sets.precast.WS['Savage Blade']
 	
 	sets.precast.WS['Shockwave'] = sets.precast.WS['Savage Blade']
-	
+    
+    -- Twofold physical attack, 80% STR ------------------------------------
 	sets.precast.WS['Ukko\'s Fury'] = {
         ammo="Knobkierrie",
 	    head={ name="Argosy Celata +1", augments={'STR+12','DEX+12','Attack+20',}}, --head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
@@ -408,15 +418,18 @@ function init_gear_sets()
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
         left_ring="Shukuyu Ring",                                    --left_ring="Regal Ring",
         right_ring="Niqmaddu Ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 	}
 	
 	sets.precast.WS['Spiral Hell'] = sets.precast.WS['Ukko\'s Fury']
 	
 	sets.precast.WS['Entropy'] = sets.precast.WS['Ukko\'s Fury'] 
-	
-	sets.precast.WS['True Strike'] = {
-	    head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
+    
+    -- Single hit physical crit, 100% STR ---------------------------------
+    sets.precast.WS['True Strike'] = sets.precast.WS['Impulse Drive']
+    
+	--[[
+        head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
         body="Pummeler's Lorica +2",                                --body="Pummeler's Lorica +3",
         hands="Sulevia's Gauntlets +2",
         legs={ name="Valor. Hose", augments={'Accuracy+19 Attack+19','Weapon skill damage +2%','STR+4','Accuracy+15','Attack+12',}},
@@ -427,8 +440,9 @@ function init_gear_sets()
         right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
         left_ring="Begrudging Ring",
         right_ring="Niqmaddu Ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
-	}
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
+    }
+    --]]
 	
     ---------------------------------------------------------------------------
     -- Kiting Sets ------------------------------------------------------------
@@ -474,15 +488,15 @@ function init_gear_sets()
 	    ammo="Seeth. Bomblet +1",
         head="Pummeler's Mask +2",                                  --head="Pummeler's Mask +3",
         body="Pummeler's Lorica +2",                                --body="Pummeler's Lorica +3",
-        hands="Pummeler's Mufflers +3",
-        legs="Pummeler's Cuisses +3",
+        hands="Pummeler's Mufflers +2",                             --hands="Pummeler's Mufflers +3",
+        legs ="Agoge Cuisses +1",                                   --legs="Pummeler's Cuisses +3",
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Ioskeha Belt",
         left_ear="Steelflash Earring",                              --left_ear="Cessance Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
-        left_ring="Moonbeam Ring",
-        right_ring="Moonbeam Ring",
+        --left_ring="Moonbeam Ring",
+        --right_ring="Moonbeam Ring",
         back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	
@@ -504,17 +518,17 @@ function init_gear_sets()
 	
     sets.engaged.GA.PDT = {
         ammo="Sihirik",
-        head="Sulevia's Mask +2",                               --head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+        head="Sulevia's Mask +2",                                   --head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --body="Arke Corazza +1",
-        hands={ name="Souveran Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+        hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         legs={ name="Souveran Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --legs="Arke Cosc. +1",
         feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         neck="War. Beads +2",
         waist="Ioskeha Belt",
         left_ear="Steelflash Earring",                              --left_ear="Cessance Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
-        left_ring="Moonbeam Ring",
-        right_ring="Moonbeam Ring",
+        --left_ring="Moonbeam Ring",
+        --right_ring="Moonbeam Ring",
         back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	
 	}
@@ -522,7 +536,7 @@ function init_gear_sets()
     sets.engaged.GS = {
 	    ammo="Ginsen",
         head="Flamma Zucchetto +2",
-        body={ name="Valorous Mail", augments={'Pet: Crit.hit rate +1','Pet: Phys. dmg. taken -3%','Quadruple Attack +3','Accuracy+19 Attack+19',}},
+        body="Sulevia's Platemail +2",                              --body={ name="Valorous Mail", augments={'Pet: Crit.hit rate +1','Pet: Phys. dmg. taken -3%','Quadruple Attack +3','Accuracy+19 Attack+19',}},
         hands="Sulevia's Gauntlets +2",
         legs="Agoge Cuisses +1",                                    --legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Pummeler's Calligae +2",
@@ -530,8 +544,8 @@ function init_gear_sets()
         waist="Ioskeha Belt",
         left_ear="Steelflash Earring",                              --left_ear="Cessance Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
-        left_ring="Moonbeam Ring",
-        right_ring="Moonbeam Ring",
+        --left_ring="Moonbeam Ring",
+        --right_ring="Moonbeam Ring",
         back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	
@@ -539,15 +553,15 @@ function init_gear_sets()
 	    ammo="Seeth. Bomblet +1",
         head="Pummeler's Mask +2",                                  --head="Pummeler's Mask +3",
         body="Pummeler's Lorica +2",                                --body="Pummeler's Lorica +3",
-        hands="Pummeler's Mufflers +3",
-        legs="Pummeler's Cuisses +3",
+        hands="Pummeler's Mufflers +2",                             --hands="Pummeler's Mufflers +3",
+        legs ="Agoge Cuisses +1",                                   --legs="Pummeler's Cuisses +3",
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Ioskeha Belt",
         left_ear="Steelflash Earring",                              --left_ear="Cessance Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
-        left_ring="Moonbeam Ring",
-        right_ring="Moonbeam Ring",
+        --left_ring="Moonbeam Ring",
+        --right_ring="Moonbeam Ring",
         back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	
@@ -556,37 +570,37 @@ function init_gear_sets()
         head="Sulevia's Mask +2",
         body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         hands="Sulevia's Gauntlets +2",
-        legs="Pummeler's Cuisses +3",
+        --right_ring="Moonbeam Ring",
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Ioskeha Belt",
         left_ear="Steelflash Earring",                              --left_ear="Cessance Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
-        left_ring="Moonbeam Ring",
-        right_ring="Moonbeam Ring",
+        --left_ring="Moonbeam Ring",
+        --right_ring="Moonbeam Ring",
         back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	
     sets.engaged.GS.PDT = {
 	    ammo="Ginsen",
-        head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+        head="Sulevia's Mask +2",                                   --head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --body="Arke Corazza +1",
-        hands={ name="Souveran Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-        legs="Arke Cosc. +1",
+        hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+        legs={ name="Souveran Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --legs="Arke Cosc. +1",
         feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         neck="Loricate Torque +1",                                  --neck="War. Beads +1",
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",                              --left_ear="Cessance Earring",
         right_ear="Odnowa Earring +1",                              --right_ear="Telos Earring",
-        left_ring="Moonbeam Ring",
-        right_ring="Moonbeam Ring",
+        --left_ring="Moonbeam Ring",
+        --right_ring="Moonbeam Ring",
         back="Moonbeam Cape",
 	}
 	
 	sets.engaged.Polearm = {
 	    ammo="Ginsen",
         head="Flamma Zucchetto +2",
-        body={ name="Valorous Mail", augments={'Pet: Crit.hit rate +1','Pet: Phys. dmg. taken -3%','Quadruple Attack +3','Accuracy+19 Attack+19',}},
+        body="Sulevia's Platemail +2",                              --body={ name="Valorous Mail", augments={'Pet: Crit.hit rate +1','Pet: Phys. dmg. taken -3%','Quadruple Attack +3','Accuracy+19 Attack+19',}},
         hands="Flamma Manopolas +2",
         legs="Agoge Cuisses +1",                                    --legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Pummeler's Calligae +2",
@@ -604,23 +618,23 @@ function init_gear_sets()
         head="Sulevia's Mask +2",
         body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         hands="Sulevia's Gauntlets +2",
-        legs="Pummeler's Cuisses +3",
+        --right_ring="Moonbeam Ring",
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Ioskeha Belt",
         left_ear="Steelflash Earring",                              --left_ear="Cessance Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
-        left_ring="Moonbeam Ring",
-        right_ring="Moonbeam Ring",
+        --left_ring="Moonbeam Ring",
+        --right_ring="Moonbeam Ring",
         back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	
     sets.engaged.Polearm.PDT = {
 	    ammo="Ginsen",
         head="Sulevia's Mask +2",
-        body="Arke Corazza",
+        body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --body="Arke Corazza +1",
         hands="Sulevia's Gauntlets +2",
-        legs="Arke Cosciales",
+        legs={ name="Souveran Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --legs="Arke Cosc. +1",
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Ioskeha Belt",
@@ -637,12 +651,12 @@ function init_gear_sets()
 	    ammo="Ginsen",
         head="Flamma Zucchetto +2",
         body="Agoge Lorica +1",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
-        hands={ name="Agoge Mufflers +3", augments={'Enhances "Mighty Strikes" effect',}},
-        legs="Pummeler's Cuisses +3",
+        hands="Sulevia's Gauntlets +2",                             --hands={ name="Agoge Mufflers +3", augments={'Enhances "Mighty Strikes" effect',}},
+        --right_ring="Moonbeam Ring",
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Flume Belt +1",
-        left_ear="Ethereal Earring",
+        --left_ear="Ethereal Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
         left_ring="Chirich Ring +1",
         right_ring="Niqmaddu Ring",
@@ -653,15 +667,15 @@ function init_gear_sets()
 	    ammo="Ginsen",
         head="Pummeler's Mask +2",                                  --head="Pummeler's Mask +3",
         body="Pummeler's Lorica +2",                                --body="Pummeler's Lorica +3",
-        hands={ name="Agoge Mufflers +3", augments={'Enhances "Mighty Strikes" effect',}},
-        legs="Pummeler's Cuisses +3",
+        hands="Sulevia's Gauntlets +2",                             --hands={ name="Agoge Mufflers +3", augments={'Enhances "Mighty Strikes" effect',}},
+        --right_ring="Moonbeam Ring",
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Flume Belt +1",
-        left_ear="Ethereal Earring",
+        --left_ear="Ethereal Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
-        left_ring="Moonbeam Ring",
-        right_ring="Moonbeam Ring",
+        --left_ring="Moonbeam Ring",
+        --right_ring="Moonbeam Ring",
         back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	
@@ -669,12 +683,12 @@ function init_gear_sets()
 	    ammo="Ginsen",
         head="Flamma Zucchetto +2",
         body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-        hands={ name="Agoge Mufflers +3", augments={'Enhances "Mighty Strikes" effect',}},
-        legs="Pummeler's Cuisses +3",
+        hands="Sulevia's Gauntlets +2",                             --hands={ name="Agoge Mufflers +3", augments={'Enhances "Mighty Strikes" effect',}},
+        --right_ring="Moonbeam Ring",
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Flume Belt +1",
-        left_ear="Ethereal Earring",
+        --left_ear="Ethereal Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
         left_ring="Defending Ring",
         right_ring="Niqmaddu Ring",
@@ -683,17 +697,17 @@ function init_gear_sets()
 	
 	sets.engaged.SwordShield.PDT = {
 	    ammo="Ginsen",
-        head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+        head="Sulevia's Mask +2",                                   --head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --body="Arke Corazza +1",
-        hands={ name="Agoge Mufflers +3", augments={'Enhances "Mighty Strikes" effect',}},
-        legs="Arke Cosc. +1",
+        hands="Sulevia's Gauntlets +2",                             --hands={ name="Agoge Mufflers +3", augments={'Enhances "Mighty Strikes" effect',}},
+        legs={ name="Souveran Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --legs="Arke Cosc. +1",
         feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         neck="War. Beads +2",
         waist="Ioskeha Belt",
         left_ear="Steelflash Earring",                              --left_ear="Cessance Earring",
         right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
-        left_ring="Moonbeam Ring",
-        right_ring="Moonbeam Ring",
+        --left_ring="Moonbeam Ring",
+        --right_ring="Moonbeam Ring",
         back="Moonbeam Cape",
 	}
 	
@@ -722,19 +736,19 @@ function init_gear_sets()
     -- Idle Sets --------------------------------------------------------------
     ---------------------------------------------------------------------------
     sets.idle = {
-	    ammo="Ginsen",
+	    ammo="Sihirik",
         head="Sulevia's Mask +2",                                         --head={ name="Souveran Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --body="Arke Corazza +1",
-        hands={ name="Souveran Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+        hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         legs={ name="Souveran Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},   --legs="Arke Cosciales +1",
         feet="Hermes' Sandals",
         neck="War. Beads +2",
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",
-        right_ear="Bladeborn Earring",                              --right_ear="Telos Earring",
-        left_ring="Chirich Ring +1",
+        right_ear="Odnowa Earring +1",                              --right_ear="Telos Earring",
+        left_ring="Patricius Ring",
         right_ring="Defending Ring",
-        back={ name="Mecisto. Mantle", augments={'Cap. Point+40%','HP+22','Accuracy+2','DEF+3',}},
+        back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
     
 	sets.idle.Town = {
@@ -757,7 +771,7 @@ function init_gear_sets()
         ammo="Sihirik",
         head="Sulevia's Mask +2",
         body={ name="Souveran Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-        hands={ name="Souveran Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+        hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         legs={ name="Souveran Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
         feet="Hermes' Sandals",
         neck="Loricate Torque +1",
@@ -770,8 +784,8 @@ function init_gear_sets()
 	}
 
     sets.idle.Weak = set_combine(sets.idle.Field, {
-        head="Twilight Helm",
-        body="Twilight Mail",
+        --head="Twilight Helm",
+        --body="Twilight Mail",
     })
 
     ---------------------------------------------------------------------------
@@ -782,7 +796,7 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     -- Reraise (Twilight Set) -------------------------------------------------
     ---------------------------------------------------------------------------
-    sets.Reraise = { head="Twilight Helm", body="Twilight Mail" }
+    sets.Reraise = { }--head="Twilight Helm", body="Twilight Mail"
     sets.engaged.Reraise = set_combine(sets.engaged, sets.Reraise)
 end
 
