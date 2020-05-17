@@ -48,6 +48,10 @@ function user_setup()
     -- Warp Ring - Windows+z
     send_command('bind @x input /equipset 17;input /echo <rarr> Warping!!;wait 11;input /item "Warp Ring" <me>')
     send_command('bind @c input /equipset 03;input /echo <rarr> Tele-Holla Warping!!;wait 11;input /item "Dim. Ring (Holla)" <me>')
+    send_command('bind @q input /item "Mirror\'s Tonic" <me>')
+    send_command('bind @w input /item "Steadfast Tonic" <me>')
+    send_command('bind @e input /item "Charm Buffer" <me>')
+    send_command('bind @r input /item "Moneta\'s Tonic" <me>')
     
     ---------------------------------------------------------------------------
     -- Augmented Gear Section -------------------------------------------------
@@ -176,13 +180,13 @@ function init_gear_sets()
         neck="Reti Pendant",        -- 04%
         left_ear="Mendicant's Earring", -- 02% (Magnetic Earring 05)
         right_ear="Calamitous Earring",  -- 04%
-        body="Witching Robe",       -- 05% (Kaykaus: 06, Chironic: 05, Vedic: 10)
+        body="Vedic Robe",          -- 10% (Kaykaus: 06, Chironic: 05, Vedic: 10)
         hands="Shrieker's Cuffs",   -- 07% (Thrift Gloves +1: 05, Kaykaus: 06)
         back="Solemnity Cape",      -- 05% (Fi Follet: 04, Aurist's: 1-5)
         waist="Austerity Belt +1",  -- 09%
         legs="Vanya Slops",         -- 12% (with augment C)
         feet="Vanya Clogs",         -- 06% (with augment C, Kaykaus: 06)
-    --------------------------- Total: 69% ------------------------------------
+    --------------------------- Total: 74 -------------------------------------
     }
 
     ---------------------------------------------------------------------------

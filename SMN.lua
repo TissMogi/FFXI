@@ -407,8 +407,8 @@ function init_gear_sets()
         right_ear="Gelos Earring",      -- 5
         body="Convoker's Doublet +3",   -- 16
         hands="Apogee Mitts +1",        -- 8
-        left_ring="Varar Ring +1",
-        right_ring="Varar Ring +1",
+        left_ring={ name="Varar Ring +1", bag="wardrobe3"},
+        right_ring={ name="Varar Ring +1", bag="wardrobe4"},
         back=CCapePhysical,             -- 5
         waist="Regal Belt",
         legs="Apogee Slacks +1",        -- 21
@@ -433,8 +433,8 @@ function init_gear_sets()
         right_ear="Gelos Earring",      -- 5
         body="Convoker's Doublet +3",   -- 16
         hands="Apogee Mitts +1",        -- 8
-        left_ring="Varar Ring +1",
-        right_ring="Varar Ring +1",
+        left_ring={ name="Varar Ring +1", bag="wardrobe3"},
+        right_ring={ name="Varar Ring +1", bag="wardrobe4"},
         back=CCapeMagical,              -- 5
         waist="Regal Belt",
         legs="Apogee Slacks +1",        -- 21
@@ -547,7 +547,7 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     sets.idle.Avatar = set_combine(sets.idle, {main="Nirvana",sub="Elan Strap +1",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Caller's Pendant",left_ear="Andoaa Earring", right_ear="Moonshade Earring",
-        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Varar Ring +1",right_ring="Woltaris Ring",
+        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring={ name="Varar Ring +1", bag="wardrobe3"},right_ring="Woltaris Ring",
         back=CCapePhysical, waist="Regal Belt", legs="Assiduity Pants +1", feet="Convoker's Pigaches +3"})
         
     -- Favor uses Empyrean instead of AF for Refresh --------------------------
@@ -558,7 +558,7 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
 	sets.idle.Avatar.Melee = set_combine(sets.idle.Avatar, {main="Nirvana",sub="Elan Strap +1",ammo="Sancus Sachet +1",
         head="Beckoner's Horn +1",neck="Summoner's Collar +2",left_ear="Rimeice Earring", right_ear="Enmerkar Earring",
-        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring="Varar Ring +1",right_ring="Varar Ring +1",
+        body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring={ name="Varar Ring +1", bag="wardrobe3"},right_ring={ name="Varar Ring +1", bag="wardrobe4"},
         back=CCapePhysical, waist="Incarnation Sash", legs="Convoker's Spats +3", feet="Convoker's Pigaches +3"
     })
 
@@ -569,7 +569,7 @@ function init_gear_sets()
 
     sets.idle.Spirit = {main="Nirvana",sub="Elan Strap +1",ammo="Sancus Sachet +1",
         head="Convoker's Horn +3",neck="Caller's Pendant",left_ear="Rimeice Earring", right_ear="Moonshade Earring",
-        body="Beckoner's Doublet +1",hands="Inyanga Dastanas +2",left_ring="Varar Ring +1",right_ring="Varar Ring +1",
+        body="Beckoner's Doublet +1",hands="Inyanga Dastanas +2",left_ring={ name="Varar Ring +1", bag="wardrobe3"},right_ring={ name="Varar Ring +1", bag="wardrobe4"},
         back=CCapePhysical, waist="Incarnation Sash", legs="Assiduity Pants +1", feet="Convoker's Pigaches +3"}
 
     ---------------------------------------------------------------------------
