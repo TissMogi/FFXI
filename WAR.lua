@@ -64,14 +64,11 @@ end
 
 -- Organizer Gear to keep in inv for specific job.
 organizer_items = {
-    echos="Echo Drops",
     remedy="Remedy",
     holy="Holy Water",
     food="Grape Daifuku",
-    orb="Macrocosmic Orb",
-    grip1="Utu Grip",
     gaxe1="Aganoshe",
-    gsword1="Zulfiqar"
+    gsword1="Montante +1"
     }
 
 -- Define sets and vars used by this job file.
@@ -162,7 +159,7 @@ function init_gear_sets()
     right_ring="Apeile Ring +1",
     back="Mubvumbamiri Mantle",
     }
-    -- Total Enmity: +64 --
+    -- Total Enmity: +92 --
 	
 
     ---------------------------------------------------------------------------
@@ -715,8 +712,6 @@ function init_gear_sets()
     sets.engaged.DualWield = {}
 
     sets.engaged.TH = {
-        main={ name="Aganoshe", augments={'"Counter"+1','VIT+16','Attack+20','DMG:+26',}},
-        sub="Utu Grip",
         ammo="Ginsen",
         head="Flam. Zucchetto +2",
         body={ name="Valorous Mail", augments={'MND+11','"Cure" potency +1%','"Treasure Hunter"+1','Accuracy+9 Attack+9','Mag. Acc.+12 "Mag.Atk.Bns."+12',}},
