@@ -299,7 +299,7 @@ function init_gear_sets()
         legs="Carmine Cuisses +1",
         feet="Ayanmo Gambieras +2",
         neck="Sanctity Necklace",
-        waist="Kentarch Belt +1",
+        waist="Fotia Belt",
         left_ear="Mache Earring",
         right_ear="Odr Earring",
         left_ring="Ilabrat Ring",
@@ -310,6 +310,7 @@ function init_gear_sets()
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     -- MND (73~85%) based; depending on merits levels
+    -- Fivefold attack
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
         ammo="Hydrocera",
         head="Jhakri Coronal +2",
@@ -318,7 +319,7 @@ function init_gear_sets()
         legs="Jhakri Slops +2",
         feet="Jhakri Pigaches +2",
         neck="Nuna Gorget",             --mnd:8, get elemental obi
-        waist="Porous Rope",
+        waist="Fotia Belt",
         left_ear="Steelflash Earring",
         right_ear="Bladeborn Earring",
         left_ring="Stikini Ring +1",

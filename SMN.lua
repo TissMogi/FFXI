@@ -190,7 +190,8 @@ organizer_items = {
     remedy="Remedy",
     holy="Holy Water",
     food="Grape Daifuku",
-    orb="Macrocosmic Orb"
+    orb="Macrocosmic Orb",
+    cudg1="Nibiru Cudgel"
     }
 
 -- Define sets and vars used by this job file.

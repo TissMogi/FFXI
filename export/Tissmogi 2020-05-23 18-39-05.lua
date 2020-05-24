@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Aganoshe", augments={'"Counter"+1','VIT+16','Attack+20','DMG:+26',}},
+    sub="Utu Grip",
+    ammo="Sihirik",
+    head="Sulevia's Mask +2",
+    body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    feet="Hermes' Sandals",
+    neck="Loricate Torque +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Etiolation Earring",
+    right_ear="Odnowa Earring +1",
+    left_ring="Patricius Ring",
+    right_ring="Defending Ring",
+    back="Moonbeam Cape",
+}
