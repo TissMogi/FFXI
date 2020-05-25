@@ -767,7 +767,7 @@ function init_gear_sets()
         neck="Loricate Torque +1",
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",
-        right_ear="Moonshade Earring",
+        right_ear="Hearty Earring",
         left_ring="Stikini Ring +1",
         right_ring="Woltaris Ring",
         back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
@@ -783,7 +783,7 @@ function init_gear_sets()
         neck="Loricate Torque +1",
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",
-        right_ear="Moonshade Earring",
+        right_ear="Genmei Earring",
         left_ring="Defending Ring",
         right_ring="Patricius Ring",
         back="Disperser's Cape"
@@ -808,7 +808,7 @@ function init_gear_sets()
         neck="Loricate Torque +1",
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",
-        right_ear="Moonshade Earring",
+        right_ear="Genmei Earring",
         left_ring="Defending Ring",
         right_ring="Patricius Ring",
         back="Disperser's Cape"
@@ -898,8 +898,8 @@ function init_gear_sets()
         feet="Ayanmo Gambieras +2",
         neck="Loricate Torque +1",
         waist="Flume Belt +1",
-        left_ear="Etiolation Earring",
-        right_ear="Moonshade Earring",
+        left_ear="Steelflash Earring",
+        right_ear="Bladeborn Earring",
         left_ring="Defending Ring",
         right_ring="Patricius Ring",
         back="Disperser's Cape"
@@ -914,8 +914,8 @@ function init_gear_sets()
         feet="Ayanmo Gambieras +2",
         neck="Loricate Torque +1",
         waist="Kentarch Belt +1",
-        left_ear="Etiolation Earring",
-        right_ear="Moonshade Earring",
+        left_ear="Steelflash Earring",
+        right_ear="Bladeborn Earring",
         left_ring="Defending Ring",
         right_ring="Vertigo Ring",
         back="Disperser's Cape"

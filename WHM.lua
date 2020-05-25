@@ -180,7 +180,7 @@ function init_gear_sets()
         neck="Reti Pendant",        -- 04%
         left_ear="Mendicant's Earring", -- 02% (Magnetic Earring 05)
         right_ear="Calamitous Earring",  -- 04%
-        body="Vedic Robe",          -- 10% (Kaykaus: 06, Chironic: 05, Vedic: 10)
+        body="Vedic Coat",          -- 10% (Kaykaus: 06, Chironic: 05, Vedic: 10)
         hands="Shrieker's Cuffs",   -- 07% (Thrift Gloves +1: 05, Kaykaus: 06)
         back="Solemnity Cape",      -- 05% (Fi Follet: 04, Aurist's: 1-5)
         waist="Austerity Belt +1",  -- 09%
@@ -440,7 +440,7 @@ function init_gear_sets()
     neck="Loricate Torque +1",
     waist="Porous Rope",
     left_ear="Etiolation Earring",
-    right_ear={ name="Moonshade Earring", augments={'MP+25','Latent effect: "Refresh"+1',}},
+    right_ear="Hearty Earring",
     left_ring="Woltaris Ring",
     right_ring="Inyanga Ring",
     back=AlanusCure,
@@ -497,7 +497,7 @@ function init_gear_sets()
         neck="Loricate Torque +1",
         waist="Porous Rope",
         left_ear="Etiolation Earring",
-        right_ear={ name="Moonshade Earring", augments={'MP+25','Latent effect: "Refresh"+1',}},
+        right_ear="Hearty Earring",
         left_ring="Woltaris Ring",
         right_ring="Inyanga Ring",
         back=AlanusCure,
