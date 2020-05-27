@@ -157,6 +157,9 @@ function user_setup()
     state.WeaponLock = M(false, 'Weapon Lock')
     send_command('bind @w gs c toggle WeaponLock')
 
+    send_command('bind @t input /item "Mirror\'s Tonic" <me>')
+    send_command('bind @y input /item "Savior\'s Tonic" <me>')
+
     MerlinicHoodBurst = { name="Merlinic Hood", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Magic burst dmg.+11%','Mag. Acc.+8',}}
     MerlinicShalwarBurst = { name="Merlinic Shalwar", augments={'Mag. Acc.+6','Magic burst dmg.+10%','"Mag.Atk.Bns."+9',}}
     MerlinicCrackowsBurst = { name="Merlinic Crackows", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+10%','MND+1','Mag. Acc.+6','"Mag.Atk.Bns."+1',}}
