@@ -531,7 +531,7 @@ function init_gear_sets()
     sets.latent_refresh = {waist="Fucho-no-obi"}
 
     sets.idle = {main="Nirvana",sub="Vox Grip",ammo="Sancus Sachet +1",
-        head="Convoker's Horn +3",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Moonshade Earring",
+        head="Convoker's Horn +3",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Hearty Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",left_ring="Inyanga Ring",right_ring="Woltaris Ring",
         back=CCapeMagical,waist="Porous Rope",legs="Assiduity Pants +1",feet="Inyanga Crackows +2"
     }
@@ -550,7 +550,7 @@ function init_gear_sets()
     -- Idle sets with Avatar and Spirits --------------------------------------
     ---------------------------------------------------------------------------
     sets.idle.Avatar = set_combine(sets.idle, {main="Nirvana",sub="Elan Strap +1",ammo="Sancus Sachet +1",
-        head="Convoker's Horn +3",neck="Caller's Pendant",left_ear="Andoaa Earring", right_ear="Moonshade Earring",
+        head="Convoker's Horn +3",neck="Caller's Pendant",left_ear="Andoaa Earring", right_ear="Enmerkar Earring",
         body="Beckoner's Doublet +1",hands="Lamassu Mitts +1",left_ring={ name="Varar Ring +1", bag="wardrobe3"},right_ring="Woltaris Ring",
         back=CCapePhysical, waist="Regal Belt", legs="Assiduity Pants +1", feet="Convoker's Pigaches +3"})
         
@@ -572,7 +572,7 @@ function init_gear_sets()
         back=CCapePhysical,waist="Selemnus Belt",legs="Inyanga Shalwar +2",feet="Inyanga Crackows +2"}
 
     sets.idle.Spirit = {main="Nirvana",sub="Elan Strap +1",ammo="Sancus Sachet +1",
-        head="Convoker's Horn +3",neck="Caller's Pendant",left_ear="Rimeice Earring", right_ear="Moonshade Earring",
+        head="Convoker's Horn +3",neck="Caller's Pendant",left_ear="Rimeice Earring", right_ear="Enmerkar Earring",
         body="Beckoner's Doublet +1",hands="Inyanga Dastanas +2",left_ring={ name="Varar Ring +1", bag="wardrobe3"},right_ring={ name="Varar Ring +1", bag="wardrobe4"},
         back=CCapePhysical, waist="Incarnation Sash", legs="Assiduity Pants +1", feet="Convoker's Pigaches +3"}
 
@@ -617,7 +617,7 @@ function init_gear_sets()
     -- Let's make sure we look pretty in Town ---------------------------------
     ---------------------------------------------------------------------------
     sets.idle.Town = {main="Nirvana",sub="Vox Grip",ammo="Sancus Sachet +1",
-        head="Convoker's Horn +3",neck="Sanctity Necklace",left_ear="Etiolation Earring",right_ear="Moonshade Earring",
+        head="Convoker's Horn +3",neck="Sanctity Necklace",left_ear="Etiolation Earring",right_ear="Enmerkar Earring",
         body="Councilor's Garb",hands="Inyanga Dastanas +2",left_ring="Inyanga Ring",right_ring="Woltaris Ring",
         back="Campestres's Cape",waist="Regal Belt",legs="Assiduity Pants +1",feet="Herald's Gaiters"
     }

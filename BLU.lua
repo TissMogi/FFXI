@@ -181,7 +181,7 @@ end
 
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('Normal', 'PDT', 'MDT', 'MDTHP', 'Acc', 'Refresh', 'Learning')
+    state.OffenseMode:options('Normal', 'PDT', 'MDT', 'MDTHP', 'TH', 'Acc', 'Refresh', 'Learning')
     state.WeaponskillMode:options('Normal', 'Acc')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT', 'Learning')
@@ -935,6 +935,22 @@ function init_gear_sets()
         left_ring="Defending Ring",
         right_ring="Vertigo Ring",
         back="Moonbeam Cape",
+    }
+
+    sets.engaged.TH = {
+        ammo="Ginsen",
+        head="Dampening Tam",
+        body="Malignance Tabard",
+        hands="Adhemar Wristbands +1",
+        legs="Carmine Cuisses +1",
+        feet="Ayanmo Gambieras +2",
+        neck="Sanctity Necklace",
+        waist="Chaac Belt",
+        left_ear="Steelflash Earring",
+        right_ear="Bladeborn Earring",
+        left_ring="Epona's Ring",
+        right_ring="Hetairoi Ring",
+        back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}        
     }
 		
 

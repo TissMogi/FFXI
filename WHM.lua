@@ -43,7 +43,7 @@ function user_setup()
     -- Locks Weapon and Sub via keybind
     state.WeaponLock = M(false, 'Weapon Lock')
     send_command('bind @w gs c toggle WeaponLock')
-    -- Fenrir Mount - Windows+x
+    -- Fenrir Mount - Windows+z
     send_command('bind @z input /mount fenrir')
     -- Warp Ring - Windows+z
     send_command('bind @x input /equipset 17;input /echo <rarr> Warping!!;wait 11;input /item "Warp Ring" <me>')
