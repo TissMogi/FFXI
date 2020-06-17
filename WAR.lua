@@ -88,7 +88,7 @@ function init_gear_sets()
     body="Pummeler's Lorica +3",
     hands="Sulevia's Gauntlets +2",
     --legs="Arke Cosciales",
-    feet="Agoge Calligae +1",                                   --feet={ name="Agoge Calligae +3", augments={'Enhances "Tomahawk" effect',}},
+    feet="Agoge Calligae +3",
     neck="War. Beads +2",
     waist="Flume Belt +1",
     left_ear="Etiolation Earring",
@@ -100,7 +100,7 @@ function init_gear_sets()
 	
 	sets.precast.JA['Aggressor'] = {
 	head="Pummeler's Mask +2",                                  --head="Pummeler's Mask +3",
-    body="Agoge Lorica +2",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
+    body="Agoge Lorica +3",
     hands="Sulevia's Gauntlets +2",
     --legs="Arke Cosciales",
     feet="Sulevia's Leggings +2",
@@ -115,9 +115,9 @@ function init_gear_sets()
 	
 	sets.precast.JA['Mighty strikes'] = { hands="Agoge Mufflers +1" }   --hands="Agoge Mufflers +3"
 	
-	sets.precast.JA['Warcry'] = { head = "Agoge Mask +1" }      --head = "Agoge Mask +3"
+	sets.precast.JA['Warcry'] = { head = "Agoge Mask +3" }
 	
-	sets.precast.JA['Tomahawk'] = { ammo = "Throwing Tomahawk",feet = "Agoge Calligae +1", body="Valorous Mail", waist ="Chaac Belt" }    --feet = "Agoge Calligae +3"
+	sets.precast.JA['Tomahawk'] = { ammo = "Throwing Tomahawk",feet = "Agoge Calligae +3", body="Valorous Mail", waist ="Chaac Belt" }
 	
 	sets.precast.JA['Retaliation'] = {
     ammo="Sapience Orb",
@@ -269,7 +269,7 @@ function init_gear_sets()
     -- Fourfold physical attack, 73~85% VIT -----------------------------------
 	sets.precast.WS['Upheaval'] = {
 	    ammo="Knobkierrie",
-        head="Sulevia's Mask +2",                                   --head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
+        head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
         body="Pummeler's Lorica +3",
         hands="Sulevia's Gauntlets +2",
         legs={ name="Valor. Hose", augments={'Rng.Atk.+14','VIT+10','Weapon skill damage +6%',}},  --legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
@@ -287,7 +287,7 @@ function init_gear_sets()
 	sets.precast.WS['Raging Rush'] = {
 	    ammo="Seeth. Bomblet +1",                                   --ammo="Yetshila +1",
         head="Boii Mask +1",
-        body="Agoge Lorica +2",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
+        body="Agoge Lorica +3",
         hands="Sulevia's Gauntlets +2",
         legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Boii Calligae +1",
@@ -304,7 +304,7 @@ function init_gear_sets()
 	sets.precast.WS['Rampage'] = {
 	    ammo="Seeth. Bomblet +1",                                   --ammo="Yetshila +1",
         head="Boii Mask +1",
-        body="Agoge Lorica +2",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
+        body="Agoge Lorica +3",
         hands="Sulevia's Gauntlets +2",
         legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Boii Calligae +1",
@@ -321,7 +321,7 @@ function init_gear_sets()
 	sets.precast.WS['Vorpal Blade'] = {
 	    ammo="Seeth. Bomblet +1",                                   --ammo="Yetshila +1",
         head="Boii Mask +1",
-        body="Agoge Lorica +2",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
+        body="Agoge Lorica +3",
         hands="Sulevia's Gauntlets +2",
         legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Boii Calligae +1",
@@ -337,7 +337,7 @@ function init_gear_sets()
     -- Twofold physical attack, 100% STR -------------------------------------
 	sets.precast.WS['Impulse Drive'] = {
 	    ammo="Knobkierrie",
-        head={ name="Argosy Celata +1", augments={'STR+12','DEX+12','Attack+20',}}, --head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
+        head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
         body="Pummeler's Lorica +3",
         hands="Flamma Manopolas +2",
         legs="Argosy Breeches +1",
@@ -375,7 +375,7 @@ function init_gear_sets()
 		sets.precast.WS['Hexa Strike'] = {
 	    ammo="Seeth. Bomblet +1",                                   --ammo="Yetshila +1",
         head="Boii Mask +1",
-        body="Agoge Lorica +2",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
+        body="Agoge Lorica +3",
         hands="Sulevia's Gauntlets +2",
         legs="Pummeler's Cuisses +2",                               --legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Boii Calligae +1",
@@ -391,7 +391,7 @@ function init_gear_sets()
     -- Twofold physical attack, 50% STR / 50% MND --------------------------
 	sets.precast.WS['Savage Blade'] = {
 	    ammo="Knobkierrie",
-        head="Sulevia's Mask +2",                                   --head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
+        head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
         body="Pummeler's Lorica +3",
         hands="Argosy Mufflers +1",
         legs="Sulevia's Cuisses +2",                                --legs={ name="Odyssean Cuisses", augments={'Accuracy+28','Weapon skill damage +5%','DEX+10',}},
@@ -420,7 +420,7 @@ function init_gear_sets()
     -- Twofold physical attack, 80% STR ------------------------------------
 	sets.precast.WS['Ukko\'s Fury'] = {
         ammo="Knobkierrie",
-	    head={ name="Argosy Celata +1", augments={'STR+12','DEX+12','Attack+20',}}, --head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
+	    head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
         hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}}, --body="Pummeler's Lorica +2",
         hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
         legs={ name="Argosy Breeches +1", augments={'STR+12','Attack+25','"Store TP"+6',}}, --legs={ name="Valor. Hose", augments={'Accuracy+19 Attack+19','Weapon skill damage +2%','STR+4','Accuracy+15','Attack+12',}},
@@ -470,7 +470,7 @@ function init_gear_sets()
         head="Flamma Zucchetto +2",
         body="Sulevia's Platemail +2",                              --body={ name="Valorous Mail", augments={'Pet: Crit.hit rate +1','Pet: Phys. dmg. taken -3%','Quadruple Attack +3','Accuracy+19 Attack+19',}},
         hands="Sulevia's Gauntlets +2",
-        legs ="Agoge Cuisses +2",                                   --legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
+        legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Ioskeha Belt",
@@ -484,9 +484,9 @@ function init_gear_sets()
     sets.engaged.GA = {
         ammo="Ginsen",
         head="Flamma Zucchetto +2",
-        body="Sulevia's Platemail +2",                              --body={ name="Valorous Mail", augments={'Pet: Crit.hit rate +1','Pet: Phys. dmg. taken -3%','Quadruple Attack +3','Accuracy+19 Attack+19',}},
+        body="Agoge Lorica +3",
         hands="Sulevia's Gauntlets +2",
-        legs ="Agoge Cuisses +2",                                   --legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
+        legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
         feet="Flamma Gambieras +2",                                 --not sure feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Ioskeha Belt",
@@ -500,7 +500,7 @@ function init_gear_sets()
     sets.engaged.GA.Accuracy = {
 	    ammo="Seeth. Bomblet +1",
         head="Flamma Zucchetto +2",                                  --head="Pummeler's Mask +3",
-        body="Pummeler's Lorica +3",
+        body="Agoge Lorica +3",
         hands="Sulevia's Gauntlets +2",                             --hands="Pummeler's Mufflers +3",
         legs ="Pummeler's Cuisses +2",                                   --legs="Pummeler's Cuisses +3",
         feet="Flamma Gambieras +2",
@@ -663,7 +663,7 @@ function init_gear_sets()
 	sets.engaged.SwordShield = {
 	    ammo="Ginsen",
         head="Flamma Zucchetto +2",
-        body="Agoge Lorica +2",                                     --body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
+        body="Agoge Lorica +3",
         hands="Sulevia's Gauntlets +2",                             --hands={ name="Agoge Mufflers +3", augments={'Enhances "Mighty Strikes" effect',}},
         --right_ring="Moonbeam Ring",
         feet="Pummeler's Calligae +2",
