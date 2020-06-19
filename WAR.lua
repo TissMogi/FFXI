@@ -486,7 +486,7 @@ function init_gear_sets()
         head="Flamma Zucchetto +2",
         body="Agoge Lorica +3",
         hands="Sulevia's Gauntlets +2",
-        legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
+        legs="Pummeler's Cuisses +3",
         feet="Flamma Gambieras +2",                                 --not sure feet="Pummeler's Calligae +2",
         neck="War. Beads +2",
         waist="Ioskeha Belt",
