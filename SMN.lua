@@ -460,7 +460,7 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     -- Flaming Crush is a Hybrid Bloodpact 2 Phys + 1 Magical Hit -------------
     ---------------------------------------------------------------------------
-    --sets.midcast['Flaming Crush'] = sets.midcast.Pet.MagicalBloodPactRage
+    sets.midcast['Flaming Crush'] = sets.midcast.Pet.MagicalBloodPactRage
     
     -- sets.midcast['Flaming Crush'] = set_combine( sets.midcast.Pet.PhysicalBloodPactRage, { 
     --  main="Gridarvor", sub="Elan Strap +1",
