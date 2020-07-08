@@ -792,7 +792,8 @@ function init_gear_sets()
         left_ring="Patricius Ring",
         right_ring="Defending Ring",
         back="Moonbeam Cape",
-	}
+    }
+    -- Total: 49 PDT, X MDT
 
     sets.idle.Weak = set_combine(sets.idle.Field, {
         --head="Twilight Helm",
